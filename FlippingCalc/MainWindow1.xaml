@@ -1,0 +1,491 @@
+﻿<Window x:Class="FlippingCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlippingCalc"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="FlippingCalc" Height="965" Width="1000" Icon="Images/Background/CurrencyAddModToRare.png" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\casey\source\repos\monkaS\monkaS\Images\Background\Untitled-1.png" />
+    </Window.Background>
+      <Border Padding="10">
+        <StackPanel>
+            <!-- Top Row -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Rectangle Grid.Column="0" Height="30" Fill="DodgerBlue" Margin="0 0 10 0" Stroke="Black"/>
+                <Rectangle Grid.Column="1" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                <Rectangle Grid.Column="2" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                <Rectangle Grid.Column="3" Height="30" Fill="SeaGreen" Margin="0 0 10 0" Stroke="Black"/>
+                <!-- right -->
+                <Rectangle Grid.Column="4" Height="30" Fill="DodgerBlue" Margin="0 0 10 0" Stroke="Black"/>
+                <Rectangle Grid.Column="5" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                <Rectangle Grid.Column="6" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                <Rectangle Grid.Column="7" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                <!-- left -->
+                <TextBlock Grid.Column="0" HorizontalAlignment="Center" Text="Type" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0"/>
+                <TextBlock Grid.Column="1" Text="⮂Buy" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="2" Text="⮀Sell" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" />
+                <TextBlock Grid.Column="3" HorizontalAlignment="Center" Text="Profit" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}"/>
+                <!-- right -->
+                <TextBlock Grid.Column="4" HorizontalAlignment="Center" Text="Type" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0"/>
+                <TextBlock Grid.Column="5" Text="⮂Buy" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="6" Text="⮀Sell" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" />
+                <TextBlock Grid.Column="7" HorizontalAlignment="Center" Text="Profit" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}"/>
+
+            </Grid>
+            <!-- Row 1 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Alteration.png"/>
+                <TextBox x:Name="BuyAlt" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellAlt" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitAlt" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Fusing.png"/>
+                <TextBox x:Name="BuyFusing" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellFusing" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitFusing" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 2 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Alchemy.png"/>
+                <TextBox x:Name="BuyAlchemy"   Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellAlchemy"  Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitAlchemy" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/GCP.png"/>
+                <TextBox x:Name="BuyGCP" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellGCP" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitGCP" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 3 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Exalted.png"/>
+                <TextBox x:Name="BuyEx" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellEx" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitEx" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Chromatic.png"/>
+                <TextBox x:Name="BuyChromatic" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellChromatic" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitChromatic" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 4 -->
+            <Grid> 
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Jewellers.png"/>
+                <TextBox x:Name="BuyJeweller" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellJeweller" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitJeweller" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Chance.png"/>
+                <TextBox x:Name="BuyChance" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellChance" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitChance" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 5 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Chisel.png"/>
+                <TextBox x:Name="BuyChisel" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellChisel" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitChisel" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Scouring.png"/>
+                <TextBox x:Name="BuyScouring" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellScouring" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitScouring" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 6 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Blessed.png"/>
+                <TextBox x:Name="BuyBlessed" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellBlessed" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitBlessed" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Regret.png"/>
+                <TextBox x:Name="BuyRegret" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellRegret" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitRegret" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 7 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Regal.png"/>
+                <TextBox x:Name="BuyRegal" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellRegal" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitRegal" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Divine.png"/>
+                <TextBox x:Name="BuyDivine" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellDivine" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitDivine" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 8 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Vaal.png"/>
+                <TextBox x:Name="BuyVaal" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellVaal" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitVaal" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Wisdom.png"/>
+                <TextBox x:Name="BuyWisdom" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellWisdom" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitWisdom" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 9 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Portal.png"/>
+                <TextBox x:Name="BuyPortal" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellPortal" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitPortal" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Scrap.png"/>
+                <TextBox x:Name="BuyScrap" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellScrap" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitScrap" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 10 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Whetstone.png"/>
+                <TextBox x:Name="BuyWhetstone" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellWhetstone" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitWhetstone" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Bauble.png"/>
+                <TextBox x:Name="BuyBauble" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellBauble" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitBauble" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 11 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Transmute.png"/>
+                <TextBox x:Name="BuyTransmute" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellTransmute" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitTransmute" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Augmentation.png"/>
+                <TextBox x:Name="BuyAugment" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellAugment" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitAugment" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 12 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Perandus.png"/>
+                <TextBox x:Name="BuyPerandus" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellPerandus" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitPerandus" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Silver.png"/>
+                <TextBox x:Name="BuySilver" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellSilver" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitSilver" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 13 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Offering.png"/>
+                <TextBox x:Name="BuyOffering" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellOffering" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitOffering" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/WSextant.png"/>
+                <TextBox x:Name="BuyWSextant" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellWSextant" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitWSextant" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 14 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/YSextant.png"/>
+                <TextBox x:Name="BuyYSextant" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellYSextant" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitYSextant" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/RSextant.png"/>
+                <TextBox x:Name="BuyRSextant" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellRSextant" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitRSextant" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 15 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Annulment.png"/>
+                <TextBox x:Name="BuyAnnulment" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellAnnulment" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitAnnulment" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Binding.png"/>
+                <TextBox x:Name="BuyBinding" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellBinding" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitBinding" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 16 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Horizons.png"/>
+                <TextBox x:Name="BuyHorizons" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellHorizons" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitHorizons" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Harbinger.png"/>
+                <TextBox x:Name="BuyHarbinger" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellHarbinger" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitHarbinger" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Row 17 -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <!-- left -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                    <!-- right -->
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <!-- left -->
+                <Image Grid.Column="0" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Engineers.png"/>
+                <TextBox x:Name="BuyEngineers" Grid.Column="1" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellEngineers" Grid.Column="2" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitEngineers" Grid.Column="3" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+                <!-- right -->
+                <Image Grid.Column="4" HorizontalAlignment="center" Height="35" Margin="0 10 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Ancient.png"/>
+                <TextBox x:Name="BuyAncient" Grid.Column="5" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="SellAncient" Grid.Column="6" Height="25" Text="" Margin="0 10 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="ProfitAncient" Grid.Column="7" Height="25" Text="" Margin="0 10 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray"/>
+            </Grid>
+            <!-- Buttons -->
+            <Grid>
+            <!-- Exit button -->
+            <Button x:Name="ExitButton" HorizontalAlignment="Center" Height="35" Width="100" Margin="870 -10 0 0" Click="Exit_Click" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold">Exit</Button>
+            <!-- Calc button-->
+            <Button x:Name="CalcButton" Height="75" Width="450" Margin="100,30,410,0" FontFamily="Microsoft YaHei" FontSize="50" FontWeight="Bold" Click="CalcButton_Click">Calculate</Button>
+            <!-- Reset button -->
+            <Button x:Name="ResetButton" HorizontalAlignment="Center" Height="35" Width="100" Margin="0 70 873 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="ResetButton_Click">Reset</Button>
+            <!-- Link button -->
+            <Button x:Name="LinksButton" HorizontalAlignment="Center" Height="35" Width="100" Margin="0 -10 873 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="LinksButton_Click">Links</Button>
+            <!-- Quant Calc -->
+            <Button x:Name="QuantButton" Height="35" Width="100" Margin="255 0 0 10" HorizontalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="QuantButton_Click">Quantity</Button>
+            <!-- Quant Box -->
+            <TextBox x:Name="QuantBox" Height="35" Width="193" Margin="562 0 0 10" HorizontalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Text="" TextAlignment="Center" />
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>

@@ -8,11 +8,11 @@
         ResizeMode="NoResize"
         Title="Links" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen">
     <Window.Background>
-        <ImageBrush ImageSource="C:\Users\casey\source\repos\FlippingCalc\FlippingCalc\Images\Background\Untitled-1.png" />
+        <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
     </Window.Background>
     <TabControl>
         <TabControl.Background>
-            <ImageBrush ImageSource="C:\Users\casey\source\repos\FlippingCalc\FlippingCalc\Images\Background\LinksBackground.png" />
+            <ImageBrush ImageSource="Images\Background\LinksBackground.png" />
         </TabControl.Background>
         <TabItem Header="Incursion SC">
             <Grid>

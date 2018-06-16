@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Quantity" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Background>
-        <ImageBrush ImageSource="C:\Users\casey\source\repos\FlippingCalc\FlippingCalc\Images\Background\Untitled-1.png" />
+        <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
     </Window.Background>
   <Grid>
     <!-- Columns -->

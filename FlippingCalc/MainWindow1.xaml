@@ -8,7 +8,7 @@
         ResizeMode="NoResize"
         Title="FlippingCalc" Height="965" Width="1000" Icon="Images/Background/CurrencyAddModToRare.png" WindowStartupLocation="CenterScreen">
     <Window.Background>
-        <ImageBrush ImageSource="C:\Users\casey\source\repos\FlippingCalc\FlippingCalc\Images\Background\Untitled-1.png" />
+        <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
     </Window.Background>
       <Border Padding="10">
         <StackPanel>

@@ -148,7 +148,7 @@
                 <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Vaal.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Incursion&amp;online=x&amp;want=4&amp;have16" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Incursion&amp;online=x&amp;want=4&amp;have=16" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>

@@ -190,7 +190,7 @@ namespace FlippingCalc
             }
             else
             {
-                result.Text = "Please input Values";
+                result.Text = "Error";
             }
         }
         // Links Button
@@ -255,8 +255,8 @@ namespace FlippingCalc
             }
             else
             {
-                fourth.Text = "Nope";
-                fifth.Text = "Nope";
+                fourth.Text = "Error";
+                fifth.Text = "Error";
             }
         }
 

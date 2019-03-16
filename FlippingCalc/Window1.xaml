@@ -14,7 +14,7 @@
         <TabControl.Background>
             <ImageBrush ImageSource="Images\Background\LinksBackground.png" />
         </TabControl.Background>
-        <TabItem Header="Delve SC">
+        <TabItem Header="Synthesis SC">
             <Grid>
                 <!-- Columns -->
                 <Grid.ColumnDefinitions>
@@ -50,13 +50,13 @@
                 <Image Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Alteration.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=1" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=1" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=1&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=1&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -64,13 +64,13 @@
                 <Image Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Alchemy.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=3" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=3" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=3&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=3&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -78,13 +78,13 @@
                 <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Exalted.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=6" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=6" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=6&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=6&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -92,13 +92,13 @@
                 <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Jewellers.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=8" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=8" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=8&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=8&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -106,13 +106,13 @@
                 <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chisel.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=10" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=10" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=10&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=10&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -120,13 +120,13 @@
                 <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Blessed.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=12" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=12" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=12&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=12&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -134,13 +134,13 @@
                 <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Regal.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=14" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=14" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=14&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=14&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -148,13 +148,13 @@
                 <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Vaal.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=16" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=16" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=16&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=16&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -162,13 +162,13 @@
                 <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Portal.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=18" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=18" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=18&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=18&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -176,13 +176,13 @@
                 <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Whetstone.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=20" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=20" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=20&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=20&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -190,13 +190,13 @@
                 <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Transmute.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=22" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=22" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=22&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=22&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -204,13 +204,13 @@
                 <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Perandus.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=26" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=26" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=26&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=26&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -218,13 +218,13 @@
                 <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Offering.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=40" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=40" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=40&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=40&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -232,13 +232,13 @@
                 <Image Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/YSextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=46" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=46" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=46&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=46&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -246,13 +246,13 @@
                 <Image Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Annulment.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=513" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=513" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=513&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=513&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -260,13 +260,13 @@
                 <Image Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Horizons.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=515" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=515" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=515&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=515&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -274,13 +274,13 @@
                 <Image Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Engineers.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=517" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=517" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=517&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=517&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -292,13 +292,13 @@
                 <Image Grid.Column="3"  Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Fusing.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=2" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=2" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=2&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=2&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -306,13 +306,13 @@
                 <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/GCP.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=5" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=5&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=5&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -320,13 +320,13 @@
                 <Image Grid.Column="3" Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chromatic.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=7" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=7" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=7&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=7&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -334,13 +334,13 @@
                 <Image Grid.Column="3" Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chance.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=9" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=9" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=9&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=9&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -348,13 +348,13 @@
                 <Image Grid.Column="3" Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Scouring.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=11" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=11" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=11&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=11&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -362,13 +362,13 @@
                 <Image Grid.Column="3" Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Regret.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=13" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=13" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=13&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=13&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -376,13 +376,13 @@
                 <Image Grid.Column="3" Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Divine.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=15" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=15" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=15&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=15&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -390,13 +390,13 @@
                 <Image Grid.Column="3" Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Wisdom.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=17" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=17" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=17&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=17&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -404,13 +404,13 @@
                 <Image Grid.Column="3" Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Scrap.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=19" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=19" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=19&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=19&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -418,13 +418,13 @@
                 <Image Grid.Column="3" Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Bauble.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=21" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=21" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=21&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=21&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -432,13 +432,13 @@
                 <Image Grid.Column="3" Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Augmentation.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=23" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=23" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=23&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=23&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -446,13 +446,13 @@
                 <Image Grid.Column="3" Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=35" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=35" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=35&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=35&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -460,13 +460,13 @@
                 <Image Grid.Column="3" Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/WSextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=45" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=45" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=45&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=45&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -474,13 +474,13 @@
                 <Image Grid.Column="3" Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/RSextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=47" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=47" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=47&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=47&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -488,13 +488,13 @@
                 <Image Grid.Column="3" Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Binding.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=514" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=514" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=514&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=514&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -502,13 +502,13 @@
                 <Image Grid.Column="3" Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Harbinger.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=516" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=516" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=516&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=516&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -516,19 +516,19 @@
                 <Image Grid.Column="3" Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Ancient.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=4&amp;have=518" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=4&amp;have=518" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Delve&amp;online=x&amp;want=518&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Synthesis&amp;online=x&amp;want=518&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
             </Grid>
         </TabItem>
-        <TabItem Header="Delve HC">
+        <TabItem Header="Synthesis HC">
             <Grid>
                 <!-- Columns -->
                 <Grid.ColumnDefinitions>
@@ -564,13 +564,13 @@
                 <Image Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Alteration.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=1" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=1" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=1&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=1&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -578,13 +578,13 @@
                 <Image Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Alchemy.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=3" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=3" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=3&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=3&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -592,13 +592,13 @@
                 <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Exalted.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=6" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=6" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=6&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=6&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -606,13 +606,13 @@
                 <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Jewellers.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=8" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=8" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=8&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=8&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -620,13 +620,13 @@
                 <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chisel.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=10" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=10" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=10&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=10&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -634,13 +634,13 @@
                 <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Blessed.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=12" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=12" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=12&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=12&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -648,13 +648,13 @@
                 <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Regal.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=14" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=14" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=14&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=14&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -662,13 +662,13 @@
                 <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Vaal.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=16" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=16" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=16&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=16&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -676,13 +676,13 @@
                 <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Portal.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=18" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=18" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=18&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=18&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -690,13 +690,13 @@
                 <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Whetstone.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=20" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=20" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=20&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=20&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -704,13 +704,13 @@
                 <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Transmute.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=22" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=22" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=22&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=22&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -718,13 +718,13 @@
                 <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Perandus.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=26" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=26" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=26&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=26&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -732,13 +732,13 @@
                 <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Offering.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=40" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=40" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=40&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=40&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -746,13 +746,13 @@
                 <Image Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/YSextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=46" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=46" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=46&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=46&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -760,13 +760,13 @@
                 <Image Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Annulment.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=513" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=513" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=513&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=513&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -774,13 +774,13 @@
                 <Image Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Horizons.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=515" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=515" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=515&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=515&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -788,13 +788,13 @@
                 <Image Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Engineers.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=517" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=517" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=517&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=517&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -806,13 +806,13 @@
                 <Image Grid.Column="3"  Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Fusing.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=2" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=2" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="0" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=2&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=2&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -820,13 +820,13 @@
                 <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/GCP.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=5" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="1" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=5&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=5&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -834,13 +834,13 @@
                 <Image Grid.Column="3" Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chromatic.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=7" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=7" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="2" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=7&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=7&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -848,13 +848,13 @@
                 <Image Grid.Column="3" Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chance.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=9" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=9" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="3" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=9&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=9&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -862,13 +862,13 @@
                 <Image Grid.Column="3" Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Scouring.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=11" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=11" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="4" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=11&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=11&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -876,13 +876,13 @@
                 <Image Grid.Column="3" Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Regret.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=13" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=13" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="5" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=13&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=13&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -890,13 +890,13 @@
                 <Image Grid.Column="3" Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Divine.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=15" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=15" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=15&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=15&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -904,13 +904,13 @@
                 <Image Grid.Column="3" Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Wisdom.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=17" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=17" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=17&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=17&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -918,13 +918,13 @@
                 <Image Grid.Column="3" Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Scrap.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=19" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=19" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=19&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=19&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -932,13 +932,13 @@
                 <Image Grid.Column="3" Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Bauble.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=21" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=21" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=21&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=21&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -946,13 +946,13 @@
                 <Image Grid.Column="3" Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Augmentation.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=23" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=23" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=23&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=23&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -960,13 +960,13 @@
                 <Image Grid.Column="3" Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=35" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=35" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=35&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=35&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -974,13 +974,13 @@
                 <Image Grid.Column="3" Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/WSextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=45" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=45" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=45&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=45&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -988,13 +988,13 @@
                 <Image Grid.Column="3" Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/RSextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=47" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=47" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="13" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=47&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=47&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -1002,13 +1002,13 @@
                 <Image Grid.Column="3" Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Binding.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=514" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=514" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="14" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=514&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=514&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -1016,13 +1016,13 @@
                 <Image Grid.Column="3" Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Harbinger.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=516" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=516" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="15" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=516&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=516&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -1030,13 +1030,13 @@
                 <Image Grid.Column="3" Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Ancient.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
                 <!-- Buy -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=4&amp;have=518" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=4&amp;have=518" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                 <!-- Sell -->
                 <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Delve&amp;online=x&amp;want=518&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="http://currency.poe.trade/search?league=Hardcore+Synthesis&amp;online=x&amp;want=518&amp;have=4" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>

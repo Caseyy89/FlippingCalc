@@ -50,7 +50,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -63,7 +63,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -86,7 +86,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -100,7 +100,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -116,7 +116,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -130,7 +130,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -146,7 +146,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -160,7 +160,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -176,7 +176,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -190,7 +190,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray"
         >
@@ -206,7 +206,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -219,7 +219,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -234,7 +234,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -247,7 +247,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -262,7 +262,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -275,7 +275,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -290,7 +290,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -303,7 +303,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -318,7 +318,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -331,7 +331,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -346,7 +346,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -359,7 +359,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -374,7 +374,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -387,7 +387,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -402,7 +402,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -415,7 +415,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -430,7 +430,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -443,7 +443,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -458,7 +458,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -471,7 +471,7 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -486,7 +486,7 @@
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -499,22 +499,22 @@
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
     <!-- Engineers -->
-    <Image Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Engineers.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+    <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Engineers.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
     <!-- Buy -->
     <TextBox
         x:Name="QuantBuyEngineers"
         Height="25" Width="70"
-        Grid.Row="16"
+        Grid.Row="12"
         Margin="0 0 0 0"
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -522,12 +522,12 @@
     <TextBox
         x:Name="QuantSellEngineers"
         Height="25" Width="70"
-        Grid.Row="16"
+        Grid.Row="12"
         Margin="0 0 0 0"
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -545,7 +545,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -558,7 +558,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -573,7 +573,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -586,7 +586,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -601,7 +601,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -614,7 +614,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -629,7 +629,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -642,7 +642,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -657,7 +657,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -670,7 +670,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -685,7 +685,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -698,7 +698,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -713,7 +713,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -726,7 +726,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -741,7 +741,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -754,7 +754,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -769,7 +769,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -782,7 +782,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -797,7 +797,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -810,7 +810,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -825,7 +825,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -838,7 +838,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -853,7 +853,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -866,7 +866,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -881,7 +881,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -894,7 +894,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -909,7 +909,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -922,7 +922,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -937,7 +937,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -950,7 +950,7 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -965,7 +965,7 @@
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -978,22 +978,22 @@
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
     <!-- Ancient -->
-    <Image Grid.Column="3" Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Ancient.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+    <Image Grid.Column="3" Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Ancient.png" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
     <!-- Buy -->
     <TextBox
         x:Name="QuantBuyAncient"
         Height="25" Width="70"
-        Grid.Row="16"
+        Grid.Row="12"
         Margin="0 0 0 0"
         Grid.Column="3"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
@@ -1001,12 +1001,12 @@
     <TextBox
         x:Name="QuantSellAncient"
         Height="25" Width="70"
-        Grid.Row="16"
+        Grid.Row="12"
         Margin="0 0 0 0"
         Grid.Column="5"
         HorizontalAlignment="Center" VerticalAlignment="Center"
         TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="18"
+        FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Globalization;
 
 namespace FlippingCalc
 {
@@ -181,7 +182,8 @@ namespace FlippingCalc
         // Math for Profit Box
         public void GetResultInTextBox1(TextBox first, TextBox second, TextBox result)
         {
-            var r1 = float.TryParse(first.Text, out float a);
+            var culture = new CultureInfo("en-US");
+            var r1 = float.TryParse(first.Text, NumberStyles.Currency, culture, out float a);
             var r2 = float.TryParse(second.Text, out float b);
 
             if (r1 && r2)

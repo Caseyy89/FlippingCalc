@@ -38,8 +38,6 @@
       <RowDefinition Height="*"/>
       <RowDefinition Height="*"/>
       <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
     <!-- Left Row -->
     <!-- Alteration -->
@@ -1001,7 +999,7 @@
         Background="DarkGray" x:FieldModifier="public">
     </TextBox>
     <!-- Sell -->
-    <TextBox
+        <TextBox
         x:Name="QuantSellAncient"
         Height="25" Width="70"
         Grid.Row="16"
@@ -1012,119 +1010,6 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-        <!-- Hunter -->
-        <Image Grid.Column="0" Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Hunter's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hunter's Exalted Orb"/>
-        <!-- Buy -->
-        <TextBox
-        x:Name="QuantBuyHunterEx"
-        Height="25" Width="70"
-        Grid.Row="17"
-        Margin="0 0 0 0"
-        Grid.Column="0"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-        </TextBox>
-        <!-- Sell -->
-        <TextBox
-        x:Name="QuantSellHunterEx"
-        Height="25" Width="70"
-        Grid.Row="17"
-        Margin="0 0 0 0"
-        Grid.Column="2"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-        </TextBox>
-        <!-- Redeemer -->
-        <Image Grid.Column="3" Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Redeemer's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Redeemer's Exalted Orb"/>
-        <!-- Buy -->
-        <TextBox
-        x:Name="QuantBuyRedeemerEx"
-        Height="25" Width="70"
-        Grid.Row="17"
-        Margin="0 0 0 0"
-        Grid.Column="3"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-        </TextBox>
-        <!-- Sell -->
-        <TextBox
-        x:Name="QuantSellRedeemerEx"
-        Height="25" Width="70"
-        Grid.Row="17"
-        Margin="0 0 0 0"
-        Grid.Column="5"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-        </TextBox>
-        <!-- Crusader -->
-        <Image Grid.Column="0" Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crusader's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crusader's Exalted Orb"/>
-        <!-- Buy -->
-        <TextBox
-        x:Name="QuantBuyCrusaderEx"
-        Height="25" Width="70"
-        Grid.Row="18"
-        Margin="0 0 0 0"
-        Grid.Column="0"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-        </TextBox>
-        <!-- Sell -->
-        <TextBox
-        x:Name="QuantSellCrusaderEx"
-        Height="25" Width="70"
-        Grid.Row="18"
-        Margin="0 0 0 0"
-        Grid.Column="2"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-        </TextBox>
-        <!-- Warlord -->
-        <Image Grid.Column="3" Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Warlord's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Warlord's Exalted Orb"/>
-        <!-- Buy -->
-        <TextBox
-        x:Name="QuantBuyWarlordEx"
-        Height="25" Width="70"
-        Grid.Row="18"
-        Margin="0 0 0 0"
-        Grid.Column="3"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-        </TextBox>
-        <!-- Sell -->
-        <TextBox
-        x:Name="QuantSellWarlordEx"
-        Height="25" Width="70"
-        Grid.Row="18"
-        Margin="0 0 0 0"
-        Grid.Column="5"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        TextAlignment="Center"
-        FontFamily="Microsoft YaHei" FontSize="12"
-        IsReadOnly="True"
-        Background="DarkGray" x:FieldModifier="public">
-
         </TextBox>
     </Grid>
 

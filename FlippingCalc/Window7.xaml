@@ -1,0 +1,256 @@
+﻿<Window x:Class="FlippingCalc.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlippingCalc"
+        mc:Ignorable="d"
+        Title="Quantity" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
+    </Window.Background>
+    <Grid>
+        <!-- Columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Left Row -->
+        <!-- Abrasive -->
+        <Image Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Abrasive_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Abrasive Catalyst"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyAbrasive"
+        Height="25" Width="70"
+        Grid.Row="0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellAbrasive"
+        Height="25" Width="70"
+        Grid.Row="0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Fertile-->
+        <Image
+      Grid.Row="1"
+      HorizontalAlignment="center"
+      Height="30"
+      VerticalAlignment="top"
+      Width="30"
+      Source="Images/Orbs/Fertile_Catalyst.png"
+      Grid.ColumnSpan="3"
+      Grid.RowSpan="2"
+      ToolTip="Fertile Catalyst"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyFertile"
+        Height="25" Width="70"
+        Grid.Row="1"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellFertile"
+        Height="25" Width="70"
+        Grid.Row="1"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Imbued -->
+        <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Imbued_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Imbued Catalyst"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyImbued"
+        Height="25" Width="70"
+        Grid.Row="2"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellImbued"
+        Height="25" Width="70"
+        Grid.Row="2"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Intrinsic -->
+        <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Intrinsic_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Intrinsic Catalyst"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyIntrinsic"
+        Height="25" Width="70"
+        Grid.Row="3"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellIntrinsic"
+        Height="25" Width="70"
+        Grid.Row="3"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Prismatic -->
+        <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Prismatic_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Prismatic Catalyst"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyPrismaticCata"
+        Height="25" Width="70"
+        Grid.Row="4"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellPrismaticCata"
+        Height="25" Width="70"
+        Grid.Row="4"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Tempering -->
+        <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Tempering_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Tempering Catalyst"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyTempering"
+        Height="25" Width="70"
+        Grid.Row="5"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellTempering"
+        Height="25" Width="70"
+        Grid.Row="5"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Turbulent -->
+        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Turbulent_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Turbulent Catalyst"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyTurbulent"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellTurbulent"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+    </Grid>
+</Window>

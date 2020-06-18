@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Globalization;
 
 namespace FlippingCalc
 {
@@ -30,7 +19,7 @@ namespace FlippingCalc
         {
             Application.Current.Shutdown(99);
         }
-        // Reset Button
+        // Reset Button Currency
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
             //Buy Buttons
@@ -38,7 +27,7 @@ namespace FlippingCalc
             BuyAlt.Clear();
             BuyAncient.Clear();
             BuyAnnulment.Clear();
-            BuyAugment.Clear();
+            BuyAugmentation.Clear();
             BuyBauble.Clear();
             BuyBinding.Clear();
             BuyBlessed.Clear();
@@ -53,12 +42,11 @@ namespace FlippingCalc
             BuyHarbinger.Clear();
             BuyHorizons.Clear();
             BuyJeweller.Clear();
-            BuyOffering.Clear();
             BuyPerandus.Clear();
             BuyPortal.Clear();
             BuyRegal.Clear();
             BuyRegret.Clear();
-            BuyRSextant.Clear();
+            BuySimple_Sextant.Clear();
             BuyScouring.Clear();
             BuyScrap.Clear();
             BuySilver.Clear();
@@ -66,14 +54,15 @@ namespace FlippingCalc
             BuyVaal.Clear();
             BuyWhetstone.Clear();
             BuyWisdom.Clear();
-            BuyWSextant.Clear();
-            BuyYSextant.Clear();
+            BuyPrime_Sextant.Clear();
+            BuyAwakened_Sextant.Clear();
+            BuyMirror.Clear();
             //Sell Buttons
             SellAlchemy.Clear();
             SellAlt.Clear();
             SellAncient.Clear();
             SellAnnulment.Clear();
-            SellAugment.Clear();
+            SellAugmentation.Clear();
             SellBauble.Clear();
             SellBinding.Clear();
             SellBlessed.Clear();
@@ -88,12 +77,11 @@ namespace FlippingCalc
             SellHarbinger.Clear();
             SellHorizons.Clear();
             SellJeweller.Clear();
-            SellOffering.Clear();
             SellPerandus.Clear();
             SellPortal.Clear();
             SellRegal.Clear();
             SellRegret.Clear();
-            SellRSextant.Clear();
+            SellSimple_Sextant.Clear();
             SellScouring.Clear();
             SellScrap.Clear();
             SellSilver.Clear();
@@ -101,14 +89,15 @@ namespace FlippingCalc
             SellVaal.Clear();
             SellWhetstone.Clear();
             SellWisdom.Clear();
-            SellWSextant.Clear();
-            SellYSextant.Clear();
+            SellPrime_Sextant.Clear();
+            SellAwakened_Sextant.Clear();
+            SellMirror.Clear();
             //Profit TextBoxes
             ProfitAlchemy.Clear();
             ProfitAlt.Clear();
             ProfitAncient.Clear();
             ProfitAnnulment.Clear();
-            ProfitAugment.Clear();
+            ProfitAugmentation.Clear();
             ProfitBauble.Clear();
             ProfitBinding.Clear();
             ProfitBlessed.Clear();
@@ -123,12 +112,11 @@ namespace FlippingCalc
             ProfitHarbinger.Clear();
             ProfitHorizons.Clear();
             ProfitJeweller.Clear();
-            ProfitOffering.Clear();
             ProfitPerandus.Clear();
             ProfitPortal.Clear();
             ProfitRegal.Clear();
             ProfitRegret.Clear();
-            ProfitRSextant.Clear();
+            ProfitSimple_Sextant.Clear();
             ProfitScouring.Clear();
             ProfitScrap.Clear();
             ProfitSilver.Clear();
@@ -136,18 +124,178 @@ namespace FlippingCalc
             ProfitVaal.Clear();
             ProfitWhetstone.Clear();
             ProfitWisdom.Clear();
-            ProfitWSextant.Clear();
-            ProfitYSextant.Clear();
+            ProfitPrime_Sextant.Clear();
+            ProfitAwakened_Sextant.Clear();
+            ProfitMirror.Clear();
+        }
+        // Reset Button Fossil
+        private void ResetButtonFossil_Click(object sender, RoutedEventArgs e)
+        {
+            //Buy Buttons
+            BuyAberrant.Clear();
+            BuyAetheric.Clear();
+            BuyBloodstained.Clear();
+            BuyBound.Clear();
+            BuyCorroded.Clear();
+            BuyDense.Clear();
+            BuyEnchanted.Clear();
+            BuyEncrusted.Clear();
+            BuyFaceted.Clear();
+            BuyFractured.Clear();
+            BuyFrigid.Clear();
+            BuyGilded.Clear();
+            BuyGlyphic.Clear();
+            BuyHollow.Clear();
+            BuyJagged.Clear();
+            BuyLucent.Clear();
+            BuyMetallic.Clear();
+            BuyPerfect.Clear();
+            BuyPrismatic.Clear();
+            BuyPristine.Clear();
+            BuySanctified.Clear();
+            BuyScorched.Clear();
+            BuySerrated.Clear();
+            BuyShuddering.Clear();
+            BuyTangled.Clear();
+            //Sell Buttons
+            SellAberrant.Clear();
+            SellAetheric.Clear();
+            SellBloodstained.Clear();
+            SellBound.Clear();
+            SellCorroded.Clear();
+            SellDense.Clear();
+            SellEnchanted.Clear();
+            SellEncrusted.Clear();
+            SellFaceted.Clear();
+            SellFractured.Clear();
+            SellFrigid.Clear();
+            SellGilded.Clear();
+            SellGlyphic.Clear();
+            SellHollow.Clear();
+            SellJagged.Clear();
+            SellLucent.Clear();
+            SellMetallic.Clear();
+            SellPerfect.Clear();
+            SellPrismatic.Clear();
+            SellPristine.Clear();
+            SellSanctified.Clear();
+            SellScorched.Clear();
+            SellSerrated.Clear();
+            SellShuddering.Clear();
+            SellTangled.Clear();
+            //Profit TextBoxes
+            ProfitAberrant.Clear();
+            ProfitAetheric.Clear();
+            ProfitBloodstained.Clear();
+            ProfitBound.Clear();
+            ProfitCorroded.Clear();
+            ProfitDense.Clear();
+            ProfitEnchanted.Clear();
+            ProfitEncrusted.Clear();
+            ProfitFaceted.Clear();
+            ProfitFractured.Clear();
+            ProfitFrigid.Clear();
+            ProfitGilded.Clear();
+            ProfitGlyphic.Clear();
+            ProfitHollow.Clear();
+            ProfitJagged.Clear();
+            ProfitLucent.Clear();
+            ProfitMetallic.Clear();
+            ProfitPerfect.Clear();
+            ProfitPrismatic.Clear();
+            ProfitPristine.Clear();
+            ProfitSanctified.Clear();
+            ProfitScorched.Clear();
+            ProfitSerrated.Clear();
+            ProfitShuddering.Clear();
+            ProfitTangled.Clear();
 
         }
-        // Calc Button
+
+        // Reset Button Oil
+        private void ResetButtonOil_Click(object sender, RoutedEventArgs e)
+        {
+            //Buy Buttons
+            BuyClear.Clear();
+            BuySepia.Clear();
+            BuyAmber.Clear();
+            BuyVerdant.Clear();
+            BuyTeal.Clear();
+            BuyAzure.Clear();
+            BuyViolet.Clear();
+            BuyCrimson.Clear();
+            BuyBlack.Clear();
+            BuyOpal.Clear();
+            BuySilverOil.Clear();
+            BuyGolden.Clear();
+            //Sell Buttons
+            SellClear.Clear();
+            SellSepia.Clear();
+            SellAmber.Clear();
+            SellVerdant.Clear();
+            SellTeal.Clear();
+            SellAzure.Clear();
+            SellViolet.Clear();
+            SellCrimson.Clear();
+            SellBlack.Clear();
+            SellOpal.Clear();
+            SellSilverOil.Clear();
+            SellGolden.Clear();
+            //Profit TextBoxes
+            ProfitClear.Clear();
+            ProfitSepia.Clear();
+            ProfitAmber.Clear();
+            ProfitVerdant.Clear();
+            ProfitTeal.Clear();
+            ProfitAzure.Clear();
+            ProfitViolet.Clear();
+            ProfitCrimson.Clear();
+            ProfitBlack.Clear();
+            ProfitOpal.Clear();
+            ProfitSilverOil.Clear();
+            ProfitGolden.Clear();
+        }
+
+        // Reset Button Cata
+        private void ResetButtonCata_Click(object sender, RoutedEventArgs e)
+        {
+            //Buy Buttons
+            BuyAbrasive.Clear();
+            BuyFertile.Clear();
+            BuyImbued.Clear();
+            BuyIntrinsic.Clear();
+            BuyPrismaticCata.Clear();
+            BuyTempering.Clear();
+            BuyTurbulent.Clear();
+            //Sell Buttons
+            SellAbrasive.Clear();
+            SellFertile.Clear();
+            SellImbued.Clear();
+            SellIntrinsic.Clear();
+            SellPrismaticCata.Clear();
+            SellTempering.Clear();
+            SellTurbulent.Clear();
+            //Profit TextBoxes
+            ProfitAbrasive.Clear();
+            ProfitFertile.Clear();
+            ProfitImbued.Clear();
+            ProfitIntrinsic.Clear();
+            ProfitPrismaticCata.Clear();
+            ProfitTempering.Clear();
+            ProfitTurbulent.Clear();
+
+        }
+
+
+        // Calc Button Currency
+
         private void CalcButton_Click(object sender, RoutedEventArgs e)
         {
             GetResultInTextBox1(BuyAlchemy, SellAlchemy, ProfitAlchemy);
             GetResultInTextBox1(BuyAlt, SellAlt, ProfitAlt);
             GetResultInTextBox1(BuyAncient, SellAncient, ProfitAncient);
             GetResultInTextBox1(BuyAnnulment, SellAnnulment, ProfitAnnulment);
-            GetResultInTextBox1(BuyAugment, SellAugment, ProfitAugment);
+            GetResultInTextBox1(BuyAugmentation, SellAugmentation, ProfitAugmentation);
             GetResultInTextBox1(BuyBauble, SellBauble, ProfitBauble);
             GetResultInTextBox1(BuyBinding, SellBinding, ProfitBinding);
             GetResultInTextBox1(BuyBlessed, SellBlessed, ProfitBlessed);
@@ -162,12 +310,11 @@ namespace FlippingCalc
             GetResultInTextBox1(BuyHarbinger, SellHarbinger, ProfitHarbinger);
             GetResultInTextBox1(BuyHorizons, SellHorizons, ProfitHorizons);
             GetResultInTextBox1(BuyJeweller, SellJeweller, ProfitJeweller);
-            GetResultInTextBox1(BuyOffering, SellOffering, ProfitOffering);
             GetResultInTextBox1(BuyPerandus, SellPerandus, ProfitPerandus);
             GetResultInTextBox1(BuyPortal, SellPortal, ProfitPortal);
             GetResultInTextBox1(BuyRegal, SellRegal, ProfitRegal);
             GetResultInTextBox1(BuyRegret, SellRegret, ProfitRegret);
-            GetResultInTextBox1(BuyRSextant, SellRSextant, ProfitRSextant);
+            GetResultInTextBox1(BuySimple_Sextant, SellSimple_Sextant, ProfitSimple_Sextant);
             GetResultInTextBox1(BuyScouring, SellScouring, ProfitScouring);
             GetResultInTextBox1(BuyScrap, SellScrap, ProfitScrap);
             GetResultInTextBox1(BuySilver, SellSilver, ProfitSilver);
@@ -175,16 +322,75 @@ namespace FlippingCalc
             GetResultInTextBox1(BuyVaal, SellVaal, ProfitVaal);
             GetResultInTextBox1(BuyWhetstone, SellWhetstone, ProfitWhetstone);
             GetResultInTextBox1(BuyWisdom, SellWisdom, ProfitWisdom);
-            GetResultInTextBox1(BuyWSextant, SellWSextant, ProfitWSextant);
-            GetResultInTextBox1(BuyYSextant, SellYSextant, ProfitYSextant);
-
+            GetResultInTextBox1(BuyPrime_Sextant, SellPrime_Sextant, ProfitPrime_Sextant);
+            GetResultInTextBox1(BuyAwakened_Sextant, SellAwakened_Sextant, ProfitAwakened_Sextant);
+            GetResultInTextBox1(BuyMirror, SellMirror, ProfitMirror);
         }
+        // Calc Button Fossil
+        private void CalcButtonFossil_Click(object sender, RoutedEventArgs e)
+        {
+            GetResultInTextBox1(BuyAberrant, SellAberrant, ProfitAberrant);
+            GetResultInTextBox1(BuyAetheric, SellAetheric, ProfitAetheric);
+            GetResultInTextBox1(BuyBloodstained, SellBloodstained, ProfitBloodstained);
+            GetResultInTextBox1(BuyBound, SellBound, ProfitBound);
+            GetResultInTextBox1(BuyCorroded, SellCorroded, ProfitCorroded);
+            GetResultInTextBox1(BuyDense, SellDense, ProfitDense);
+            GetResultInTextBox1(BuyEnchanted, SellEnchanted, ProfitEnchanted);
+            GetResultInTextBox1(BuyEncrusted, SellEncrusted, ProfitEncrusted);
+            GetResultInTextBox1(BuyFaceted, SellFaceted, ProfitFaceted);
+            GetResultInTextBox1(BuyFractured, SellFractured, ProfitFractured);
+            GetResultInTextBox1(BuyFrigid, SellFrigid, ProfitFrigid);
+            GetResultInTextBox1(BuyGilded, SellGilded, ProfitGilded);
+            GetResultInTextBox1(BuyGlyphic, SellGlyphic, ProfitGlyphic);
+            GetResultInTextBox1(BuyHollow, SellHollow, ProfitHollow);
+            GetResultInTextBox1(BuyJagged, SellJagged, ProfitJagged);
+            GetResultInTextBox1(BuyLucent, SellLucent, ProfitLucent);
+            GetResultInTextBox1(BuyMetallic, SellMetallic, ProfitMetallic);
+            GetResultInTextBox1(BuyPerfect, SellPerfect, ProfitPerfect);
+            GetResultInTextBox1(BuyPrismatic, SellPrismatic, ProfitPrismatic);
+            GetResultInTextBox1(BuyPristine, SellPristine, ProfitPristine);
+            GetResultInTextBox1(BuySanctified, SellSanctified, ProfitSanctified);
+            GetResultInTextBox1(BuyScorched, SellScorched, ProfitScorched);
+            GetResultInTextBox1(BuySerrated, SellSerrated, ProfitSerrated);
+            GetResultInTextBox1(BuyShuddering, SellShuddering, ProfitShuddering);
+            GetResultInTextBox1(BuyTangled, SellTangled, ProfitTangled);
+        }
+
+        // Calc Button Oil
+        private void CalcButtonOil_Click(object sender, RoutedEventArgs e)
+        {
+            GetResultInTextBox1(BuyClear, SellClear, ProfitClear);
+            GetResultInTextBox1(BuySepia, SellSepia, ProfitSepia);
+            GetResultInTextBox1(BuyAmber, SellAmber, ProfitAmber);
+            GetResultInTextBox1(BuyVerdant, SellVerdant, ProfitVerdant);
+            GetResultInTextBox1(BuyTeal, SellTeal, ProfitTeal);
+            GetResultInTextBox1(BuyAzure, SellAzure, ProfitAzure);
+            GetResultInTextBox1(BuyViolet, SellViolet, ProfitViolet);
+            GetResultInTextBox1(BuyCrimson, SellCrimson, ProfitCrimson);
+            GetResultInTextBox1(BuyBlack, SellBlack, ProfitBlack);
+            GetResultInTextBox1(BuyOpal, SellOpal, ProfitOpal);
+            GetResultInTextBox1(BuySilverOil, SellSilverOil, ProfitSilverOil);
+            GetResultInTextBox1(BuyGolden, SellGolden, ProfitGolden);
+        }
+
+        // Calc Button Cata
+        private void CalcButtonCata_Click(object sender, RoutedEventArgs e)
+        {
+            GetResultInTextBox1(BuyAbrasive, SellAbrasive, ProfitAbrasive);
+            GetResultInTextBox1(BuyFertile, SellFertile, ProfitFertile);
+            GetResultInTextBox1(BuyImbued, SellImbued, ProfitImbued);
+            GetResultInTextBox1(BuyIntrinsic, SellIntrinsic, ProfitIntrinsic);
+            GetResultInTextBox1(BuyPrismaticCata, SellPrismaticCata, ProfitPrismaticCata);
+            GetResultInTextBox1(BuyTempering, SellTempering, ProfitTempering);
+            GetResultInTextBox1(BuyTurbulent, SellTurbulent, ProfitTurbulent);
+        }
+
         // Math for Profit Box
         public void GetResultInTextBox1(TextBox first, TextBox second, TextBox result)
         {
             var culture = new CultureInfo("en-US");
             var r1 = float.TryParse(first.Text, NumberStyles.Currency, culture, out float a);
-            var r2 = float.TryParse(second.Text, out float b);
+            var r2 = float.TryParse(second.Text, NumberStyles.Currency, culture, out float b);
 
             if (r1 && r2)
             {
@@ -201,6 +407,24 @@ namespace FlippingCalc
             Window1 subWindow = new Window1();
             subWindow.Show();
         }
+        // Fossil Button
+        private void FossilButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 subWindow = new Window3();
+            subWindow.Show();
+        }
+        // Catalyst Button
+        private void CatalystButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 subWindow = new Window4();
+            subWindow.Show();
+        }
+        // Oil Button
+        private void OilButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 subWindow = new Window5();
+            subWindow.Show();
+        }
         // Quant Button
         private void QuantButton_Click(object sender, RoutedEventArgs e)
         {
@@ -211,7 +435,7 @@ namespace FlippingCalc
             GetResultInTextBox2(BuyAlchemy, SellAlchemy, QuantBox, subWindow.QuantBuyAlch, subWindow.QuantSellAlch);
             GetResultInTextBox2(BuyAncient, SellAncient, QuantBox, subWindow.QuantBuyAncient, subWindow.QuantSellAncient);
             GetResultInTextBox2(BuyAnnulment, SellAnnulment, QuantBox, subWindow.QuantBuyAnnulment, subWindow.QuantSellAnnulment);
-            GetResultInTextBox2(BuyAugment, SellAugment, QuantBox, subWindow.QuantBuyAugmentation, subWindow.QuantSellAugmentation);
+            GetResultInTextBox2(BuyAugmentation, SellAugmentation, QuantBox, subWindow.QuantBuyAugmentation, subWindow.QuantSellAugmentation);
             GetResultInTextBox2(BuyBauble, SellBauble, QuantBox, subWindow.QuantBuyBauble, subWindow.QuantSellBauble);
             GetResultInTextBox2(BuyBinding, SellBinding, QuantBox, subWindow.QuantBuyBinding, subWindow.QuantSellBinding);
             GetResultInTextBox2(BuyBlessed, SellBlessed, QuantBox, subWindow.QuantBuyBlessed, subWindow.QuantSellBlessed);
@@ -226,12 +450,11 @@ namespace FlippingCalc
             GetResultInTextBox2(BuyHarbinger, SellHarbinger, QuantBox, subWindow.QuantBuyHarbinger, subWindow.QuantSellHarbinger);
             GetResultInTextBox2(BuyHorizons, SellHorizons, QuantBox, subWindow.QuantBuyHorizons, subWindow.QuantSellHorizons);
             GetResultInTextBox2(BuyJeweller, SellJeweller, QuantBox, subWindow.QuantBuyJewellers, subWindow.QuantSellJewellers);
-            GetResultInTextBox2(BuyOffering, SellOffering, QuantBox, subWindow.QuantBuyOffering, subWindow.QuantSellOffering);
             GetResultInTextBox2(BuyPerandus, SellPerandus, QuantBox, subWindow.QuantBuyPerandus, subWindow.QuantSellPerandus);
             GetResultInTextBox2(BuyPortal, SellPortal, QuantBox, subWindow.QuantBuyPortal, subWindow.QuantSellPortal);
             GetResultInTextBox2(BuyRegal, SellRegal, QuantBox, subWindow.QuantBuyRegal, subWindow.QuantSellRegal);
             GetResultInTextBox2(BuyRegret, SellRegret, QuantBox, subWindow.QuantBuyRegret, subWindow.QuantSellRegret);
-            GetResultInTextBox2(BuyRSextant, SellRSextant, QuantBox, subWindow.QuantBuyRSextant, subWindow.QuantSellRSextant);
+            GetResultInTextBox2(BuyPrime_Sextant, SellPrime_Sextant, QuantBox, subWindow.QuantBuyPrime_Sextant, subWindow.QuantSellPrime_Sextant);
             GetResultInTextBox2(BuyScouring, SellScouring, QuantBox, subWindow.QuantBuyScouring, subWindow.QuantSellScouring);
             GetResultInTextBox2(BuyScrap, SellScrap, QuantBox, subWindow.QuantBuyScrap, subWindow.QuantSellScrap);
             GetResultInTextBox2(BuySilver, SellSilver, QuantBox, subWindow.QuantBuySilver, subWindow.QuantSellSilver);
@@ -239,15 +462,87 @@ namespace FlippingCalc
             GetResultInTextBox2(BuyVaal, SellVaal, QuantBox, subWindow.QuantBuyVaal, subWindow.QuantSellVaal);
             GetResultInTextBox2(BuyWhetstone, SellWhetstone, QuantBox, subWindow.QuantBuyWhetstone, subWindow.QuantSellWhetstone);
             GetResultInTextBox2(BuyWisdom, SellWisdom, QuantBox, subWindow.QuantBuyWisdom, subWindow.QuantSellWisdom);
-            GetResultInTextBox2(BuyWSextant, SellWSextant, QuantBox, subWindow.QuantBuyWSextant, subWindow.QuantSellWSextant);
-            GetResultInTextBox2(BuyYSextant, SellYSextant, QuantBox, subWindow.QuantBuyYSextant, subWindow.QuantSellYSextant);
+            GetResultInTextBox2(BuySimple_Sextant, SellSimple_Sextant, QuantBox, subWindow.QuantBuySimple_Sextant, subWindow.QuantSellSimple_Sextant);
+            GetResultInTextBox2(BuyAwakened_Sextant, SellAwakened_Sextant, QuantBox, subWindow.QuantBuyAwakened_Sextant, subWindow.QuantSellAwakened_Sextant);
+            GetResultInTextBox2(BuyMirror, SellMirror, QuantBox, subWindow.QuantBuyMirror, subWindow.QuantSellMirror);
+        }
+
+        // Quant Button Fossil
+        private void QuantButtonFossil_Click(object sender, RoutedEventArgs e)
+        {
+            Window6 subWindow = new Window6();
+            subWindow.Show();
+
+            GetResultInTextBox3(BuyAberrant, SellAberrant, QuantBoxFossil, subWindow.QuantBuyAberrant, subWindow.QuantSellAberrant);
+            GetResultInTextBox3(BuyAetheric, SellAetheric, QuantBoxFossil, subWindow.QuantBuyAetheric, subWindow.QuantSellAetheric);
+            GetResultInTextBox3(BuyBloodstained, SellBloodstained, QuantBoxFossil, subWindow.QuantBuyBloodstained, subWindow.QuantSellBloodstained);
+            GetResultInTextBox3(BuyBound, SellBound, QuantBoxFossil, subWindow.QuantBuyBound, subWindow.QuantSellBound);
+            GetResultInTextBox3(BuyCorroded, SellCorroded, QuantBoxFossil, subWindow.QuantBuyCorroded, subWindow.QuantSellCorroded);
+            GetResultInTextBox3(BuyDense, SellDense, QuantBoxFossil, subWindow.QuantBuyDense, subWindow.QuantSellDense);
+            GetResultInTextBox3(BuyEnchanted, SellEnchanted, QuantBoxFossil, subWindow.QuantBuyEnchanted, subWindow.QuantSellEnchanted);
+            GetResultInTextBox3(BuyEncrusted, SellEncrusted, QuantBoxFossil, subWindow.QuantBuyEncrusted, subWindow.QuantSellEncrusted);
+            GetResultInTextBox3(BuyFaceted, SellFaceted, QuantBoxFossil, subWindow.QuantBuyFaceted, subWindow.QuantSellFaceted);
+            GetResultInTextBox3(BuyFractured, SellFractured, QuantBoxFossil, subWindow.QuantBuyFractured, subWindow.QuantSellFractured);
+            GetResultInTextBox3(BuyFrigid, SellFrigid, QuantBoxFossil, subWindow.QuantBuyFrigid, subWindow.QuantSellFrigid);
+            GetResultInTextBox3(BuyGilded, SellGilded, QuantBoxFossil, subWindow.QuantBuyGilded, subWindow.QuantSellGilded);
+            GetResultInTextBox3(BuyGlyphic, SellGlyphic, QuantBoxFossil, subWindow.QuantBuyGlyphic, subWindow.QuantSellGlyphic);
+            GetResultInTextBox3(BuyHollow, SellHollow, QuantBoxFossil, subWindow.QuantBuyHollow, subWindow.QuantSellHollow);
+            GetResultInTextBox3(BuyJagged, SellJagged, QuantBoxFossil, subWindow.QuantBuyJagged, subWindow.QuantSellJagged);
+            GetResultInTextBox3(BuyLucent, SellLucent, QuantBoxFossil, subWindow.QuantBuyLucent, subWindow.QuantSellLucent);
+            GetResultInTextBox3(BuyMetallic, SellMetallic, QuantBoxFossil, subWindow.QuantBuyMetallic, subWindow.QuantSellMetallic);
+            GetResultInTextBox3(BuyPerfect, SellPerfect, QuantBoxFossil, subWindow.QuantBuyPerfect, subWindow.QuantSellPerfect);
+            GetResultInTextBox3(BuyPrismatic, SellPrismatic, QuantBoxFossil, subWindow.QuantBuyPrismatic, subWindow.QuantSellPrismatic);
+            GetResultInTextBox3(BuyPristine, SellPristine, QuantBoxFossil, subWindow.QuantBuyPristine, subWindow.QuantSellPristine);
+            GetResultInTextBox3(BuySanctified, SellSanctified, QuantBoxFossil, subWindow.QuantBuySanctified, subWindow.QuantSellSanctified);
+            GetResultInTextBox3(BuyScorched, SellScorched, QuantBoxFossil, subWindow.QuantBuyScorched, subWindow.QuantSellScorched);
+            GetResultInTextBox3(BuySerrated, SellSerrated, QuantBoxFossil, subWindow.QuantBuySerrated, subWindow.QuantSellSerrated);
+            GetResultInTextBox3(BuyShuddering, SellShuddering, QuantBoxFossil, subWindow.QuantBuyShuddering, subWindow.QuantSellShuddering);
+            GetResultInTextBox3(BuyTangled, SellTangled, QuantBoxFossil, subWindow.QuantBuyTangled, subWindow.QuantSellTangled);
 
         }
-        // Math for Quant Button
+        // Quant Button Oil
+        private void QuantButtonOil_Click(object sender, RoutedEventArgs e)
+        {
+            Window8 subWindow = new Window8();
+            subWindow.Show();
+
+            GetResultInTextBox4(BuyClear, SellClear, QuantBoxOil, subWindow.QuantBuyClear, subWindow.QuantSellClear);
+            GetResultInTextBox4(BuySepia, SellSepia, QuantBoxOil, subWindow.QuantBuySepia, subWindow.QuantSellSepia);
+            GetResultInTextBox4(BuyAmber, SellAmber, QuantBoxOil, subWindow.QuantBuyAmber, subWindow.QuantSellAmber);
+            GetResultInTextBox4(BuyVerdant, SellVerdant, QuantBoxOil, subWindow.QuantBuyVerdant, subWindow.QuantSellVerdant);
+            GetResultInTextBox4(BuyTeal, SellTeal, QuantBoxOil, subWindow.QuantBuyTeal, subWindow.QuantSellTeal);
+            GetResultInTextBox4(BuyAzure, SellAzure, QuantBoxOil, subWindow.QuantBuyAzure, subWindow.QuantSellAzure);
+            GetResultInTextBox4(BuyViolet, SellViolet, QuantBoxOil, subWindow.QuantBuyViolet, subWindow.QuantSellViolet);
+            GetResultInTextBox4(BuyCrimson, SellCrimson, QuantBoxOil, subWindow.QuantBuyCrimson, subWindow.QuantSellCrimson);
+            GetResultInTextBox4(BuyBlack, SellBlack, QuantBoxOil, subWindow.QuantBuyBlack, subWindow.QuantSellBlack);
+            GetResultInTextBox4(BuyOpal, SellOpal, QuantBoxOil, subWindow.QuantBuyOpal, subWindow.QuantSellOpal);
+            GetResultInTextBox4(BuySilverOil, SellSilverOil, QuantBoxOil, subWindow.QuantBuySilverOil, subWindow.QuantSellSilverOil);
+            GetResultInTextBox4(BuyGolden, SellGolden, QuantBoxOil, subWindow.QuantBuyGolden, subWindow.QuantSellGolden);
+        }
+
+        // Quant Button Cata
+        private void QuantButtonCata_Click(object sender, RoutedEventArgs e)
+        {
+            Window7 subWindow = new Window7();
+            subWindow.Show();
+
+            GetResultInTextBox5(BuyAbrasive, SellAbrasive, QuantBoxCata, subWindow.QuantBuyAbrasive, subWindow.QuantSellAbrasive);
+            GetResultInTextBox5(BuyFertile, SellFertile, QuantBoxCata, subWindow.QuantBuyFertile, subWindow.QuantSellFertile);
+            GetResultInTextBox5(BuyImbued, SellImbued, QuantBoxCata, subWindow.QuantBuyImbued, subWindow.QuantSellImbued);
+            GetResultInTextBox5(BuyIntrinsic, SellIntrinsic, QuantBoxCata, subWindow.QuantBuyIntrinsic, subWindow.QuantSellIntrinsic);
+            GetResultInTextBox5(BuyPrismaticCata, SellPrismaticCata, QuantBoxCata, subWindow.QuantBuyPrismaticCata, subWindow.QuantSellPrismaticCata);
+            GetResultInTextBox5(BuyTempering, SellTempering, QuantBoxCata, subWindow.QuantBuyTempering, subWindow.QuantSellTempering);
+            GetResultInTextBox5(BuyTurbulent, SellTurbulent, QuantBoxCata, subWindow.QuantBuyTurbulent, subWindow.QuantSellTurbulent);
+        }
+
+
+        // Quant Math Currency
+
         public void GetResultInTextBox2(TextBox first, TextBox second, TextBox third, TextBox fourth, TextBox fifth)
         {
-            var r1 = float.TryParse(first.Text, out float a);
-            var r2 = float.TryParse(second.Text, out float b);
+            var culture = new CultureInfo("en-US");
+            var r1 = float.TryParse(first.Text, NumberStyles.Currency, culture, out float a);
+            var r2 = float.TryParse(second.Text, NumberStyles.Currency, culture, out float b);
             var r3 = float.TryParse(third.Text, out float c);
 
             if (r1 && r2 && r3)
@@ -261,6 +556,70 @@ namespace FlippingCalc
                 fifth.Text = "";
             }
         }
+
+        // Quant Math Fossils
+
+        public void GetResultInTextBox3(TextBox first, TextBox second, TextBox third, TextBox fourth, TextBox fifth)
+        {
+            var culture = new CultureInfo("en-US");
+            var r1 = float.TryParse(first.Text, NumberStyles.Currency, culture, out float a);
+            var r2 = float.TryParse(second.Text, NumberStyles.Currency, culture, out float b);
+            var r3 = float.TryParse(third.Text, out float c);
+
+            if (r1 && r2 && r3)
+            {
+                fourth.Text = Math.Round((c / a), 3).ToString(); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString();
+            }
+            else
+            {
+                fourth.Text = "";
+                fifth.Text = "";
+            }
+        }
+
+        // Quant Math Oils 
+
+        public void GetResultInTextBox4(TextBox first, TextBox second, TextBox third, TextBox fourth, TextBox fifth)
+        {
+            var culture = new CultureInfo("en-US");
+            var r1 = float.TryParse(first.Text, NumberStyles.Currency, culture, out float a);
+            var r2 = float.TryParse(second.Text, NumberStyles.Currency, culture, out float b);
+            var r3 = float.TryParse(third.Text, out float c);
+
+            if (r1 && r2 && r3)
+            {
+                fourth.Text = Math.Round((c / a), 3).ToString(); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString();
+            }
+            else
+            {
+                fourth.Text = "";
+                fifth.Text = "";
+            }
+        }
+
+        // Quant Math Catalysts
+
+        public void GetResultInTextBox5(TextBox first, TextBox second, TextBox third, TextBox fourth, TextBox fifth)
+        {
+            var culture = new CultureInfo("en-US");
+            var r1 = float.TryParse(first.Text, NumberStyles.Currency, culture, out float a);
+            var r2 = float.TryParse(second.Text, NumberStyles.Currency, culture, out float b);
+            var r3 = float.TryParse(third.Text, out float c);
+            
+            if (r1 && r2 && r3)
+            {
+                fourth.Text = Math.Round((c / a), 3).ToString(); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString();
+            }
+            else
+            {
+                fourth.Text = "";
+                fifth.Text = "";
+            }
+        }
+
 
     }
 }

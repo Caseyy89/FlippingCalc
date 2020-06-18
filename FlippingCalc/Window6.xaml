@@ -1,0 +1,764 @@
+﻿<Window x:Class="FlippingCalc.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlippingCalc"
+        mc:Ignorable="d"
+        Title="Quantity" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
+    </Window.Background>
+    <Grid>
+        <!-- Columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Left Row -->
+        <!-- Aberrant -->
+        <Image Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Aberrant_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Aberrant Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyAberrant"
+        Height="25" Width="70"
+        Grid.Row="0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellAberrant"
+        Height="25" Width="70"
+        Grid.Row="0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Bloodstained -->
+        <Image
+      Grid.Row="1"
+      HorizontalAlignment="center"
+      Height="30"
+      VerticalAlignment="top"
+      Width="30"
+      Source="Images/Orbs/Bloodstained_Fossil.png"
+      Grid.ColumnSpan="3"
+      Grid.RowSpan="2"
+      ToolTip="Bloodstained Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyBloodstained"
+        Height="25" Width="70"
+        Grid.Row="1"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellBloodstained"
+        Height="25" Width="70"
+        Grid.Row="1"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Corroded -->
+        <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Corroded_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Corroded Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyCorroded"
+        Height="25" Width="70"
+        Grid.Row="2"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellCorroded"
+        Height="25" Width="70"
+        Grid.Row="2"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Enchanted -->
+        <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Enchanted_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Enchanted Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyEnchanted"
+        Height="25" Width="70"
+        Grid.Row="3"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellEnchanted"
+        Height="25" Width="70"
+        Grid.Row="3"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Faceted -->
+        <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Faceted_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Faceted Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyFaceted"
+        Height="25" Width="70"
+        Grid.Row="4"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellFaceted"
+        Height="25" Width="70"
+        Grid.Row="4"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray"
+        >
+        </TextBox>
+        <!-- Gilded -->
+        <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Gilded_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Gilded Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyGilded"
+        Height="25" Width="70"
+        Grid.Row="5"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellGilded"
+        Height="25" Width="70"
+        Grid.Row="5"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Hollow -->
+        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Hollow_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hollow Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyHollow"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellHollow"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Lucent -->
+        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Lucent_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Lucent Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyLucent"
+        Height="25" Width="70"
+        Grid.Row="7"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellLucent"
+        Height="25" Width="70"
+        Grid.Row="7"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Perfect -->
+        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Perfect_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Perfect Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyPerfect"
+        Height="25" Width="70"
+        Grid.Row="8"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellPerfect"
+        Height="25" Width="70"
+        Grid.Row="8"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Pristine -->
+        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Pristine_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Pristine Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyPristine"
+        Height="25" Width="70"
+        Grid.Row="9"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellPristine"
+        Height="25" Width="70"
+        Grid.Row="9"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Scorched -->
+        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Scorched_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Scorched Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyScorched"
+        Height="25" Width="70"
+        Grid.Row="10"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellScorched"
+        Height="25" Width="70"
+        Grid.Row="10"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Shuddering -->
+        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Shuddering_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Shuddering Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyShuddering"
+        Height="25" Width="70"
+        Grid.Row="11"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellShuddering"
+        Height="25" Width="70"
+        Grid.Row="11"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Fractured -->
+        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Fractured_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Fractured Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyFractured"
+        Height="25" Width="70"
+        Grid.Row="12"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellFractured"
+        Height="25" Width="70"
+        Grid.Row="12"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+
+
+        <!-- Right Row -->
+        <!-- Aetheric -->
+        <Image Grid.Column="3"  Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Aetheric_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Aetheric Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyAetheric"
+        Height="25" Width="70"
+        Grid.Row="0"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellAetheric"
+        Height="25" Width="70"
+        Grid.Row="0"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Bound -->
+        <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Bound_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Bound Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyBound"
+        Height="25" Width="70"
+        Grid.Row="1"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellBound"
+        Height="25" Width="70"
+        Grid.Row="1"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Dense -->
+        <Image Grid.Column="3" Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Dense_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Dense Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyDense"
+        Height="25" Width="70"
+        Grid.Row="2"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellDense"
+        Height="25" Width="70"
+        Grid.Row="2"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Encrusted -->
+        <Image Grid.Column="3" Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Encrusted_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Encrusted Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyEncrusted"
+        Height="25" Width="70"
+        Grid.Row="3"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellEncrusted"
+        Height="25" Width="70"
+        Grid.Row="3"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Frigid -->
+        <Image Grid.Column="3" Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Frigid_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Frigid Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyFrigid"
+        Height="25" Width="70"
+        Grid.Row="4"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellFrigid"
+        Height="25" Width="70"
+        Grid.Row="4"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Glyphic -->
+        <Image Grid.Column="3" Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Glyphic_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Glyphic Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyGlyphic"
+        Height="25" Width="70"
+        Grid.Row="5"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellGlyphic"
+        Height="25" Width="70"
+        Grid.Row="5"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Jagged -->
+        <Image Grid.Column="3" Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Jagged_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Jagged Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyJagged"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellJagged"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Metallic -->
+        <Image Grid.Column="3" Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Metallic_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Metallic Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyMetallic"
+        Height="25" Width="70"
+        Grid.Row="7"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellMetallic"
+        Height="25" Width="70"
+        Grid.Row="7"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Prismatic -->
+        <Image Grid.Column="3" Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Prismatic_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Prismatic Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyPrismatic"
+        Height="25" Width="70"
+        Grid.Row="8"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellPrismatic"
+        Height="25" Width="70"
+        Grid.Row="8"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sanctified -->
+        <Image Grid.Column="3" Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Sanctified_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Sanctified Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuySanctified"
+        Height="25" Width="70"
+        Grid.Row="9"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellSanctified"
+        Height="25" Width="70"
+        Grid.Row="9"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Serrated -->
+        <Image Grid.Column="3" Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Serrated_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Serrated Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuySerrated"
+        Height="25" Width="70"
+        Grid.Row="10"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellSerrated"
+        Height="25" Width="70"
+        Grid.Row="10"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Tangled -->
+        <Image Grid.Column="3" Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Tangled_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Tangled Fossil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyTangled"
+        Height="25" Width="70"
+        Grid.Row="11"
+        Margin="0 0 0 0"
+        Grid.Column="3"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellTangled"
+        Height="25" Width="70"
+        Grid.Row="11"
+        Margin="0 0 0 0"
+        Grid.Column="5"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+    </Grid>
+
+</Window>

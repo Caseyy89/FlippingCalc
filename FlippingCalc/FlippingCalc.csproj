@@ -16,7 +16,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>C:\Users\casey\Desktop\calc3\</PublishUrl>
+    <PublishUrl>C:\Users\casey\Desktop\FlippingCalc\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -26,7 +26,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -112,6 +112,24 @@
     <Compile Include="Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window5.xaml.cs">
+      <DependentUpon>Window5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window6.xaml.cs">
+      <DependentUpon>Window6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window7.xaml.cs">
+      <DependentUpon>Window7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window8.xaml.cs">
+      <DependentUpon>Window8.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -121,6 +139,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -212,6 +254,69 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Background\LinksBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Orbs\Aberrant_Fossil.png" />
+    <Resource Include="Images\Orbs\Abrasive_Catalyst.png" />
+    <Resource Include="Images\Orbs\Aetheric_Fossil.png" />
+    <Resource Include="Images\Orbs\Amber_Oil.png" />
+    <Resource Include="Images\Orbs\Azure_Oil.png" />
+    <Resource Include="Images\Orbs\Black_Oil.png" />
+    <Resource Include="Images\Orbs\Bloodstained_Fossil.png" />
+    <Resource Include="Images\Orbs\Bound_Fossil.png" />
+    <Resource Include="Images\Orbs\Clear_Oil.png" />
+    <Resource Include="Images\Orbs\Corroded_Fossil.png" />
+    <Resource Include="Images\Orbs\Crimson_Oil.png" />
+    <Resource Include="Images\Orbs\Dense_Fossil.png" />
+    <Resource Include="Images\Orbs\Enchanted_Fossil.png" />
+    <Resource Include="Images\Orbs\Encrusted_Fossil.png" />
+    <Resource Include="Images\Orbs\Faceted_Fossil.png" />
+    <Resource Include="Images\Orbs\Fertile_Catalyst.png" />
+    <Resource Include="Images\Orbs\Fractured_Fossil.png" />
+    <Resource Include="Images\Orbs\Frigid_Fossil.png" />
+    <Resource Include="Images\Orbs\Gilded_Fossil.png" />
+    <Resource Include="Images\Orbs\Glyphic_Fossil.png" />
+    <Resource Include="Images\Orbs\Golden_Oil.png" />
+    <Resource Include="Images\Orbs\Hollow_Fossil.png" />
+    <Resource Include="Images\Orbs\Imbued_Catalyst.png" />
+    <Resource Include="Images\Orbs\Intrinsic_Catalyst.png" />
+    <Resource Include="Images\Orbs\Jagged_Fossil.png" />
+    <Resource Include="Images\Orbs\Lucent_Fossil.png" />
+    <Resource Include="Images\Orbs\Metallic_Fossil.png" />
+    <Resource Include="Images\Orbs\Opalescent_Oil.png" />
+    <Resource Include="Images\Orbs\Perfect_Fossil.png" />
+    <Resource Include="Images\Orbs\Prismatic_Catalyst.png" />
+    <Resource Include="Images\Orbs\Prismatic_Fossil.png" />
+    <Resource Include="Images\Orbs\Pristine_Fossil.png" />
+    <Resource Include="Images\Orbs\Sanctified_Fossil.png" />
+    <Resource Include="Images\Orbs\Scorched_Fossil.png" />
+    <Resource Include="Images\Orbs\Sepia_Oil.png" />
+    <Resource Include="Images\Orbs\Serrated_Fossil.png" />
+    <Resource Include="Images\Orbs\Shuddering_Fossil.png" />
+    <Resource Include="Images\Orbs\Silver_Oil.png" />
+    <Resource Include="Images\Orbs\Tangled_Fossil.png" />
+    <Resource Include="Images\Orbs\Teal_Oil.png" />
+    <Resource Include="Images\Orbs\Tempering_Catalyst.png" />
+    <Resource Include="Images\Orbs\Turbulent_Catalyst.png" />
+    <Resource Include="Images\Orbs\Verdant_Oil.png" />
+    <Resource Include="Images\Orbs\Violet_Oil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Orbs\Awakened_Sextant.png" />
+    <Resource Include="Images\Orbs\Prime_Sextant.png" />
+    <Resource Include="Images\Orbs\Simple_Sextant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Orbs\Mirror_of_Kalandra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Orbs\Crusader%27s_Exalted_Orb.png" />
+    <Resource Include="Images\Orbs\Hunter%27s_Exalted_Orb.png" />
+    <Resource Include="Images\Orbs\Redeemer%27s_Exalted_Orb.png" />
+    <Resource Include="Images\Orbs\Warlord%27s_Exalted_Orb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets" Condition="Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets')" />

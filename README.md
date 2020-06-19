@@ -1,6 +1,4 @@
-# FlippingCalc
-
-How to Use 
+# How to Use Flipping Calc
 
 Step 1: Select Tab you want to use
 
@@ -49,3 +47,6 @@ Step 11: Choose your Trade Quantity in the Quantity Box (e.g. 10 for a 10 chaos 
 Step 12: See how many items you would Buy and Sell in a 10 Chaos trade(e.g. you would buy 24.75 Fusings and would sell 23.99 Fusings)
 
 ![Like This](https://i.imgur.com/OWM9ifI.png)
+
+Join Discord if you have questions 
+![Discord Link](https://discord.gg/vStKutp)

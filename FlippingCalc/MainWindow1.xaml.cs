@@ -2,11 +2,10 @@
 using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Diagnostics;
 
 namespace FlippingCalc
 {
-    /// <summary>
-    /// Interaction logic for MainWindow1.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -14,6 +13,13 @@ namespace FlippingCalc
         {
             InitializeComponent();
         }
+
+        //Discord Button
+        private void Discord_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://discord.com/invite/vStKutp");
+        }
+
         // Exit Button
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
@@ -127,6 +133,8 @@ namespace FlippingCalc
             ProfitPrime_Sextant.Clear();
             ProfitAwakened_Sextant.Clear();
             ProfitMirror.Clear();
+            //Quantbox
+            QuantBox.Clear();
         }
         // Reset Button Fossil
         private void ResetButtonFossil_Click(object sender, RoutedEventArgs e)
@@ -209,7 +217,8 @@ namespace FlippingCalc
             ProfitSerrated.Clear();
             ProfitShuddering.Clear();
             ProfitTangled.Clear();
-
+            //Quantbox
+            QuantBoxFossil.Clear();
         }
 
         // Reset Button Oil
@@ -254,6 +263,9 @@ namespace FlippingCalc
             ProfitOpal.Clear();
             ProfitSilverOil.Clear();
             ProfitGolden.Clear();
+            //Quantbox
+            QuantBoxOil.Clear();
+            
         }
 
         // Reset Button Cata
@@ -283,6 +295,8 @@ namespace FlippingCalc
             ProfitPrismaticCata.Clear();
             ProfitTempering.Clear();
             ProfitTurbulent.Clear();
+            //Quantbox
+            QuantBoxCata.Clear();
 
         }
 
@@ -394,7 +408,7 @@ namespace FlippingCalc
 
             if (r1 && r2)
             {
-                result.Text = Math.Round(100 - ((a / b) * 100), 3).ToString() + "%"; // (100 - (buy/sell) * 100),3) , into a string with 3 decimals and a % behind it 
+                result.Text = Math.Round(100 - ((a / b) * 100), 3).ToString(culture) + "%"; // (100 - (buy/sell) * 100),3) , into a string with 3 decimals and a % behind it 
             }
             else
             {
@@ -547,8 +561,8 @@ namespace FlippingCalc
 
             if (r1 && r2 && r3)
             {
-                fourth.Text = Math.Round((c / a), 3).ToString(); // quant x buy/sell = quant x C 
-                fifth.Text = Math.Round((c / b), 3).ToString();
+                fourth.Text = Math.Round((c / a), 3).ToString(culture); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString(culture);
             }
             else
             {
@@ -568,8 +582,8 @@ namespace FlippingCalc
 
             if (r1 && r2 && r3)
             {
-                fourth.Text = Math.Round((c / a), 3).ToString(); // quant x buy/sell = quant x C 
-                fifth.Text = Math.Round((c / b), 3).ToString();
+                fourth.Text = Math.Round((c / a), 3).ToString(culture); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString(culture);
             }
             else
             {
@@ -589,8 +603,8 @@ namespace FlippingCalc
 
             if (r1 && r2 && r3)
             {
-                fourth.Text = Math.Round((c / a), 3).ToString(); // quant x buy/sell = quant x C 
-                fifth.Text = Math.Round((c / b), 3).ToString();
+                fourth.Text = Math.Round((c / a), 3).ToString(culture); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString(culture);
             }
             else
             {
@@ -610,8 +624,8 @@ namespace FlippingCalc
             
             if (r1 && r2 && r3)
             {
-                fourth.Text = Math.Round((c / a), 3).ToString(); // quant x buy/sell = quant x C 
-                fifth.Text = Math.Round((c / b), 3).ToString();
+                fourth.Text = Math.Round((c / a), 3).ToString(culture); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString(culture);
             }
             else
             {

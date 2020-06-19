@@ -283,10 +283,11 @@
                                 <ColumnDefinition Width="2*" />
                                 <ColumnDefinition Width="1*" />
                                 <ColumnDefinition Width="1*" />
-                            </Grid.ColumnDefinitions>
+                        </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                             <!-- Exit button -->
                             <Button x:Name="ExitButton" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#FF252424" BorderBrush="{x:Null}"/>
                             <!-- Calc button-->
@@ -305,7 +306,15 @@
                             <Button x:Name="CatalystButton" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="11.5" FontWeight="Bold" Click="CatalystButton_Click" Content="CATALYSTS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="2"/>
                             <!-- Oil Button -->
                             <Button x:Name="OilButton" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="OilButton_Click" Content="OILS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="3"/>
-                        </Grid>
+                            <!-- Discord button -->
+                            <Button x:Name="Discord" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                 <Button.Template>
+                                       <ControlTemplate>
+                                            <Image Source="Discord.png"/>
+                                       </ControlTemplate>
+                                 </Button.Template>
+                            </Button>
+                    </Grid>
                     </Viewbox>
                     <!-- Buttons -->
                 </StackPanel>
@@ -519,7 +528,8 @@
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                             <!-- Exit button -->
                             <Button x:Name="ExitButtonFossil" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#FF252424" BorderBrush="{x:Null}"/>
                             <!-- Calc button-->
@@ -538,7 +548,16 @@
                             <Button x:Name="CatalystButtonFossil" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="11.5" FontWeight="Bold" Click="CatalystButton_Click" Content="CATALYSTS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="2"/>
                             <!-- Oil Button -->
                             <Button x:Name="OilButtonFossil" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="OilButton_Click" Content="OILS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="3"/>
-                        </Grid>
+                            <!-- Discord button -->
+                            <Button x:Name="DiscordFossil" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                    </Grid>
                     </Viewbox>
                     <!-- Buttons -->
                 </StackPanel>
@@ -680,7 +699,8 @@
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                             <!-- Exit button -->
                             <Button x:Name="ExitButtonOil" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#FF252424" BorderBrush="{x:Null}"/>
                             <!-- Calc button-->
@@ -699,7 +719,16 @@
                             <Button x:Name="CatalystButtonOil" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="11.5" FontWeight="Bold" Click="CatalystButton_Click" Content="CATALYSTS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="2"/>
                             <!-- Oil Button -->
                             <Button x:Name="OilButtonOil" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="OilButton_Click" Content="OILS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="3"/>
-                        </Grid>
+                        <!-- Discord button -->
+                        <Button x:Name="DiscordOil" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                    </Grid>
                     </Viewbox>
                     <!-- Buttons -->
                 </StackPanel>
@@ -814,7 +843,8 @@
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                             <!-- Exit button -->
                             <Button x:Name="ExitButtonCata" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#FF252424" BorderBrush="{x:Null}"/>
                             <!-- Calc button-->
@@ -833,7 +863,15 @@
                             <Button x:Name="CatalystButtonCata" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="11.5" FontWeight="Bold" Click="CatalystButton_Click" Content="CATALYSTS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="2"/>
                             <!-- Oil Button -->
                             <Button x:Name="OilButtonCata" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" Margin="0,40,0,-40" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="OilButton_Click" Content="OILS" Background="#FF252424" BorderBrush="{x:Null}" Grid.Column="3"/>
-                        </Grid>
+                        <!-- Discord button -->
+                        <Button x:Name="DiscordCata" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
                     </Viewbox>
                     <!-- Buttons -->
                 </StackPanel>

@@ -15,19 +15,19 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_3B61774BF82FD37AE564B46099CDD165"
+        "MsmKey" = "8:_0270809D98AF3403343E8C028F107773"
         "OwnerKey" = "8:_74AA25EBDEF14DBC8423DAEB64F061CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3B61774BF82FD37AE564B46099CDD165"
-        "OwnerKey" = "8:_E691A2FB7B0D7A073B7212869CB40DE1"
+        "MsmKey" = "8:_0270809D98AF3403343E8C028F107773"
+        "OwnerKey" = "8:_102F9729B43DD893F26F54436537A8AB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_70C61591BAD15361D1C9D5D7D0C40048"
+        "MsmKey" = "8:_102F9729B43DD893F26F54436537A8AB"
         "OwnerKey" = "8:_74AA25EBDEF14DBC8423DAEB64F061CF"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -39,7 +39,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E691A2FB7B0D7A073B7212869CB40DE1"
+        "MsmKey" = "8:_C90DF2C47355C366618FFEADD870C02A"
         "OwnerKey" = "8:_74AA25EBDEF14DBC8423DAEB64F061CF"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -58,31 +58,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E6F57645438A33DBC6A1DD8E2195FE25"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_74AA25EBDEF14DBC8423DAEB64F061CF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_70C61591BAD15361D1C9D5D7D0C40048"
+        "OwnerKey" = "8:_C90DF2C47355C366618FFEADD870C02A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E691A2FB7B0D7A073B7212869CB40DE1"
+        "OwnerKey" = "8:_102F9729B43DD893F26F54436537A8AB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3B61774BF82FD37AE564B46099CDD165"
+        "OwnerKey" = "8:_0270809D98AF3403343E8C028F107773"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_E6F57645438A33DBC6A1DD8E2195FE25"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -103,6 +103,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -119,6 +135,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -148,14 +180,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3B61774BF82FD37AE564B46099CDD165"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0270809D98AF3403343E8C028F107773"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:MaterialDesignColors, Version=1.2.0.325, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3B61774BF82FD37AE564B46099CDD165"
+                    "_0270809D98AF3403343E8C028F107773"
                     {
                     "Name" = "8:MaterialDesignColors.dll"
                     "Attributes" = "3:512"
@@ -179,20 +211,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_70C61591BAD15361D1C9D5D7D0C40048"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_102F9729B43DD893F26F54436537A8AB"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ShowMeTheXAML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:MaterialDesignThemes.Wpf, Version=2.6.0.325, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_70C61591BAD15361D1C9D5D7D0C40048"
+                    "_102F9729B43DD893F26F54436537A8AB"
                     {
-                    "Name" = "8:ShowMeTheXAML.dll"
+                    "Name" = "8:MaterialDesignThemes.Wpf.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:ShowMeTheXAML.dll"
+            "SourcePath" = "8:MaterialDesignThemes.Wpf.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6219DB2C2F77463391214800C71DCCCE"
@@ -210,20 +242,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E691A2FB7B0D7A073B7212869CB40DE1"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C90DF2C47355C366618FFEADD870C02A"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:MaterialDesignThemes.Wpf, Version=2.6.0.325, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:ShowMeTheXAML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E691A2FB7B0D7A073B7212869CB40DE1"
+                    "_C90DF2C47355C366618FFEADD870C02A"
                     {
-                    "Name" = "8:MaterialDesignThemes.Wpf.dll"
+                    "Name" = "8:ShowMeTheXAML.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:MaterialDesignThemes.Wpf.dll"
+            "SourcePath" = "8:ShowMeTheXAML.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_6219DB2C2F77463391214800C71DCCCE"
@@ -359,18 +391,18 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FlippingCalc"
-        "ProductCode" = "8:{10B390D0-0DB9-45D3-9A72-1D195FF8EEA2}"
-        "PackageCode" = "8:{FE353D7B-4C93-40EC-88A8-3FE62F609DCD}"
+        "ProductCode" = "8:{264E6027-494A-4476-9D59-72C7EE48BA73}"
+        "PackageCode" = "8:{FB51BEDB-7F3D-4888-9B89-292387A6F83E}"
         "UpgradeCode" = "8:{80A797CD-BE47-4F0C-931C-C3AF49F4C71E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:2.0.0"
+        "ProductVersion" = "8:2.0.2"
         "Manufacturer" = "8:Casey"
         "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:https://github.com/Caseyy89/FlippingCalc"
+        "ARPHELPLINK" = "8:https://discord.com/invite/vStKutp"
         "Title" = "8:FlippingCalc-Setup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Casey"

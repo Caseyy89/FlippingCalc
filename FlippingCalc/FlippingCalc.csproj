@@ -318,6 +318,12 @@
   <ItemGroup>
     <Resource Include="App.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Discord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Background\Discord.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets" Condition="Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

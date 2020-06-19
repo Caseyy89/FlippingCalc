@@ -49,4 +49,4 @@ Step 12: See how many items you would Buy and Sell in a 10 Chaos trade(e.g. you 
 ![Like This](https://i.imgur.com/OWM9ifI.png)
 
 Join Discord if you have questions 
-![Discord Link](https://discord.gg/vStKutp)
+[Discord Link](https://discord.gg/vStKutp)

@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace FlippingCalc
 {
     /// <summary>
-    /// Interaction logic for Window3.xaml
+    /// Interaction logic for Window9.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class Window9 : Window
     {
-        public Window3()
+        public Window9()
         {
             InitializeComponent();
-        }
-        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
-        {
-            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
-            e.Handled = true;
         }
     }
 }

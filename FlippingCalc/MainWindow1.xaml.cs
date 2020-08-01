@@ -300,6 +300,127 @@ namespace FlippingCalc
 
         }
 
+        // Reset Button Fragments
+        private void ResetButtonFragment_Click(object sender, RoutedEventArgs e)
+        {
+            //Buy Buttons
+            BuyAtziri1.Clear();
+            BuyAtziri2.Clear();
+            BuyAtziri3.Clear();
+            BuyAtziri4.Clear();
+            BuyUAtziri1.Clear();
+            BuyUAtziri2.Clear();
+            BuyUAtziri3.Clear();
+            BuyUAtziri4.Clear();
+            BuyPale1.Clear();
+            BuyPale2.Clear();
+            BuyPale3.Clear();
+            BuyPale4.Clear();
+            BuyHydra.Clear();
+            BuyPhoenix.Clear();
+            BuyMinotaur.Clear();
+            BuyChimera.Clear();
+            BuyElder1.Clear();
+            BuyElder2.Clear();
+            BuyElder3.Clear();
+            BuyElder4.Clear();
+            BuyUElder1.Clear();
+            BuyUElder2.Clear();
+            BuyUElder3.Clear();
+            BuyUElder4.Clear();
+            BuyXoph.Clear();
+            BuyTul.Clear();
+            BuyEsh.Clear();
+            BuyNetol.Clear();
+            BuyChayula.Clear();
+            BuyKarui.Clear();
+            BuyMaraketh.Clear();
+            BuyTemplar.Clear();
+            BuyVaalE.Clear();
+            BuyEternal.Clear ();
+            BuyOffering.Clear();
+            BuyDVessel.Clear();
+            BuySimulacrum.Clear();
+            //Sell Buttons
+            SellAtziri1.Clear();
+            SellAtziri2.Clear();
+            SellAtziri3.Clear();
+            SellAtziri4.Clear();
+            SellUAtziri1.Clear();
+            SellUAtziri2.Clear();
+            SellUAtziri3.Clear();
+            SellUAtziri4.Clear();
+            SellPale1.Clear();
+            SellPale2.Clear();
+            SellPale3.Clear();
+            SellPale4.Clear();
+            SellHydra.Clear();
+            SellPhoenix.Clear();
+            SellMinotaur.Clear();
+            SellChimera.Clear();
+            SellElder1.Clear();
+            SellElder2.Clear();
+            SellElder3.Clear();
+            SellElder4.Clear();
+            SellUElder1.Clear();
+            SellUElder2.Clear();
+            SellUElder3.Clear();
+            SellUElder4.Clear();
+            SellXoph.Clear();
+            SellTul.Clear();
+            SellEsh.Clear();
+            SellNetol.Clear();
+            SellChayula.Clear();
+            SellKarui.Clear();
+            SellMaraketh.Clear();
+            SellTemplar.Clear();
+            SellVaalE.Clear();
+            SellEternal.Clear();
+            SellOffering.Clear();
+            SellDVessel.Clear();
+            SellSimulacrum.Clear();
+            //Profit TextBoxes
+            ProfitAtziri1.Clear();
+            ProfitAtziri2.Clear();
+            ProfitAtziri3.Clear();
+            ProfitAtziri4.Clear();
+            ProfitUAtziri1.Clear();
+            ProfitUAtziri2.Clear();
+            ProfitUAtziri3.Clear();
+            ProfitUAtziri4.Clear();
+            ProfitPale1.Clear();
+            ProfitPale2.Clear();
+            ProfitPale3.Clear();
+            ProfitPale4.Clear();
+            ProfitHydra.Clear();
+            ProfitPhoenix.Clear();
+            ProfitMinotaur.Clear();
+            ProfitChimera.Clear();
+            ProfitElder1.Clear();
+            ProfitElder2.Clear();
+            ProfitElder3.Clear();
+            ProfitElder4.Clear();
+            ProfitUElder1.Clear();
+            ProfitUElder2.Clear();
+            ProfitUElder3.Clear();
+            ProfitUElder4.Clear();
+            ProfitXoph.Clear();
+            ProfitTul.Clear();
+            ProfitEsh.Clear();
+            ProfitNetol.Clear();
+            ProfitChayula.Clear();
+            ProfitKarui.Clear();
+            ProfitMaraketh.Clear();
+            ProfitTemplar.Clear();
+            ProfitVaalE.Clear();
+            ProfitEternal.Clear();
+            ProfitOffering.Clear();
+            ProfitDVessel.Clear();
+            ProfitSimulacrum.Clear();
+            //Quantbox
+            QuantBoxFragment.Clear();
+        }
+
 
         // Calc Button Currency
 
@@ -399,6 +520,49 @@ namespace FlippingCalc
             GetResultInTextBox1(BuyTurbulent, SellTurbulent, ProfitTurbulent);
         }
 
+        // Calc Button Fragments
+
+        private void CalcButtonFragment_Click(object sender, RoutedEventArgs e)
+        {
+            GetResultInTextBox1(BuyAtziri1, SellAtziri1, ProfitAtziri1);
+            GetResultInTextBox1(BuyAtziri2, SellAtziri2, ProfitAtziri2);
+            GetResultInTextBox1(BuyAtziri3, SellAtziri3, ProfitAtziri3);
+            GetResultInTextBox1(BuyAtziri4, SellAtziri4, ProfitAtziri4);
+            GetResultInTextBox1(BuyUAtziri1, SellUAtziri1, ProfitUAtziri1);
+            GetResultInTextBox1(BuyUAtziri2, SellUAtziri2, ProfitUAtziri2);
+            GetResultInTextBox1(BuyUAtziri3, SellUAtziri3, ProfitUAtziri3);
+            GetResultInTextBox1(BuyUAtziri4, SellUAtziri4, ProfitUAtziri4);
+            GetResultInTextBox1(BuyPale1, SellPale1, ProfitPale1);
+            GetResultInTextBox1(BuyPale2, SellPale2, ProfitPale2);
+            GetResultInTextBox1(BuyPale3, SellPale3, ProfitPale3);
+            GetResultInTextBox1(BuyPale4, SellPale4, ProfitPale4);
+            GetResultInTextBox1(BuyHydra, SellHydra, ProfitHydra);
+            GetResultInTextBox1(BuyPhoenix, SellPhoenix, ProfitPhoenix);
+            GetResultInTextBox1(BuyMinotaur, SellMinotaur, ProfitMinotaur);
+            GetResultInTextBox1(BuyChimera, SellChimera, ProfitChimera);
+            GetResultInTextBox1(BuyElder1, SellElder1, ProfitElder1);
+            GetResultInTextBox1(BuyElder2, SellElder2, ProfitElder2);
+            GetResultInTextBox1(BuyElder3, SellElder3, ProfitElder3);
+            GetResultInTextBox1(BuyElder4, SellElder4, ProfitElder4);
+            GetResultInTextBox1(BuyUElder1, SellUElder1, ProfitUElder1);
+            GetResultInTextBox1(BuyUElder2, SellUElder2, ProfitUElder2);
+            GetResultInTextBox1(BuyUElder3, SellUElder3, ProfitUElder3);
+            GetResultInTextBox1(BuyUElder4, SellUElder4, ProfitUElder4);
+            GetResultInTextBox1(BuyXoph, SellXoph, ProfitXoph);
+            GetResultInTextBox1(BuyTul, SellTul, ProfitTul);
+            GetResultInTextBox1(BuyNetol, SellNetol, ProfitNetol);
+            GetResultInTextBox1(BuyChayula, SellChayula, ProfitChayula);
+            GetResultInTextBox1(BuyKarui, SellKarui, ProfitKarui);
+            GetResultInTextBox1(BuyMaraketh, SellMaraketh, ProfitMaraketh);
+            GetResultInTextBox1(BuyTemplar, SellTemplar, ProfitTemplar);
+            GetResultInTextBox1(BuyVaalE, SellVaalE, ProfitVaalE);
+            GetResultInTextBox1(BuyEternal, SellEternal, ProfitEternal);
+            GetResultInTextBox1(BuyOffering, SellOffering, ProfitOffering);
+            GetResultInTextBox1(BuyDVessel, SellDVessel, ProfitDVessel);
+            GetResultInTextBox1(BuySimulacrum, SellSimulacrum, ProfitSimulacrum);
+        }
+
+
         // Math for Profit Box
         public void GetResultInTextBox1(TextBox first, TextBox second, TextBox result)
         {
@@ -421,25 +585,7 @@ namespace FlippingCalc
             Window1 subWindow = new Window1();
             subWindow.Show();
         }
-        // Fossil Button
-        private void FossilButton_Click(object sender, RoutedEventArgs e)
-        {
-            Window3 subWindow = new Window3();
-            subWindow.Show();
-        }
-        // Catalyst Button
-        private void CatalystButton_Click(object sender, RoutedEventArgs e)
-        {
-            Window4 subWindow = new Window4();
-            subWindow.Show();
-        }
-        // Oil Button
-        private void OilButton_Click(object sender, RoutedEventArgs e)
-        {
-            Window5 subWindow = new Window5();
-            subWindow.Show();
-        }
-        // Quant Button
+        // Quant Button Currency
         private void QuantButton_Click(object sender, RoutedEventArgs e)
         {
             Window2 subWindow = new Window2();
@@ -549,6 +695,50 @@ namespace FlippingCalc
             GetResultInTextBox5(BuyTurbulent, SellTurbulent, QuantBoxCata, subWindow.QuantBuyTurbulent, subWindow.QuantSellTurbulent);
         }
 
+        // Quant Button Fragments
+        private void QuantButtonFragment_Click(object sender, RoutedEventArgs e)
+        {
+            Window9 subWindow = new Window9();
+            subWindow.Show();
+
+            GetResultInTextBox6(BuyAtziri1, SellAtziri1, QuantBoxFragment, subWindow.QuantBuyAtziri1, subWindow.QuantSellAtziri1);
+            GetResultInTextBox6(BuyAtziri2, SellAtziri2, QuantBoxFragment, subWindow.QuantBuyAtziri2, subWindow.QuantSellAtziri2);
+            GetResultInTextBox6(BuyAtziri3, SellAtziri3, QuantBoxFragment, subWindow.QuantBuyAtziri3, subWindow.QuantSellAtziri3);
+            GetResultInTextBox6(BuyAtziri4, SellAtziri4, QuantBoxFragment, subWindow.QuantBuyAtziri4, subWindow.QuantSellAtziri4);
+            GetResultInTextBox6(BuyUAtziri1, SellUAtziri1, QuantBoxFragment, subWindow.QuantBuyUAtziri1, subWindow.QuantSellUAtziri1);
+            GetResultInTextBox6(BuyUAtziri2, SellUAtziri2, QuantBoxFragment, subWindow.QuantBuyUAtziri2, subWindow.QuantSellUAtziri2);
+            GetResultInTextBox6(BuyUAtziri3, SellUAtziri3, QuantBoxFragment, subWindow.QuantBuyUAtziri3, subWindow.QuantSellUAtziri3);
+            GetResultInTextBox6(BuyUAtziri4, SellUAtziri4, QuantBoxFragment, subWindow.QuantBuyUAtziri4, subWindow.QuantSellUAtziri4);
+            GetResultInTextBox6(BuyPale1, SellPale1, QuantBoxFragment, subWindow.QuantBuyPale1, subWindow.QuantSellPale1);
+            GetResultInTextBox6(BuyPale2, SellPale2, QuantBoxFragment, subWindow.QuantBuyPale2, subWindow.QuantSellPale2);
+            GetResultInTextBox6(BuyPale3, SellPale3, QuantBoxFragment, subWindow.QuantBuyPale3, subWindow.QuantSellPale3);
+            GetResultInTextBox6(BuyPale4, SellPale4, QuantBoxFragment, subWindow.QuantBuyPale4, subWindow.QuantSellPale4);
+            GetResultInTextBox6(BuyHydra, SellHydra, QuantBoxFragment, subWindow.QuantBuyHydra, subWindow.QuantSellHydra);
+            GetResultInTextBox6(BuyPhoenix, SellPhoenix, QuantBoxFragment, subWindow.QuantBuyPhoenix, subWindow.QuantSellPhoenix);
+            GetResultInTextBox6(BuyMinotaur, SellMinotaur, QuantBoxFragment, subWindow.QuantBuyMinotaur, subWindow.QuantSellMinotaur);
+            GetResultInTextBox6(BuyChimera, SellChimera, QuantBoxFragment, subWindow.QuantBuyChimera, subWindow.QuantSellChimera);
+            GetResultInTextBox6(BuyElder1, SellElder1, QuantBoxFragment, subWindow.QuantBuyElder1, subWindow.QuantSellElder1);
+            GetResultInTextBox6(BuyElder2, SellElder2, QuantBoxFragment, subWindow.QuantBuyElder2, subWindow.QuantSellElder2);
+            GetResultInTextBox6(BuyElder3, SellElder3, QuantBoxFragment, subWindow.QuantBuyElder3, subWindow.QuantSellElder3);
+            GetResultInTextBox6(BuyElder4, SellElder4, QuantBoxFragment, subWindow.QuantBuyElder4, subWindow.QuantSellElder4);
+            GetResultInTextBox6(BuyUElder1, SellUElder1, QuantBoxFragment, subWindow.QuantBuyUElder1, subWindow.QuantSellUElder1);
+            GetResultInTextBox6(BuyUElder2, SellUElder2, QuantBoxFragment, subWindow.QuantBuyUElder2, subWindow.QuantSellUElder2);
+            GetResultInTextBox6(BuyUElder3, SellUElder3, QuantBoxFragment, subWindow.QuantBuyUElder3, subWindow.QuantSellUElder3);
+            GetResultInTextBox6(BuyUElder4, SellUElder4, QuantBoxFragment, subWindow.QuantBuyUElder4, subWindow.QuantSellUElder4);
+            GetResultInTextBox6(BuyXoph, SellXoph, QuantBoxFragment, subWindow.QuantBuyXoph, subWindow.QuantSellXoph);
+            GetResultInTextBox6(BuyTul, SellTul, QuantBoxFragment, subWindow.QuantBuyTul, subWindow.QuantSellTul);
+            GetResultInTextBox6(BuyEsh, SellEsh, QuantBoxFragment, subWindow.QuantBuyEsh, subWindow.QuantSellEsh);
+            GetResultInTextBox6(BuyNetol, SellNetol, QuantBoxFragment, subWindow.QuantBuyNetol, subWindow.QuantSellNetol);
+            GetResultInTextBox6(BuyChayula, SellChayula, QuantBoxFragment, subWindow.QuantBuyChayula, subWindow.QuantSellChayula);
+            GetResultInTextBox6(BuyKarui, SellKarui, QuantBoxFragment, subWindow.QuantBuyKarui, subWindow.QuantSellKarui);
+            GetResultInTextBox6(BuyMaraketh, SellMaraketh, QuantBoxFragment, subWindow.QuantBuyMaraketh, subWindow.QuantSellMaraketh);
+            GetResultInTextBox6(BuyTemplar, SellTemplar, QuantBoxFragment, subWindow.QuantBuyTemplar, subWindow.QuantSellTemplar);
+            GetResultInTextBox6(BuyVaalE, SellVaalE, QuantBoxFragment, subWindow.QuantBuyVaalE, subWindow.QuantSellVaalE);
+            GetResultInTextBox6(BuyEternal, SellEternal, QuantBoxFragment, subWindow.QuantBuyEternal, subWindow.QuantSellEternal);
+            GetResultInTextBox6(BuyOffering, SellOffering, QuantBoxFragment, subWindow.QuantBuyOffering, subWindow.QuantSellOffering);
+            GetResultInTextBox6(BuyDVessel, SellDVessel, QuantBoxFragment, subWindow.QuantBuyDVessel, subWindow.QuantSellDVessel);
+            GetResultInTextBox6(BuySimulacrum, SellSimulacrum, QuantBoxFragment, subWindow.QuantBuySimulacrum, subWindow.QuantSellSimulacrum);
+        }
 
         // Quant Math Currency
 
@@ -634,6 +824,26 @@ namespace FlippingCalc
             }
         }
 
+        // Quant Math Fragment
+
+        public void GetResultInTextBox6(TextBox first, TextBox second, TextBox third, TextBox fourth, TextBox fifth)
+        {
+            var culture = new CultureInfo("en-US");
+            var r1 = float.TryParse(first.Text, NumberStyles.Currency, culture, out float a);
+            var r2 = float.TryParse(second.Text, NumberStyles.Currency, culture, out float b);
+            var r3 = float.TryParse(third.Text, out float c);
+
+            if (r1 && r2 && r3)
+            {
+                fourth.Text = Math.Round((c / a), 3).ToString(culture); // quant x buy/sell = quant x C 
+                fifth.Text = Math.Round((c / b), 3).ToString(culture);
+            }
+            else
+            {
+                fourth.Text = "";
+                fifth.Text = "";
+            }
+        }
 
     }
 }

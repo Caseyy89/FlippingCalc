@@ -351,6 +351,12 @@
     <Resource Include="Images\Orbs\Labyrinth.png" />
     <Resource Include="Images\Orbs\SinFlaskEmpty.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Orbs\WokeOrb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Orbs\IndigoOil.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets" Condition="Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

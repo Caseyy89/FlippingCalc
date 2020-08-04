@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FlippingCalc"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Currency" Height="650" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen">
+        Title="Currency" Height="700" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
     </Window.Background>
@@ -32,6 +32,9 @@
                         </Grid.ColumnDefinitions>
                         <!-- Rows -->
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
@@ -289,10 +292,53 @@
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
+                        <!-- Hunter -->
+                        <Image Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Hunter's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hunter's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/9dXlgBQuK" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/j94oKzoIX" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Warlord -->
+                        <Image Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Warlord's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Warlord's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/2n56EmYik" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/545j7JDua" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Woke Orb -->
+                        <Image Grid.Row="19" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/WokeOrb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Awakener's Orb"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/kk4Z84wC5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/oV49mKYcl" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
 
-                        
-                        
-                        
+
+
+
+
 
                         <!-- Right Row -->
                         <!-- Engineer -->
@@ -530,6 +576,34 @@
                         <!-- Sell -->
                         <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/Bgbjh8" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Crusader -->
+                        <Image Grid.Column="3" Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crusader's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crusader's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/DVbagY5H5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/Pr8LXMDiL" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Redeemer -->
+                        <Image Grid.Column="3" Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Redeemer's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Redeemer's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/Y9gJlY7fY" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/EobYvvyF5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -1169,36 +1243,36 @@
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Violet_Oil -->
-                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
+                        <!-- Indigo Oil -->
+                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/IndigoOil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Indigo Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/Eobp7qLS5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/8lPZ0gbhV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Crimson Oil -->
-                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
+                        <!-- Violet_Oil -->
+                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Black_Oil -->
-                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
+                        <!-- Crimson Oil -->
+                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
@@ -1207,48 +1281,62 @@
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Opalescent_Oil -->
-                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
+                        <!-- Black_Oil -->
+                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Silver_Oil -->
-                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
+                        <!-- Opalescent_Oil -->
+                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Golden_Oil -->
-                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Silver_Oil -->
+                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Golden_Oil -->
+                        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Harvest/ky3WyD3h5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
@@ -1852,6 +1940,9 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <!-- Left Row -->
                         <!-- Alteration -->
@@ -2092,6 +2183,49 @@
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
+                        <!-- Hunter -->
+                        <Image Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Hunter's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hunter's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/9dXlgBQuK" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/j94oKzoIX" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Warlord -->
+                        <Image Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Warlord's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Warlord's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/2n56EmYik" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/545j7JDua" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Woke Orb -->
+                        <Image Grid.Row="19" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/WokeOrb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Awakener's Orb"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/kk4Z84wC5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/oV49mKYcl" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+
 
 
 
@@ -2333,6 +2467,34 @@
                         <!-- Sell -->
                         <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/Bgbjh8" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Crusader -->
+                        <Image Grid.Column="3" Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crusader's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crusader's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/DVbagY5H5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/Pr8LXMDiL" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Redeemer -->
+                        <Image Grid.Column="3" Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Redeemer's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Redeemer's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/Y9gJlY7fY" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/EobYvvyF5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -2972,36 +3134,36 @@
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Violet_Oil -->
-                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
+                        <!-- Indigo Oil -->
+                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/IndigoOil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Indigo Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/Eobp7qLS5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/8lPZ0gbhV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Crimson Oil -->
-                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
+                        <!-- Violet_Oil -->
+                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Black_Oil -->
-                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
+                        <!-- Crimson Oil -->
+                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
@@ -3010,48 +3172,62 @@
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Opalescent_Oil -->
-                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
+                        <!-- Black_Oil -->
+                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Silver_Oil -->
-                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
+                        <!-- Opalescent_Oil -->
+                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Golden_Oil -->
-                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Silver_Oil -->
+                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Golden_Oil -->
+                        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore Harvest/ky3WyD3h5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
@@ -3655,6 +3831,9 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <!-- Left Row -->
                         <!-- Alteration -->
@@ -3892,6 +4071,48 @@
                         <!-- Sell -->
                         <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/RJ0BU7" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Hunter -->
+                        <Image Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Hunter's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hunter's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/9dXlgBQuK" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/j94oKzoIX" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Warlord -->
+                        <Image Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Warlord's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Warlord's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/2n56EmYik" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/545j7JDua" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Woke Orb -->
+                        <Image Grid.Row="19" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/WokeOrb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Awakener's Orb"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/kk4Z84wC5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/oV49mKYcl" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -4136,6 +4357,34 @@
                         <!-- Sell -->
                         <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/Bgbjh8" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Crusader -->
+                        <Image Grid.Column="3" Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crusader's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crusader's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/DVbagY5H5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/Pr8LXMDiL" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Redeemer -->
+                        <Image Grid.Column="3" Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Redeemer's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Redeemer's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/Y9gJlY7fY" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/EobYvvyF5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -4775,36 +5024,36 @@
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Violet_Oil -->
-                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
+                        <!-- Indigo Oil -->
+                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/IndigoOil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Indigo Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/Eobp7qLS5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/8lPZ0gbhV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Crimson Oil -->
-                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
+                        <!-- Violet_Oil -->
+                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Black_Oil -->
-                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
+                        <!-- Crimson Oil -->
+                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
@@ -4813,48 +5062,62 @@
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Opalescent_Oil -->
-                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
+                        <!-- Black_Oil -->
+                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Silver_Oil -->
-                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
+                        <!-- Opalescent_Oil -->
+                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Golden_Oil -->
-                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Silver_Oil -->
+                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Golden_Oil -->
+                        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Standard/ky3WyD3h5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
@@ -5458,6 +5721,9 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <!-- Left Row -->
                         <!-- Alteration -->
@@ -5695,6 +5961,48 @@
                         <!-- Sell -->
                         <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/RJ0BU7" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Hunter -->
+                        <Image Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Hunter's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hunter's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/9dXlgBQuK" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/j94oKzoIX" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Warlord -->
+                        <Image Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Warlord's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Warlord's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/2n56EmYik" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/545j7JDua" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Woke Orb -->
+                        <Image Grid.Row="19" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/WokeOrb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Awakener's Orb"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/kk4Z84wC5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="19" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/oV49mKYcl" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -5939,6 +6247,34 @@
                         <!-- Sell -->
                         <TextBlock Grid.Row="16" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/Bgbjh8" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Crusader -->
+                        <Image Grid.Column="3" Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crusader's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crusader's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/DVbagY5H5" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="17" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/Pr8LXMDiL" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Redeemer -->
+                        <Image Grid.Column="3" Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Redeemer's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Redeemer's Exalted"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/Y9gJlY7fY" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="18" Margin="0 0 0 0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/EobYvvyF5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
@@ -6578,36 +6914,36 @@
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Violet_Oil -->
-                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
+                        <!-- Indigo Oil -->
+                        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/IndigoOil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Indigo Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/Eobp7qLS5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="6" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/8lPZ0gbhV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Crimson Oil -->
-                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
+                        <!-- Violet_Oil -->
+                        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/vedyl9JhE" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="7" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/5nMEneJua" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Black_Oil -->
-                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
+                        <!-- Crimson Oil -->
+                        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
@@ -6616,48 +6952,62 @@
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="8" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/V5nRlvdIp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Opalescent_Oil -->
-                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
+                        <!-- Black_Oil -->
+                        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/lgVpn4wuV" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="9" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/WvOaQ3DTm" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Silver_Oil -->
-                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
+                        <!-- Opalescent_Oil -->
+                        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/V5nRbgoSp" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="10" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/D6YJVR5u5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>
                 </TextBlock>
-                        <!-- Golden_Oil -->
-                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Silver_Oil -->
+                        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
                         <!-- Buy -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
-                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/wvBrvXdIb" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Buy"/>
                     </Hyperlink>
                 </TextBlock>
                         <!-- Sell -->
                         <TextBlock Grid.Row="11" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/vedyypBuE" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Sell"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Golden_Oil -->
+                        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Golden Oil"/>
+                        <!-- Buy -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
+                    <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/4m0439kT9" RequestNavigate="Hyperlink_RequestNavigate">
+                        <TextBlock Text="Buy"/>
+                    </Hyperlink>
+                </TextBlock>
+                        <!-- Sell -->
+                        <TextBlock Grid.Row="12" Margin="0 0 0 0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="18" TextDecorations="{x:Null}">
                     <Hyperlink NavigateUri="https://www.pathofexile.com/trade/exchange/Hardcore/ky3WyD3h5" RequestNavigate="Hyperlink_RequestNavigate">
                         <TextBlock Text="Sell"/>
                     </Hyperlink>

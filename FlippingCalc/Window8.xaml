@@ -224,13 +224,42 @@
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
+        <!-- Indigo -->
+        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/IndigoOil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Indigo Oil"/>
+        <!-- Buy -->
+        <TextBox
+        x:Name="QuantBuyIndigo"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="0"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
+        x:Name="QuantSellIndigo"
+        Height="25" Width="70"
+        Grid.Row="6"
+        Margin="0 0 0 0"
+        Grid.Column="2"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        TextAlignment="Center"
+        FontFamily="Microsoft YaHei" FontSize="12"
+        IsReadOnly="True"
+        Background="DarkGray" x:FieldModifier="public">
+        </TextBox>
+
         <!-- Violet -->
-        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
+        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyViolet"
         Height="25" Width="70"
-        Grid.Row="6"
+        Grid.Row="7"
         Margin="0 0 0 0"
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -243,7 +272,7 @@
         <TextBox
         x:Name="QuantSellViolet"
         Height="25" Width="70"
-        Grid.Row="6"
+        Grid.Row="7"
         Margin="0 0 0 0"
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -253,12 +282,12 @@
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
         <!-- Crimson -->
-        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
+        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyCrimson"
         Height="25" Width="70"
-        Grid.Row="7"
+        Grid.Row="8"
         Margin="0 0 0 0"
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -271,7 +300,7 @@
         <TextBox
         x:Name="QuantSellCrimson"
         Height="25" Width="70"
-        Grid.Row="7"
+        Grid.Row="8"
         Margin="0 0 0 0"
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -281,12 +310,12 @@
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
         <!-- Black -->
-        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
+        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyBlack"
         Height="25" Width="70"
-        Grid.Row="8"
+        Grid.Row="9"
         Margin="0 0 0 0"
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -299,7 +328,7 @@
         <TextBox
         x:Name="QuantSellBlack"
         Height="25" Width="70"
-        Grid.Row="8"
+        Grid.Row="9"
         Margin="0 0 0 0"
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -309,12 +338,12 @@
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
         <!-- Opal -->
-        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
+        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyOpal"
         Height="25" Width="70"
-        Grid.Row="9"
+        Grid.Row="10"
         Margin="0 0 0 0"
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -327,7 +356,7 @@
         <TextBox
         x:Name="QuantSellOpal"
         Height="25" Width="70"
-        Grid.Row="9"
+        Grid.Row="10"
         Margin="0 0 0 0"
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -337,12 +366,12 @@
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
         <!-- SilverOil -->
-        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
+        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuySilverOil"
         Height="25" Width="70"
-        Grid.Row="10"
+        Grid.Row="11"
         Margin="0 0 0 0"
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -355,7 +384,7 @@
         <TextBox
         x:Name="QuantSellSilverOil"
         Height="25" Width="70"
-        Grid.Row="10"
+        Grid.Row="11"
         Margin="0 0 0 0"
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -365,12 +394,12 @@
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
         <!-- Golden -->
-        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2"  ToolTip="Golden Oil"/>
+        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2"  ToolTip="Golden Oil"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyGolden"
         Height="25" Width="70"
-        Grid.Row="11"
+        Grid.Row="12"
         Margin="0 0 0 0"
         Grid.Column="0"
         HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -383,7 +412,7 @@
         <TextBox
         x:Name="QuantSellGolden"
         Height="25" Width="70"
-        Grid.Row="11"
+        Grid.Row="12"
         Margin="0 0 0 0"
         Grid.Column="2"
         HorizontalAlignment="Center" VerticalAlignment="Center"

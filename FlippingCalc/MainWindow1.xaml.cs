@@ -63,6 +63,10 @@ namespace FlippingCalc
             BuyPrime_Sextant.Clear();
             BuyAwakened_Sextant.Clear();
             BuyMirror.Clear();
+            BuyHunter.Clear();
+            BuyWarlord.Clear();
+            BuyRedeemer.Clear();
+            BuyCrusader.Clear();
             //Sell Buttons
             SellAlchemy.Clear();
             SellAlt.Clear();
@@ -98,6 +102,10 @@ namespace FlippingCalc
             SellPrime_Sextant.Clear();
             SellAwakened_Sextant.Clear();
             SellMirror.Clear();
+            SellHunter.Clear();
+            SellWarlord.Clear();
+            SellRedeemer.Clear();
+            SellCrusader.Clear();
             //Profit TextBoxes
             ProfitAlchemy.Clear();
             ProfitAlt.Clear();
@@ -133,6 +141,10 @@ namespace FlippingCalc
             ProfitPrime_Sextant.Clear();
             ProfitAwakened_Sextant.Clear();
             ProfitMirror.Clear();
+            ProfitHunter.Clear();
+            ProfitWarlord.Clear();
+            ProfitRedeemer.Clear();
+            ProfitCrusader.Clear();
             //Quantbox
             QuantBox.Clear();
         }
@@ -231,6 +243,7 @@ namespace FlippingCalc
             BuyVerdant.Clear();
             BuyTeal.Clear();
             BuyAzure.Clear();
+            BuyIndigo.Clear();
             BuyViolet.Clear();
             BuyCrimson.Clear();
             BuyBlack.Clear();
@@ -244,6 +257,7 @@ namespace FlippingCalc
             SellVerdant.Clear();
             SellTeal.Clear();
             SellAzure.Clear();
+            SellIndigo.Clear();
             SellViolet.Clear();
             SellCrimson.Clear();
             SellBlack.Clear();
@@ -257,6 +271,7 @@ namespace FlippingCalc
             ProfitVerdant.Clear();
             ProfitTeal.Clear();
             ProfitAzure.Clear();
+            ProfitIndigo.Clear();
             ProfitViolet.Clear();
             ProfitCrimson.Clear();
             ProfitBlack.Clear();
@@ -460,6 +475,10 @@ namespace FlippingCalc
             GetResultInTextBox1(BuyPrime_Sextant, SellPrime_Sextant, ProfitPrime_Sextant);
             GetResultInTextBox1(BuyAwakened_Sextant, SellAwakened_Sextant, ProfitAwakened_Sextant);
             GetResultInTextBox1(BuyMirror, SellMirror, ProfitMirror);
+            GetResultInTextBox1(BuyHunter, SellHunter, ProfitHunter);
+            GetResultInTextBox1(BuyWarlord, SellWarlord, ProfitWarlord);
+            GetResultInTextBox1(BuyRedeemer, SellRedeemer, ProfitRedeemer);
+            GetResultInTextBox1(BuyCrusader, SellCrusader, ProfitCrusader);
         }
         // Calc Button Fossil
         private void CalcButtonFossil_Click(object sender, RoutedEventArgs e)
@@ -500,6 +519,7 @@ namespace FlippingCalc
             GetResultInTextBox1(BuyVerdant, SellVerdant, ProfitVerdant);
             GetResultInTextBox1(BuyTeal, SellTeal, ProfitTeal);
             GetResultInTextBox1(BuyAzure, SellAzure, ProfitAzure);
+            GetResultInTextBox1(BuyIndigo, SellIndigo, ProfitIndigo);
             GetResultInTextBox1(BuyViolet, SellViolet, ProfitViolet);
             GetResultInTextBox1(BuyCrimson, SellCrimson, ProfitCrimson);
             GetResultInTextBox1(BuyBlack, SellBlack, ProfitBlack);
@@ -625,6 +645,10 @@ namespace FlippingCalc
             GetResultInTextBox2(BuySimple_Sextant, SellSimple_Sextant, QuantBox, subWindow.QuantBuySimple_Sextant, subWindow.QuantSellSimple_Sextant);
             GetResultInTextBox2(BuyAwakened_Sextant, SellAwakened_Sextant, QuantBox, subWindow.QuantBuyAwakened_Sextant, subWindow.QuantSellAwakened_Sextant);
             GetResultInTextBox2(BuyMirror, SellMirror, QuantBox, subWindow.QuantBuyMirror, subWindow.QuantSellMirror);
+            GetResultInTextBox2(BuyHunter, SellHunter, QuantBox, subWindow.QuantBuyHunter, subWindow.QuantSellHunter);
+            GetResultInTextBox2(BuyWarlord, SellWarlord, QuantBox, subWindow.QuantBuyWarlord, subWindow.QuantSellWarlord);
+            GetResultInTextBox2(BuyRedeemer, SellRedeemer, QuantBox, subWindow.QuantBuyRedeemer, subWindow.QuantSellRedeemer);
+            GetResultInTextBox2(BuyCrusader, SellCrusader, QuantBox, subWindow.QuantBuyCrusader, subWindow.QuantSellCrusader);
         }
 
         // Quant Button Fossil
@@ -672,6 +696,7 @@ namespace FlippingCalc
             GetResultInTextBox4(BuyVerdant, SellVerdant, QuantBoxOil, subWindow.QuantBuyVerdant, subWindow.QuantSellVerdant);
             GetResultInTextBox4(BuyTeal, SellTeal, QuantBoxOil, subWindow.QuantBuyTeal, subWindow.QuantSellTeal);
             GetResultInTextBox4(BuyAzure, SellAzure, QuantBoxOil, subWindow.QuantBuyAzure, subWindow.QuantSellAzure);
+            GetResultInTextBox4(BuyIndigo, SellIndigo, QuantBoxOil, subWindow.QuantBuyIndigo, subWindow.QuantSellIndigo);
             GetResultInTextBox4(BuyViolet, SellViolet, QuantBoxOil, subWindow.QuantBuyViolet, subWindow.QuantSellViolet);
             GetResultInTextBox4(BuyCrimson, SellCrimson, QuantBoxOil, subWindow.QuantBuyCrimson, subWindow.QuantSellCrimson);
             GetResultInTextBox4(BuyBlack, SellBlack, QuantBoxOil, subWindow.QuantBuyBlack, subWindow.QuantSellBlack);

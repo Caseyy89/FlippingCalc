@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlippingCalc"
         mc:Ignorable="d"
-        Title="FlippingCalc" Height="750" Width="700" 
+        Title="FlippingCalc" Height="790" Width="700" 
         Icon="Images/Background/CurrencyAddModToRare.png" 
         WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         TextElement.FontWeight="Medium"
@@ -24,7 +24,7 @@
             <ImageBrush ImageSource="Images\Background\untitled-1.png" />
         </TabControl.Background>
         <TabItem Header="Currency">
-                <StackPanel Height="700">
+                <StackPanel Height="720">
                     <Viewbox Stretch="Uniform"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Grid >
                             <!-- Column Def -->
@@ -60,7 +60,8 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                             <!-- Top Row -->
                             <!-- left -->
                             <Rectangle Grid.Column="0" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
@@ -269,9 +270,37 @@
                         <TextBox x:Name="BuyAncient" Grid.Column="5" Grid.Row="17" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
                         <TextBox x:Name="SellAncient" Grid.Column="6" Grid.Row="17" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
                             <TextBox x:Name="ProfitAncient" Grid.Column="7" Grid.Row="17" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>
-                            <!-- Row 18 -->
-                            <!-- left -->
-                        </Grid>
+                        <!-- Row 18 -->
+                        <!-- left -->
+                        <Image Grid.Column="4" Grid.Row="18" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Crusader's_Exalted_Orb.png" ToolTip="Crusader's Exalted"/>
+                        <TextBox x:Name="BuyCrusader" Grid.Column="5" Grid.Row="18" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="SellCrusader" Grid.Column="6" Grid.Row="18" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="ProfitCrusader" Grid.Column="7" Grid.Row="18" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>
+                        <!-- right -->
+                        <Image Grid.Column="0" Grid.Row="18" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Hunter's_Exalted_Orb.png" ToolTip="Hunter's Exalted"/>
+                        <TextBox x:Name="BuyHunter" Grid.Column="1" Grid.Row="18" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="SellHunter" Grid.Column="2" Grid.Row="18" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="ProfitHunter" Grid.Column="3" Grid.Row="18" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>
+                        <!-- Row 19 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="19" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Warlord's_Exalted_Orb.png" ToolTip="Warlord's Exalted"/>
+                        <TextBox x:Name="BuyWarlord" Grid.Column="1" Grid.Row="19" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="SellWarlord" Grid.Column="2" Grid.Row="19" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="ProfitWarlord" Grid.Column="3" Grid.Row="19" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="19" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Redeemer's_Exalted_Orb.png" ToolTip="Redeemer's Exalted"/>
+                        <TextBox x:Name="BuyRedeemer" Grid.Column="5" Grid.Row="19" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="SellRedeemer" Grid.Column="6" Grid.Row="19" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="ProfitRedeemer" Grid.Column="7" Grid.Row="19" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>
+                        <!-- Row 20 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="20" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/WokeOrb.png" ToolTip="Awakener's Orb"/>
+                        <TextBox x:Name="BuyAwakener" Grid.Column="1" Grid.Row="20" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="SellAwakener" Grid.Column="2" Grid.Row="20" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
+                        <TextBox x:Name="ProfitAwakener" Grid.Column="3" Grid.Row="20" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>
+
+
+                    </Grid>
                     </Viewbox>
                     <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Grid>
@@ -641,7 +670,7 @@
                             <TextBox x:Name="ProfitAzure" Grid.Row="3" Grid.Column="7" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>
                             <!-- Row 4 -->
                             <!-- left -->
-                        <Image Grid.Column="0" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Azure_Oil.png" ToolTip="Indigo_Oil"/>
+                        <Image Grid.Column="0" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/IndigoOil.png" ToolTip="Indigo Oil"/>
                         <TextBox x:Name="BuyIndigo" Grid.Column="1" Grid.Row="4" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
                         <TextBox x:Name="SellIndigo" Grid.Column="2" Grid.Row="4" Height="25" Text="" Margin="0 0 10 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="6" Foreground="White"/>
                         <TextBox x:Name="ProfitIndigo" Grid.Column="3" Grid.Row="4" Height="25" Text="" Margin="0 0 0 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="DarkGray" Foreground="#DD000000"/>

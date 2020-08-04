@@ -6,47 +6,47 @@
         xmlns:local="clr-namespace:FlippingCalc"
         mc:Ignorable="d"
         Title="Quantity" Height="650" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Window.Background>
-        <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
-    </Window.Background>
-  <Grid>
-    <!-- Columns -->
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
-    <!-- Rows -->
-    <Grid.RowDefinitions>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="*"/>
+        <Window.Background>
+            <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
+        </Window.Background>
+        <Grid>
+        <!-- Columns -->
+        <Grid.ColumnDefinitions>
+           <ColumnDefinition Width="*"/>
+           <ColumnDefinition Width="*"/>
+           <ColumnDefinition Width="*"/>
+           <ColumnDefinition Width="*"/>
+           <ColumnDefinition Width="*"/>
+           <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Rows -->
+        <Grid.RowDefinitions>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-    <!-- Left Row -->
-    <!-- Alteration -->
+        <!-- Left Row -->
+        <!-- Alteration -->
         <Image Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Alteration.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Alteration"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyAlt"
         Height="25" Width="70"
         Grid.Row="0"
@@ -55,11 +55,10 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        Background="DarkGray">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellAlt"
         Height="25" Width="70"
         Grid.Row="0"
@@ -68,22 +67,21 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Alchemy -->
-    <Image
-      Grid.Row="1"
-      HorizontalAlignment="center"
-      Height="30"
-      VerticalAlignment="top"
-      Width="30"
-      Source="Images/Orbs/Alchemy.png"
-      Grid.ColumnSpan="3"
-      Grid.RowSpan="2"
-      ToolTip="Orb of Alchemy"/>
-    <!-- Buy -->
-    <TextBox
+        Background="DarkGray">
+        </TextBox>
+        <!-- Alchemy -->
+        <Image
+        Grid.Row="1"
+        HorizontalAlignment="center"
+        Height="30"
+        VerticalAlignment="top"
+        Width="30"
+        Source="Images/Orbs/Alchemy.png"
+        Grid.ColumnSpan="3"
+        Grid.RowSpan="2"
+        ToolTip="Orb of Alchemy"/>
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyAlch"
         Height="25" Width="70"
         Grid.Row="1"
@@ -92,11 +90,10 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        Background="DarkGray">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellAlch"
         Height="25" Width="70"
         Grid.Row="1"
@@ -106,13 +103,12 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Exalted -->
+        Background="DarkGray">
+        </TextBox>
+        <!-- Exalted -->
         <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Exalted.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Exalted Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyEx"
         Height="25" Width="70"
         Grid.Row="2"
@@ -122,11 +118,10 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        Background="DarkGray">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellEx"
         Height="25" Width="70"
         Grid.Row="2"
@@ -136,13 +131,12 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Jewellers -->
+        Background="DarkGray">
+        </TextBox>
+        <!-- Jewellers -->
         <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Jewellers.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Jeweller's orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyJewellers"
         Height="25" Width="70"
         Grid.Row="3"
@@ -152,11 +146,10 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        Background="DarkGray">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellJewellers"
         Height="25" Width="70"
         Grid.Row="3"
@@ -166,13 +159,12 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Chisel -->
+        Background="DarkGray">
+        </TextBox>
+        <!-- Chisel -->
         <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chisel.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Cartographer's Chisel"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyChisel"
         Height="25" Width="70"
         Grid.Row="4"
@@ -182,11 +174,10 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        Background="DarkGray">
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellChisel"
         Height="25" Width="70"
         Grid.Row="4"
@@ -196,13 +187,12 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
-    </TextBox>
-    <!-- Blessed -->
+        Background="DarkGray">
+        </TextBox>
+        <!-- Blessed -->
         <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Blessed.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Blessed Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyBlessed"
         Height="25" Width="70"
         Grid.Row="5"
@@ -213,9 +203,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellBlessed"
         Height="25" Width="70"
         Grid.Row="5"
@@ -226,11 +216,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Regal -->
+        </TextBox>
+        <!-- Regal -->
         <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Regal.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Regal Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyRegal"
         Height="25" Width="70"
         Grid.Row="6"
@@ -241,9 +231,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellRegal"
         Height="25" Width="70"
         Grid.Row="6"
@@ -254,11 +244,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Vaal -->
+        </TextBox>
+        <!-- Vaal -->
         <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Vaal.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Vaal Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyVaal"
         Height="25" Width="70"
         Grid.Row="7"
@@ -269,9 +259,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellVaal"
         Height="25" Width="70"
         Grid.Row="7"
@@ -282,11 +272,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Portal -->
+        </TextBox>
+        <!-- Portal -->
         <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Portal.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Portal Scroll"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyPortal"
         Height="25" Width="70"
         Grid.Row="8"
@@ -297,9 +287,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellPortal"
         Height="25" Width="70"
         Grid.Row="8"
@@ -310,11 +300,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Whetstone -->
+        </TextBox>
+        <!-- Whetstone -->
         <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Whetstone.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Blacksmith's Whetstone"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyWhetstone"
         Height="25" Width="70"
         Grid.Row="9"
@@ -325,9 +315,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellWhetstone"
         Height="25" Width="70"
         Grid.Row="9"
@@ -338,11 +328,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Transmute -->
+        </TextBox>
+        <!-- Transmute -->
         <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Transmute.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Transmutation"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyTransmute"
         Height="25" Width="70"
         Grid.Row="10"
@@ -353,9 +343,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellTransmute"
         Height="25" Width="70"
         Grid.Row="10"
@@ -366,11 +356,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Perandus -->
+        </TextBox>
+        <!-- Perandus -->
         <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Perandus.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Perandus Coin"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyPerandus"
         Height="25" Width="70"
         Grid.Row="11"
@@ -381,9 +371,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellPerandus"
         Height="25" Width="70"
         Grid.Row="11"
@@ -394,11 +384,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Simple_Sextant -->
+        </TextBox>
+        <!-- Simple_Sextant -->
         <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Simple_Sextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Simple Sextant"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuySimple_Sextant"
         Height="25" Width="70"
         Grid.Row="12"
@@ -409,9 +399,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellSimple_Sextant"
         Height="25" Width="70"
         Grid.Row="12"
@@ -422,11 +412,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Prime_Sextant -->
+        </TextBox>
+        <!-- Prime_Sextant -->
         <Image Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Prime_Sextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Prime Sextant"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyPrime_Sextant"
         Height="25" Width="70"
         Grid.Row="13"
@@ -437,9 +427,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellPrime_Sextant"
         Height="25" Width="70"
         Grid.Row="13"
@@ -450,11 +440,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Awakened_Sextant -->
+        </TextBox>
+        <!-- Awakened_Sextant -->
         <Image Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Awakened_Sextant.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Awakened Sextant"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyAwakened_Sextant"
         Height="25" Width="70"
         Grid.Row="14"
@@ -465,9 +455,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellAwakened_Sextant"
         Height="25" Width="70"
         Grid.Row="14"
@@ -478,11 +468,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Annulment -->
+        </TextBox>
+        <!-- Annulment -->
         <Image Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Annulment.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Annulment"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyAnnulment"
         Height="25" Width="70"
         Grid.Row="15"
@@ -493,9 +483,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellAnnulment"
         Height="25" Width="70"
         Grid.Row="15"
@@ -506,11 +496,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Horizons -->
+        </TextBox>
+        <!-- Horizons -->
         <Image Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Horizons.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Horizons"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyHorizons"
         Height="25" Width="70"
         Grid.Row="16"
@@ -521,9 +511,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellHorizons"
         Height="25" Width="70"
         Grid.Row="16"
@@ -534,7 +524,7 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
+        </TextBox>
         <!-- Hunter -->
         <Image Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Hunter's_Exalted_Orb.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hunter's Exalted"/>
         <!-- Buy -->
@@ -621,13 +611,11 @@
         </TextBox>
 
 
-
-
         <!-- Right Row -->
-    <!-- Engineers -->
+        <!-- Engineers -->
         <Image Grid.Column="3"  Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Engineers.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Engineer's Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyEngineers"
         Height="25" Width="70"
         Grid.Row="0"
@@ -638,9 +626,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellEngineers"
         Height="25" Width="70"
         Grid.Row="0"
@@ -651,11 +639,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Fusing -->
+        </TextBox>
+        <!-- Fusing -->
         <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Fusing.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Fusing"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyFusing"
         Height="25" Width="70"
         Grid.Row="1"
@@ -666,9 +654,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellFusing"
         Height="25" Width="70"
         Grid.Row="1"
@@ -679,11 +667,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- GCP -->
+        </TextBox>
+        <!-- GCP -->
         <Image Grid.Column="3" Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/GCP.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Gemcutter's Prism"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyGCP"
         Height="25" Width="70"
         Grid.Row="2"
@@ -694,9 +682,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellGCP"
         Height="25" Width="70"
         Grid.Row="2"
@@ -707,11 +695,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Chromatic -->
+        </TextBox>
+        <!-- Chromatic -->
         <Image Grid.Column="3" Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chromatic.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Chromatic Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyChromatic"
         Height="25" Width="70"
         Grid.Row="3"
@@ -722,9 +710,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellChromatic"
         Height="25" Width="70"
         Grid.Row="3"
@@ -735,11 +723,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Chance -->
+        </TextBox>
+        <!-- Chance -->
         <Image Grid.Column="3" Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Chance.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Chance"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyChance"
         Height="25" Width="70"
         Grid.Row="4"
@@ -750,9 +738,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellChance"
         Height="25" Width="70"
         Grid.Row="4"
@@ -763,11 +751,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Scouring -->
+        </TextBox>
+        <!-- Scouring -->
         <Image Grid.Column="3" Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Scouring.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Scouring"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyScouring"
         Height="25" Width="70"
         Grid.Row="5"
@@ -778,9 +766,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellScouring"
         Height="25" Width="70"
         Grid.Row="5"
@@ -791,11 +779,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Regret -->
+        </TextBox>
+        <!-- Regret -->
         <Image Grid.Column="3" Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Regret.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Regret"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyRegret"
         Height="25" Width="70"
         Grid.Row="6"
@@ -806,9 +794,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellRegret"
         Height="25" Width="70"
         Grid.Row="6"
@@ -819,11 +807,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Divine -->
+        </TextBox>
+        <!-- Divine -->
         <Image Grid.Column="3" Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Divine.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Divine Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyDivine"
         Height="25" Width="70"
         Grid.Row="7"
@@ -834,9 +822,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellDivine"
         Height="25" Width="70"
         Grid.Row="7"
@@ -847,11 +835,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Wisdom -->
+        </TextBox>
+        <!-- Wisdom -->
         <Image Grid.Column="3" Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Wisdom.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Scroll of Wisdom"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyWisdom"
         Height="25" Width="70"
         Grid.Row="8"
@@ -862,9 +850,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellWisdom"
         Height="25" Width="70"
         Grid.Row="8"
@@ -875,11 +863,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Scrap -->
+        </TextBox>
+        <!-- Scrap -->
         <Image Grid.Column="3" Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Scrap.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Armourer's Scrap"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyScrap"
         Height="25" Width="70"
         Grid.Row="9"
@@ -890,9 +878,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellScrap"
         Height="25" Width="70"
         Grid.Row="9"
@@ -903,11 +891,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Bauble -->
+        </TextBox>
+        <!-- Bauble -->
         <Image Grid.Column="3" Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Bauble.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Glassblower's Bauble"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyBauble"
         Height="25" Width="70"
         Grid.Row="10"
@@ -918,9 +906,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellBauble"
         Height="25" Width="70"
         Grid.Row="10"
@@ -931,11 +919,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Augmentation -->
+        </TextBox>
+        <!-- Augmentation -->
         <Image Grid.Column="3" Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Augmentation.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Augmentation"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyAugmentation"
         Height="25" Width="70"
         Grid.Row="11"
@@ -946,9 +934,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellAugmentation"
         Height="25" Width="70"
         Grid.Row="11"
@@ -959,11 +947,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Silver -->
+        </TextBox>
+        <!-- Silver -->
         <Image Grid.Column="3" Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Coin"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuySilver"
         Height="25" Width="70"
         Grid.Row="12"
@@ -974,9 +962,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellSilver"
         Height="25" Width="70"
         Grid.Row="12"
@@ -987,11 +975,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Mirror -->
+        </TextBox>
+        <!-- Mirror -->
         <Image Grid.Column="3" Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Mirror_of_Kalandra.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Mirror of Kalandra"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyMirror"
         Height="25" Width="70"
         Grid.Row="13"
@@ -1002,9 +990,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellMirror"
         Height="25" Width="70"
         Grid.Row="13"
@@ -1015,11 +1003,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Binding -->
+        </TextBox>
+        <!-- Binding -->
         <Image Grid.Column="3" Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Binding.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Orb of Binding"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyBinding"
         Height="25" Width="70"
         Grid.Row="14"
@@ -1030,9 +1018,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellBinding"
         Height="25" Width="70"
         Grid.Row="14"
@@ -1043,11 +1031,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Harbinger -->
+        </TextBox>
+        <!-- Harbinger -->
         <Image Grid.Column="3" Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Harbinger.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Harbinger's Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyHarbinger"
         Height="25" Width="70"
         Grid.Row="15"
@@ -1058,9 +1046,9 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
-    <TextBox
+        </TextBox>
+        <!-- Sell -->
+        <TextBox
         x:Name="QuantSellHarbinger"
         Height="25" Width="70"
         Grid.Row="15"
@@ -1071,11 +1059,11 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Ancient -->
+        </TextBox>
+        <!-- Ancient -->
         <Image Grid.Column="3" Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Ancient.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Ancient Orb"/>
-    <!-- Buy -->
-    <TextBox
+        <!-- Buy -->
+        <TextBox
         x:Name="QuantBuyAncient"
         Height="25" Width="70"
         Grid.Row="16"
@@ -1086,8 +1074,8 @@
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
-    </TextBox>
-    <!-- Sell -->
+        </TextBox>
+        <!-- Sell -->
         <TextBox
         x:Name="QuantSellAncient"
         Height="25" Width="70"
@@ -1156,7 +1144,5 @@
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
-
     </Grid>
-
 </Window>

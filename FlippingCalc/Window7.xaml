@@ -1,11 +1,11 @@
 ﻿<Window x:Class="FlippingCalc.Window7"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FlippingCalc"
-        mc:Ignorable="d"
-        Title="Quantity" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:FlippingCalc"
+mc:Ignorable="d"
+Title="Quantity" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Background>
         <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
     </Window.Background>
@@ -52,8 +52,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -65,20 +64,19 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Fertile-->
         <Image
-      Grid.Row="1"
-      HorizontalAlignment="center"
-      Height="30"
-      VerticalAlignment="top"
-      Width="30"
-      Source="Images/Orbs/Fertile_Catalyst.png"
-      Grid.ColumnSpan="3"
-      Grid.RowSpan="2"
-      ToolTip="Fertile Catalyst"/>
+        Grid.Row="1"
+        HorizontalAlignment="center"
+        Height="30"
+        VerticalAlignment="top"
+        Width="30"
+        Source="Images/Orbs/Fertile_Catalyst.png"
+        Grid.ColumnSpan="3"
+        Grid.RowSpan="2"
+        ToolTip="Fertile Catalyst"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyFertile"
@@ -89,8 +87,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -103,8 +100,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Imbued -->
         <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Imbued_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Imbued Catalyst"/>
@@ -119,8 +115,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -133,8 +128,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Intrinsic -->
         <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Intrinsic_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Intrinsic Catalyst"/>
@@ -149,8 +143,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -163,8 +156,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Prismatic -->
         <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Prismatic_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Prismatic Catalyst"/>
@@ -179,8 +171,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -193,8 +184,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Tempering -->
         <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Tempering_Catalyst.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Tempering Catalyst"/>

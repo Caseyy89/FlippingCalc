@@ -72,15 +72,15 @@
         </TextBox>
         <!-- Dawn -->
         <Image
-      Grid.Row="1"
-      HorizontalAlignment="center"
-      Height="30"
-      VerticalAlignment="top"
-      Width="30"
-      Source="Images/Orbs/Atziri3.png"
-      Grid.ColumnSpan="3"
-      Grid.RowSpan="2"
-      ToolTip="Dawn"/>
+        Grid.Row="1"
+        HorizontalAlignment="center"
+        Height="30"
+        VerticalAlignment="top"
+        Width="30"
+        Source="Images/Orbs/Atziri3.png"
+        Grid.ColumnSpan="3"
+        Grid.RowSpan="2"
+        ToolTip="Dawn"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyAtziri3"
@@ -1098,7 +1098,5 @@
         IsReadOnly="True"
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
-
     </Grid>
-
 </Window>

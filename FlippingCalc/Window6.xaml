@@ -1,11 +1,11 @@
 ﻿<Window x:Class="FlippingCalc.Window6"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FlippingCalc"
-        mc:Ignorable="d"
-        Title="Quantity" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:FlippingCalc"
+mc:Ignorable="d"
+Title="Quantity" Height="600" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Background>
         <ImageBrush ImageSource="Images\Background\Untitled-1.png" />
     </Window.Background>
@@ -52,8 +52,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -65,20 +64,19 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Bloodstained -->
         <Image
-      Grid.Row="1"
-      HorizontalAlignment="center"
-      Height="30"
-      VerticalAlignment="top"
-      Width="30"
-      Source="Images/Orbs/Bloodstained_Fossil.png"
-      Grid.ColumnSpan="3"
-      Grid.RowSpan="2"
-      ToolTip="Bloodstained Fossil"/>
+        Grid.Row="1"
+        HorizontalAlignment="center"
+        Height="30"
+        VerticalAlignment="top"
+        Width="30"
+        Source="Images/Orbs/Bloodstained_Fossil.png"
+        Grid.ColumnSpan="3"
+        Grid.RowSpan="2"
+        ToolTip="Bloodstained Fossil"/>
         <!-- Buy -->
         <TextBox
         x:Name="QuantBuyBloodstained"
@@ -89,8 +87,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -103,8 +100,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Corroded -->
         <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Corroded_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Corroded Fossil"/>
@@ -119,8 +115,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -133,8 +128,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Enchanted -->
         <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Enchanted_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Enchanted Fossil"/>
@@ -149,8 +143,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -163,8 +156,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Faceted -->
         <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Faceted_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Faceted Fossil"/>
@@ -179,8 +171,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Sell -->
         <TextBox
@@ -193,8 +184,7 @@
         TextAlignment="Center"
         FontFamily="Microsoft YaHei" FontSize="12"
         IsReadOnly="True"
-        Background="DarkGray"
-        >
+        Background="DarkGray">
         </TextBox>
         <!-- Gilded -->
         <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Gilded_Fossil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Gilded Fossil"/>
@@ -760,5 +750,4 @@
         Background="DarkGray" x:FieldModifier="public">
         </TextBox>
     </Grid>
-
 </Window>

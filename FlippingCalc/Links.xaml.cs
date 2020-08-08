@@ -17,13 +17,15 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
+using ControlzEx.Theming;
 
 namespace FlippingCalc
 {
     /// <summary>
     /// Interaction logic for Links.xaml
     /// </summary>
-    public partial class Links : Window, INotifyPropertyChanged
+    public partial class Links : MetroWindow, INotifyPropertyChanged
     {
         public Links()
         {

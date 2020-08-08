@@ -19,7 +19,7 @@ namespace FlippingCalc
     /// <summary>
     /// Interaction logic for QuantOil.xaml
     /// </summary>
-    public partial class QuantOil : Window
+    public partial class QuantOil : MetroWindow
     {
         public QuantOil()
         {

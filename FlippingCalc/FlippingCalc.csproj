@@ -128,26 +128,66 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="data\Classes\HardcoreCatalyst.cs" />
-    <Compile Include="data\Classes\HardcoreCurrency.cs" />
-    <Compile Include="data\Classes\HardcoreFossil.cs" />
-    <Compile Include="data\Classes\HardcoreFragment.cs" />
-    <Compile Include="data\Classes\LeagueCatalyst.cs" />
-    <Compile Include="data\Classes\LeagueFossil.cs" />
-    <Compile Include="data\Classes\LeagueFragment.cs" />
-    <Compile Include="data\Classes\LeagueHCCatalyst.cs" />
-    <Compile Include="data\Classes\LeagueHCCurrency.cs" />
-    <Compile Include="data\Classes\LeagueHCFossil.cs" />
-    <Compile Include="data\Classes\LeagueHCFragment.cs" />
-    <Compile Include="data\Classes\LeagueHCOil.cs" />
-    <Compile Include="data\Classes\HardcoreOil.cs" />
-    <Compile Include="data\Classes\LeagueOil.cs" />
-    <Compile Include="data\Classes\StandardCatalyst.cs" />
-    <Compile Include="data\Classes\StandardCurrency.cs" />
-    <Compile Include="data\Classes\StandardFossil.cs" />
-    <Compile Include="data\Classes\StandardFragment.cs" />
-    <Compile Include="data\Classes\StandardOil.cs" />
-    <Compile Include="data\Classes\LeagueCurrency.cs" />
+    <Compile Include="data\Classes\HardcoreCatalyst.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\HardcoreCurrency.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\HardcoreFossil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\HardcoreFragment.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueCatalyst.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueFossil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueFragment.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueHCCatalyst.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueHCCurrency.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueHCFossil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueHCFragment.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueHCOil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\HardcoreOil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueOil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\StandardCatalyst.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\StandardCurrency.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\StandardFossil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\StandardFragment.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\StandardOil.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="data\Classes\LeagueCurrency.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Links.xaml.cs">
       <DependentUpon>Links.xaml</DependentUpon>
     </Compile>
@@ -216,66 +256,66 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="data\Assets\HardcoreCatalyst.csv">
+    <Content Include="data\Assets\HardcoreCatalyst.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\HardcoreCurrency.csv">
+    </Content>
+    <Content Include="data\Assets\HardcoreCurrency.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\HardcoreFossil.csv">
+    </Content>
+    <Content Include="data\Assets\HardcoreFossil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\HardcoreFragment.csv">
+    </Content>
+    <Content Include="data\Assets\HardcoreFragment.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\HardcoreOil.csv">
+    </Content>
+    <Content Include="data\Assets\HardcoreOil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueCatalyst.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueCatalyst.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueCurrency.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueCurrency.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueFossil.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueFossil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueFragment.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueFragment.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueHCCatalyst.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueHCCatalyst.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueHCCurrency.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueHCCurrency.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueHCFossil.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueHCFossil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueHCFragment.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueHCFragment.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueHCOil.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueHCOil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\LeagueOil.csv">
+    </Content>
+    <Content Include="data\Assets\LeagueOil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\StandardCatalyst.csv">
+    </Content>
+    <Content Include="data\Assets\StandardCatalyst.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\StandardCurrency.csv">
+    </Content>
+    <Content Include="data\Assets\StandardCurrency.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\StandardFossil.csv">
+    </Content>
+    <Content Include="data\Assets\StandardFossil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\StandardFragment.csv">
+    </Content>
+    <Content Include="data\Assets\StandardFragment.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="data\Assets\StandardOil.csv">
+    </Content>
+    <Content Include="data\Assets\StandardOil.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Include="FlippingCalc_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

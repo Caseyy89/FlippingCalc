@@ -1,4 +1,4 @@
-﻿<Window x:Class="FlippingCalc.QuantOil"
+﻿<mah:MetroWindow x:Class="FlippingCalc.QuantOil"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -15,9 +15,9 @@ Title="Quantity" Height="650" Width="500" Icon="Images/Orbs/Exalted.png" WindowS
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="TextAlignment" Value="Center"/>
             <Setter Property="IsReadOnly" Value="True"/>
-            <Setter Property="Background" Value="#CCA4C400"/>
+            <Setter Property="Background" Value="#CCA4A4A4"/>
             <Setter Property="Foreground" Value="#DDFFFFFF"/>
-            <Setter Property="BorderBrush" Value="#CCA4C400"/>
+            <Setter Property="BorderBrush" Value="#CCA4A4A4"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="mah:ControlsHelper.FocusBorderBrush" Value="Black"/>
         </Style>
@@ -132,4 +132,4 @@ Title="Quantity" Height="650" Width="500" Icon="Images/Orbs/Exalted.png" WindowS
         <!-- Sell -->
         <TextBox x:Name="QuantSellGolden" Grid.Row="12" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
     </Grid>
-</Window>
+</mah:MetroWindow>

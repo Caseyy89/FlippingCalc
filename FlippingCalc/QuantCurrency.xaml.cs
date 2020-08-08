@@ -19,7 +19,7 @@ namespace FlippingCalc
     /// <summary>
     /// Interaction logic for QuantCurrency.xaml
     /// </summary>
-    public partial class QuantCurrency : Window
+    public partial class QuantCurrency : MetroWindow
     {
         public QuantCurrency()
         {

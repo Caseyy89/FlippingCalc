@@ -19,7 +19,7 @@ namespace FlippingCalc
     /// <summary>
     /// Interaction logic for QuantCatalyst.xaml
     /// </summary>
-    public partial class QuantCatalyst : Window
+    public partial class QuantCatalyst : MetroWindow
     {
         public QuantCatalyst()
         {

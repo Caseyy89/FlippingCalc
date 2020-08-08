@@ -124,12 +124,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3BE97CA1C1B8C40CE186057A7FFE396E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_DE9BF6BAEB61FB5748EE9487CB36BBC5"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -173,6 +167,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7864564107740590EB8DA7FD3F48E87B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3BE97CA1C1B8C40CE186057A7FFE396E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -674,7 +674,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FlippingCalc"
         "ProductCode" = "8:{DB25CE0A-A802-431B-A8C5-7E7E39F76539}"
-        "PackageCode" = "8:{8325057E-76D2-4851-B10E-62475ED6CFB5}"
+        "PackageCode" = "8:{3920459F-E3B7-4F8E-93C7-63BF3D05C1D9}"
         "UpgradeCode" = "8:{2EECC110-FB16-4835-A22C-3A1BE3751096}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1243,6 +1243,34 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{48BD66EE-6D26-4E2A-8545-2E21618E76E6}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8254069A258940A7A28E9C7DBA87CEFC"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_6219DB2C2F77463391214800C71DCCCE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
             "OutputProjectGuid" = "8:{48BD66EE-6D26-4E2A-8545-2E21618E76E6}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"

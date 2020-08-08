@@ -19,7 +19,7 @@ namespace FlippingCalc
     /// <summary>
     /// Interaction logic for QuantFossil.xaml
     /// </summary>
-    public partial class QuantFossil : Window
+    public partial class QuantFossil : MetroWindow
     {
         public QuantFossil()
         {

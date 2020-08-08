@@ -19,7 +19,7 @@ namespace FlippingCalc
     /// <summary>
     /// Interaction logic for QuantFragment.xaml
     /// </summary>
-    public partial class QuantFragment : Window
+    public partial class QuantFragment : MetroWindow
     {
         public QuantFragment()
         {

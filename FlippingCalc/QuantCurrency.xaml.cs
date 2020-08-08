@@ -11,15 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
+using ControlzEx.Theming;
 
 namespace FlippingCalc
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for QuantCurrency.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class QuantCurrency : Window
     {
-        public Window2()
+        public QuantCurrency()
         {
             InitializeComponent();
         }

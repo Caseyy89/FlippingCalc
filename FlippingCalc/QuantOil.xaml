@@ -1,0 +1,135 @@
+﻿<Window x:Class="FlippingCalc.QuantOil"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+xmlns:local="clr-namespace:FlippingCalc"
+mc:Ignorable="d"
+Title="Quantity" Height="650" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#FF302F2F">
+    <Window.Resources>
+        <Style x:Key="Quantbox" TargetType="TextBox">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Width" Value="70"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="Background" Value="#CCA4C400"/>
+            <Setter Property="Foreground" Value="#DDFFFFFF"/>
+            <Setter Property="BorderBrush" Value="#CCA4C400"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="mah:ControlsHelper.FocusBorderBrush" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!-- Columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Left Row -->
+        <!-- Clear -->
+        <Image Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Clear_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Clear Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyClear" Grid.Row="0" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellClear" Grid.Row="0" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sepia -->
+        <Image Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Sepia_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Sepia Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuySepia" Grid.Row="1" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellSepia" Grid.Row="1" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Amber -->
+        <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Amber_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Amber Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyAmber" Grid.Row="2" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellAmber" Grid.Row="2" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Verdant -->
+        <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Verdant_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Verdant Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyVerdant" Grid.Row="3" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellVerdant" Grid.Row="3" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Teal -->
+        <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Teal_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Teal Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyTeal" Grid.Row="4" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellTeal" Grid.Row="4" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Azure -->
+        <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Azure_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Azure Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyAzure" Grid.Row="5" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellAzure" Grid.Row="5" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Indigo -->
+        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/IndigoOil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Indigo Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyIndigo" Grid.Row="6" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellIndigo" Grid.Row="6" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Violet -->
+        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Violet_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Violet Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyViolet" Grid.Row="7" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellViolet" Grid.Row="7" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Crimson -->
+        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Crimson_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Crimson Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyCrimson" Grid.Row="8" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellCrimson" Grid.Row="8" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Black -->
+        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Black_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Black Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyBlack" Grid.Row="9" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellBlack" Grid.Row="9" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Opal -->
+        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Opalescent_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Opalescent Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyOpal" Grid.Row="10" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellOpal" Grid.Row="10" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- SilverOil -->
+        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Silver_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Silver Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuySilverOil" Grid.Row="11" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellSilverOil" Grid.Row="11" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Golden -->
+        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Golden_Oil.png" Grid.ColumnSpan="3" Grid.RowSpan="2"  ToolTip="Golden Oil"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyGolden" Grid.Row="12" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellGolden" Grid.Row="12" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+    </Grid>
+</Window>

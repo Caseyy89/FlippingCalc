@@ -3,13 +3,16 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Diagnostics;
+using MahApps.Metro.Controls;
+using ControlzEx.Theming;
+using AutoUpdaterDotNET;
 
 namespace FlippingCalc
 {
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Calc : MetroWindow
     {
-        public MainWindow()
+        public Calc()
         {
             InitializeComponent();
         }
@@ -602,13 +605,13 @@ namespace FlippingCalc
         // Links Button
         private void LinksButton_Click(object sender, RoutedEventArgs e)
         {
-            Window1 subWindow = new Window1();
+            Links subWindow = new Links();
             subWindow.Show();
         }
         // Quant Button Currency
         private void QuantButton_Click(object sender, RoutedEventArgs e)
         {
-            Window2 subWindow = new Window2();
+            QuantCurrency subWindow = new QuantCurrency();
             subWindow.Show();
 
             GetResultInTextBox2(BuyAlt, SellAlt, QuantBox, subWindow.QuantBuyAlt, subWindow.QuantSellAlt);
@@ -654,7 +657,7 @@ namespace FlippingCalc
         // Quant Button Fossil
         private void QuantButtonFossil_Click(object sender, RoutedEventArgs e)
         {
-            Window6 subWindow = new Window6();
+            QuantFossil subWindow = new QuantFossil();
             subWindow.Show();
 
             GetResultInTextBox3(BuyAberrant, SellAberrant, QuantBoxFossil, subWindow.QuantBuyAberrant, subWindow.QuantSellAberrant);
@@ -687,7 +690,7 @@ namespace FlippingCalc
         // Quant Button Oil
         private void QuantButtonOil_Click(object sender, RoutedEventArgs e)
         {
-            Window8 subWindow = new Window8();
+            QuantOil subWindow = new QuantOil();
             subWindow.Show();
 
             GetResultInTextBox4(BuyClear, SellClear, QuantBoxOil, subWindow.QuantBuyClear, subWindow.QuantSellClear);
@@ -708,7 +711,7 @@ namespace FlippingCalc
         // Quant Button Cata
         private void QuantButtonCata_Click(object sender, RoutedEventArgs e)
         {
-            Window7 subWindow = new Window7();
+            QuantCatalyst subWindow = new QuantCatalyst();
             subWindow.Show();
 
             GetResultInTextBox5(BuyAbrasive, SellAbrasive, QuantBoxCata, subWindow.QuantBuyAbrasive, subWindow.QuantSellAbrasive);
@@ -723,7 +726,7 @@ namespace FlippingCalc
         // Quant Button Fragments
         private void QuantButtonFragment_Click(object sender, RoutedEventArgs e)
         {
-            Window9 subWindow = new Window9();
+            QuantFragment subWindow = new QuantFragment();
             subWindow.Show();
 
             GetResultInTextBox6(BuyAtziri1, SellAtziri1, QuantBoxFragment, subWindow.QuantBuyAtziri1, subWindow.QuantSellAtziri1);
@@ -870,5 +873,9 @@ namespace FlippingCalc
             }
         }
 
+        private void OnWindowLoad(object sender, RoutedEventArgs e)
+        {
+            AutoUpdater.Start("https://github.com/Caseyy89/FlippingCalc/blob/master/FlippingCalc/FlippingCalcAutoUpdater.xaml");
+        }
     }
 }

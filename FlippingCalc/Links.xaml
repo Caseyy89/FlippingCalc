@@ -1,0 +1,730 @@
+﻿<Window x:Class="FlippingCalc.Links"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+xmlns:local="clr-namespace:FlippingCalc"
+mc:Ignorable="d"
+Title="Currency" Height="700" Width="600" 
+Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip"
+Loaded="OnWindowLoad">
+    <TabControl>
+        <TabItem Header="Harvest SC">
+            <TabControl>
+                <TabItem Header="Currency">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueCurrency}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fossil">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueFossil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Oils">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueOil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Catalysts">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueCatalyst}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fragments">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueFragment}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+            </TabControl>
+        </TabItem>
+        <TabItem Header="Harvest HC">
+            <TabControl>
+                <TabItem Header="Currency">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueHCCurrency}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fossil">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueHCFossil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Oils">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueHCOil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Catalysts">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueHCCatalyst}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fragments">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding LeagueHCFragment}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+            </TabControl>
+        </TabItem>
+        <TabItem Header="Standard">
+            <TabControl>
+                <TabItem Header="Currency">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding StandardCurrency}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fossil">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding StandardFossil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Oils">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding StandardOil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Catalysts">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding StandardCatalyst}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fragments">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding StandardFragment}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+            </TabControl>
+        </TabItem>
+        <TabItem Header="Hardcore">
+            <TabControl>
+                <TabItem Header="Currency">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding HardcoreCurrency}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fossil">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding HardcoreFossil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                        <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                            <TextBlock Text="Sell"/>
+                                        </Hyperlink>
+                                            </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Oils">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding HardcoreOil}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Catalysts">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding HardcoreCatalyst}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="Fragments">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsControl ItemsSource="{Binding HardcoreFragment}" HorizontalAlignment="Center">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="1" Height="30" Width="30" Source="{Binding Image}" ToolTip="{Binding Name}"/>
+                                        <!-- Buy -->
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="10 0 0 0">
+                                            <Hyperlink NavigateUri="{Binding Buy}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Buy"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                        <!-- Sell -->
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="16" TextDecorations="{x:Null}" Margin="0 0 10 0">
+                                            <Hyperlink NavigateUri="{Binding Sell}" RequestNavigate="Hyperlink_RequestNavigate">
+                                        <TextBlock Text="Sell"/>
+                                            </Hyperlink>
+                                        </TextBlock>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </TabItem>
+            </TabControl>
+        </TabItem>
+    </TabControl>
+</Window>

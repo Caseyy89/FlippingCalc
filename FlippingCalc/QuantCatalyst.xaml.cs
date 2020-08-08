@@ -11,15 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
+using ControlzEx.Theming;
 
 namespace FlippingCalc
 {
     /// <summary>
-    /// Interaction logic for Window7.xaml
+    /// Interaction logic for QuantCatalyst.xaml
     /// </summary>
-    public partial class Window7 : Window
+    public partial class QuantCatalyst : Window
     {
-        public Window7()
+        public QuantCatalyst()
         {
             InitializeComponent();
         }

@@ -11,23 +11,19 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
+using ControlzEx.Theming;
 
 namespace FlippingCalc
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for QuantFossil.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class QuantFossil : Window
     {
-        public Window1()
+        public QuantFossil()
         {
             InitializeComponent();
-        }
-
-        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
-        {
-            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
-            e.Handled = true;
         }
     }
 }

@@ -73,17 +73,39 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MaterialDesignColors, Version=1.2.0.325, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialDesignColors.1.2.0\lib\net45\MaterialDesignColors.dll</HintPath>
+    <Reference Include="AutoUpdater.NET, Version=1.6.0.0, Culture=neutral, PublicKeyToken=501435c91b35f4bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autoupdater.NET.Official.1.6.0\lib\net40\AutoUpdater.NET.dll</HintPath>
     </Reference>
-    <Reference Include="MaterialDesignThemes.Wpf, Version=2.6.0.325, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialDesignThemes.2.6.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.4.3.2\lib\net45\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper, Version=15.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.15.0.5\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51482d6f650b2b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.2.2.0\lib\net46\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
     <Reference Include="ShowMeTheXAML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ShowMeTheXAML.1.0.12\lib\net45\ShowMeTheXAML.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -106,56 +128,76 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
+    <Compile Include="data\Classes\HardcoreCatalyst.cs" />
+    <Compile Include="data\Classes\HardcoreCurrency.cs" />
+    <Compile Include="data\Classes\HardcoreFossil.cs" />
+    <Compile Include="data\Classes\HardcoreFragment.cs" />
+    <Compile Include="data\Classes\LeagueCatalyst.cs" />
+    <Compile Include="data\Classes\LeagueFossil.cs" />
+    <Compile Include="data\Classes\LeagueFragment.cs" />
+    <Compile Include="data\Classes\LeagueHCCatalyst.cs" />
+    <Compile Include="data\Classes\LeagueHCCurrency.cs" />
+    <Compile Include="data\Classes\LeagueHCFossil.cs" />
+    <Compile Include="data\Classes\LeagueHCFragment.cs" />
+    <Compile Include="data\Classes\LeagueHCOil.cs" />
+    <Compile Include="data\Classes\HardcoreOil.cs" />
+    <Compile Include="data\Classes\LeagueOil.cs" />
+    <Compile Include="data\Classes\StandardCatalyst.cs" />
+    <Compile Include="data\Classes\StandardCurrency.cs" />
+    <Compile Include="data\Classes\StandardFossil.cs" />
+    <Compile Include="data\Classes\StandardFragment.cs" />
+    <Compile Include="data\Classes\StandardOil.cs" />
+    <Compile Include="data\Classes\LeagueCurrency.cs" />
+    <Compile Include="Links.xaml.cs">
+      <DependentUpon>Links.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window2.xaml.cs">
-      <DependentUpon>Window2.xaml</DependentUpon>
+    <Compile Include="QuantCurrency.xaml.cs">
+      <DependentUpon>QuantCurrency.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window6.xaml.cs">
-      <DependentUpon>Window6.xaml</DependentUpon>
+    <Compile Include="QuantFossil.xaml.cs">
+      <DependentUpon>QuantFossil.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window7.xaml.cs">
-      <DependentUpon>Window7.xaml</DependentUpon>
+    <Compile Include="QuantCatalyst.xaml.cs">
+      <DependentUpon>QuantCatalyst.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window8.xaml.cs">
-      <DependentUpon>Window8.xaml</DependentUpon>
+    <Compile Include="QuantOil.xaml.cs">
+      <DependentUpon>QuantOil.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window9.xaml.cs">
-      <DependentUpon>Window9.xaml</DependentUpon>
+    <Compile Include="QuantFragment.xaml.cs">
+      <DependentUpon>QuantFragment.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow1.xaml">
+    <Page Include="Calc.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Window1.xaml">
+    <Page Include="Links.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window2.xaml">
+    <Page Include="QuantCurrency.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window6.xaml">
+    <Page Include="QuantFossil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window7.xaml">
+    <Page Include="QuantCatalyst.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window8.xaml">
+    <Page Include="QuantOil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window9.xaml">
+    <Page Include="QuantFragment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindow1.xaml.cs">
-      <DependentUpon>MainWindow1.xaml</DependentUpon>
+    <Compile Include="Calc.xaml.cs">
+      <DependentUpon>Calc.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -174,6 +216,66 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="data\Assets\HardcoreCatalyst.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\HardcoreCurrency.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\HardcoreFossil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\HardcoreFragment.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\HardcoreOil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueCatalyst.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueCurrency.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueFossil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueFragment.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueHCCatalyst.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueHCCurrency.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueHCFossil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueHCFragment.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueHCOil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\LeagueOil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\StandardCatalyst.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\StandardCurrency.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\StandardFossil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\StandardFragment.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\Assets\StandardOil.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="FlippingCalc_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -305,7 +407,7 @@
     <Resource Include="App.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Discord.png" />
+    <Resource Include="Images\Discord.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Background\Discord.png" />
@@ -325,18 +427,14 @@
     <Resource Include="Images\Orbs\BreachFragmentsLightning.png" />
     <Resource Include="Images\Orbs\BreachFragmentsPhysical.png" />
     <Resource Include="Images\Orbs\DeliriumFragment.png" />
-    <Resource Include="Images\Orbs\EternalEmpireFragment.png" />
     <Resource Include="Images\Orbs\FragmentChimera.png" />
     <Resource Include="Images\Orbs\FragmentHydra.png" />
     <Resource Include="Images\Orbs\FragmentMinotaur.png" />
     <Resource Include="Images\Orbs\FragmentPhoenix.png" />
-    <Resource Include="Images\Orbs\KaruiFragment.png" />
-    <Resource Include="Images\Orbs\MarakethFragment.png" />
     <Resource Include="Images\Orbs\PaleCourt01.png" />
     <Resource Include="Images\Orbs\PaleCourt02.png" />
     <Resource Include="Images\Orbs\PaleCourt03.png" />
     <Resource Include="Images\Orbs\PaleCourt04.png" />
-    <Resource Include="Images\Orbs\TemplarFragment.png" />
     <Resource Include="Images\Orbs\UAtziri1.png" />
     <Resource Include="Images\Orbs\Uatziri2.png" />
     <Resource Include="Images\Orbs\Uatziri3.png" />
@@ -345,7 +443,6 @@
     <Resource Include="Images\Orbs\UberElder02.png" />
     <Resource Include="Images\Orbs\UberElder03.png" />
     <Resource Include="Images\Orbs\UberElder04.png" />
-    <Resource Include="Images\Orbs\VaalFragment.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Orbs\Labyrinth.png" />
@@ -356,6 +453,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Orbs\IndigoOil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Orbs\Timeless01.png" />
+    <Resource Include="Images\Orbs\Timeless02.png" />
+    <Resource Include="Images\Orbs\Timeless03.png" />
+    <Resource Include="Images\Orbs\Timeless04.png" />
+    <Resource Include="Images\Orbs\Timeless05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FlippingCalcAutoUpdater.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets" Condition="Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets')" />

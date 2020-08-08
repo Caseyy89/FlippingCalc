@@ -1,0 +1,283 @@
+﻿<Window x:Class="FlippingCalc.QuantFragment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:FlippingCalc"
+        mc:Ignorable="d"
+        Title="Quantity" Height="650" Width="500" Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#FF302F2F">
+    <Window.Resources>
+        <Style x:Key="Quantbox" TargetType="TextBox">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Width" Value="70"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="Background" Value="#CCA4C400"/>
+            <Setter Property="Foreground" Value="#DDFFFFFF"/>
+            <Setter Property="BorderBrush" Value="#CCA4C400"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="mah:ControlsHelper.FocusBorderBrush" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!-- Columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Left Row -->
+        <!-- Dusk -->
+        <Image Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Atziri1.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Dusk"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyAtziri1" Grid.Row="0" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellAtziri1" Grid.Row="0" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Dawn -->
+        <Image Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Atziri3.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Dawn"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyAtziri3" Grid.Row="1" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellAtziri3" Grid.Row="1" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Grief -->
+        <Image Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UAtziri1.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Mortal Grief"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUAtziri1" Grid.Row="2" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUAtziri1" Grid.Row="2" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Hope -->
+        <Image Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UAtziri3.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Mortal Hope"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUAtziri3" Grid.Row="3" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUAtziri3" Grid.Row="3" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Eber -->
+        <Image Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/PaleCourt01.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Eber's Key"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyPale1" Grid.Row="4" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellPale1" Grid.Row="4" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Inya -->
+        <Image Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/PaleCourt03.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Inya's Key"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyPale3" Grid.Row="5" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellPale3" Grid.Row="5" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Hydra -->
+        <Image Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/FragmentHydra.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Hydra"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyHydra" Grid.Row="6" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellHydra" Grid.Row="6" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Minotaur -->
+        <Image Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/FragmentMinotaur.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Minotaur"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyMinotaur" Grid.Row="7" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellMinotaur" Grid.Row="7" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Enslavement -->
+        <Image Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/AtlasMapGuardianFire.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Enslavement"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyElder1" Grid.Row="8" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellElder1" Grid.Row="8" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Constriction -->
+        <Image Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/AtlasMapGuardianHoly.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Constriction"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyElder3" Grid.Row="9" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellElder3" Grid.Row="9" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Terror -->
+        <Image Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UberElder01.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Terror"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUElder1" Grid.Row="10" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUElder1" Grid.Row="10" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Shape -->
+        <Image Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UberElder03.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Shape"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUElder3" Grid.Row="11" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUElder3" Grid.Row="11" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Xoph -->
+        <Image Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/BreachFragmentsFire.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Xoph"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyXoph" Grid.Row="12" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellXoph" Grid.Row="12" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Esh -->
+        <Image Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/BreachFragmentsLightning.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Esh"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyEsh" Grid.Row="13" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+       <!-- Sell -->
+        <TextBox x:Name="QuantSellEsh" Grid.Row="13" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Chayula -->
+        <Image Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/BreachFragmentsChaos.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Chayula"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyChayula" Grid.Row="14" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellChayula" Grid.Row="14" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Maraketh -->
+        <Image Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Timeless03.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Maraketh"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyMaraketh" Grid.Row="15" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellMaraketh" Grid.Row="15" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Vaal -->
+        <Image Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Timeless01.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Vaal"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyVaalE" Grid.Row="16" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellVaalE" Grid.Row="16" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Offering -->
+        <Image Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Labyrinth.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Offering"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyOffering" Grid.Row="17" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellOffering" Grid.Row="17" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Simulacrum -->
+        <Image Grid.Row="18" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/DeliriumFragment.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Simulacrum"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuySimulacrum" Grid.Row="18" Grid.Column="0" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellSimulacrum" Grid.Row="18" Grid.Column="2" Style="{StaticResource Quantbox}"></TextBox>
+        
+        <!-- Right Row -->
+        <!-- Midnight -->
+        <Image Grid.Column="3"  Grid.Row="0" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Atziri2.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Midnight"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyAtziri2" Grid.Row="0" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellAtziri2" Grid.Row="0" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Noon -->
+        <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="center" Height="30" VerticalAlignment="top" Width="30" Source="Images/Orbs/Atziri4.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Noon"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyAtziri4" Grid.Row="1" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellAtziri4" Grid.Row="1" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Rage -->
+        <Image Grid.Column="3" Grid.Row="2" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UAtziri2.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Mortal Rage"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUAtziri2" Grid.Row="2" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUAtziri2" Grid.Row="2" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Ignorance -->
+        <Image Grid.Column="3" Grid.Row="3" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UAtziri4.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Mortal Ignorance"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUAtziri4" Grid.Row="3" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUAtziri4" Grid.Row="3" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Yriel -->
+        <Image Grid.Column="3" Grid.Row="4" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/PaleCourt02.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Yriel's Key"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyPale2" Grid.Row="4" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellPale2" Grid.Row="4" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Volkuur -->
+        <Image Grid.Column="3" Grid.Row="5" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/PaleCourt04.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Volkuur's Key"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyPale4" Grid.Row="5" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellPale4" Grid.Row="5" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Phoenix -->
+        <Image Grid.Column="3" Grid.Row="6" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/FragmentPhoenix.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Phoenix"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyPhoenix" Grid.Row="6" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellPhoenix" Grid.Row="6" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Chimera -->
+        <Image Grid.Column="3" Grid.Row="7" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/FragmentChimera.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Chimera"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyChimera" Grid.Row="7" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellChimera" Grid.Row="7" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Eradication -->
+        <Image Grid.Column="3" Grid.Row="8" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/AtlasMapGuardianLightning.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Eradication"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyElder2" Grid.Row="8" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellElder2" Grid.Row="8" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Purification -->
+        <Image Grid.Column="3" Grid.Row="9" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/AtlasMapGuardianChaos.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Purification"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyElder4" Grid.Row="9" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellElder4" Grid.Row="9" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Emptiness -->
+        <Image Grid.Column="3" Grid.Row="10" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UberElder02.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Emptiness"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUElder2" Grid.Row="10" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUElder2" Grid.Row="10" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Knowledge -->
+        <Image Grid.Column="3" Grid.Row="11" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/UberElder04.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Knowledge"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyUElder4" Grid.Row="11" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellUElder4" Grid.Row="11" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Tul -->
+        <Image Grid.Column="3" Grid.Row="12" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/BreachFragmentsCold.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Tul"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyTul" Grid.Row="12" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellTul" Grid.Row="12" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Netol -->
+        <Image Grid.Column="3" Grid.Row="13" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/BreachFragmentsPhysical.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Netol"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyNetol" Grid.Row="13" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellNetol" Grid.Row="13" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Karui -->
+        <Image Grid.Column="3" Grid.Row="14" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Timeless04.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Karui"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyKarui" Grid.Row="14" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellKarui" Grid.Row="14" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Templar -->
+        <Image Grid.Column="3" Grid.Row="15" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Timeless02.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Templar"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyTemplar" Grid.Row="15" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellTemplar" Grid.Row="15" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Eternal -->
+        <Image Grid.Column="3" Grid.Row="16" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/Timeless05.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Eternal"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyEternal" Grid.Row="16" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellEternal" Grid.Row="16" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Divine -->
+        <Image Grid.Column="3" Grid.Row="17" HorizontalAlignment="center" Height="30" VerticalAlignment="Top" Width="30" Source="Images/Orbs/SinFlaskEmpty.png" Grid.ColumnSpan="3" Grid.RowSpan="2" ToolTip="Divine Vessel"/>
+        <!-- Buy -->
+        <TextBox x:Name="QuantBuyDVessel" Grid.Row="17" Grid.Column="3" Style="{StaticResource Quantbox}"></TextBox>
+        <!-- Sell -->
+        <TextBox x:Name="QuantSellDVessel" Grid.Row="17" Grid.Column="5" Style="{StaticResource Quantbox}"></TextBox>
+    </Grid>
+</Window>

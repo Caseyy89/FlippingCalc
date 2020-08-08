@@ -11,15 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
+using ControlzEx.Theming;
 
 namespace FlippingCalc
 {
     /// <summary>
-    /// Interaction logic for Window9.xaml
+    /// Interaction logic for QuantOil.xaml
     /// </summary>
-    public partial class Window9 : Window
+    public partial class QuantOil : Window
     {
-        public Window9()
+        public QuantOil()
         {
             InitializeComponent();
         }

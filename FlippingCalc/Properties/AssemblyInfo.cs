@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("monkaS")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FlippingCalc")]
+[assembly: AssemblyDescription("Currency Flipping Calculator for Path of Exile")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("monkaS")]
+[assembly: AssemblyCompany("Casey")]
+[assembly: AssemblyProduct("FlippingCalc")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

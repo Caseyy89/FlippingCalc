@@ -1,0 +1,1206 @@
+﻿<mah:MetroWindow x:Class="FlippingCalc.Calc"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:FlippingCalc"
+xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+mc:Ignorable="d"
+Title="FlippingCalc" Height="820" Width="700" 
+Icon="Images/Background/CurrencyAddModToRare.png" 
+WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+TextElement.FontWeight="Medium"
+TextElement.FontSize="14"
+TextElement.FontFamily="Microsoft YaHei"
+Loaded="OnWindowLoad">
+    <Window.Resources>
+        <Style x:Key="TextBoxBuySell" TargetType="TextBox">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Text" Value=""/>
+            <Setter Property="Margin" Value="0 5 10 0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="MaxLength" Value="6"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="BorderBrush" Value="#CCA4C400"/>
+        </Style>
+        <Style x:Key="TextBoxProfit" TargetType="TextBox">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Text" Value=""/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="Background" Value="#CCA4C400"/>
+            <Setter Property="Foreground" Value="#DDFFFFFF"/>
+            <Setter Property="BorderBrush" Value="#CCA4C400"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="mah:ControlsHelper.FocusBorderBrush" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <TabControl>
+        <TabItem Header="Currency" >
+            <StackPanel Height="750">
+                <Viewbox Stretch="Uniform"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid >
+                        <!-- Column Def -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                        </Grid.ColumnDefinitions>
+                        <!-- Row Def -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Top Row -->
+                        <!-- left -->
+                        <Rectangle Grid.Column="0" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="1" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="2" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="3" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- right -->
+                        <Rectangle Grid.Column="4" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="5" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="6" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="7" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- left -->
+                        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="10,0,10,0" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="1" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF3AFF00"/>
+                        <!-- right -->
+                        <TextBlock Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="5" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="6" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF0CFF00"/>
+                        <!-- Row 1 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Alteration.png" ToolTip="Orb of Alteration"/>
+                        <TextBox x:Name="BuyAlt" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAlt" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAlt" Grid.Row="1" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Engineers.png" ToolTip="Engineer's Orb"/>
+                        <TextBox x:Name="BuyEngineers" Grid.Column="5" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellEngineers" Grid.Column="6" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitEngineers" Grid.Column="7" Grid.Row="1" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 2 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Alchemy.png" ToolTip="Orb of Alchemy"/>
+                        <TextBox x:Name="BuyAlchemy" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAlchemy" Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAlchemy" Grid.Row="2" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Fusing.png" ToolTip="Orb of Fusing"/>
+                        <TextBox x:Name="BuyFusing" Grid.Column="5" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellFusing" Grid.Column="6" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitFusing" Grid.Column="7" Grid.Row="2" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 3 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Exalted.png" ToolTip="Exalted Orb"/>
+                        <TextBox x:Name="BuyEx" Grid.Column="1" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellEx" Grid.Column="2" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitEx" Grid.Column="3" Grid.Row="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/GCP.png" ToolTip="Gemcutter's Prism"/>
+                        <TextBox x:Name="BuyGCP" Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellGCP" Grid.Row="3" Grid.Column="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitGCP" Grid.Row="3" Grid.Column="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 4 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Jewellers.png" ToolTip="Jeweller's orb"/>
+                        <TextBox x:Name="BuyJeweller" Grid.Column="1" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellJeweller" Grid.Column="2" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitJeweller" Grid.Column="3" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Chromatic.png" ToolTip="Chromatic Orb"/>
+                        <TextBox x:Name="BuyChromatic" Grid.Column="5" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellChromatic" Grid.Column="6" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitChromatic" Grid.Column="7" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 5 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Chisel.png" ToolTip="Cartographer's Chisel"/>
+                        <TextBox x:Name="BuyChisel" Grid.Column="1" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellChisel" Grid.Column="2" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitChisel" Grid.Column="3" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Chance.png" ToolTip="Orb of Chance"/>
+                        <TextBox x:Name="BuyChance" Grid.Column="5" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellChance" Grid.Column="6" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitChance" Grid.Column="7" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 6 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Blessed.png" ToolTip="Blessed Orb"/>
+                        <TextBox x:Name="BuyBlessed" Grid.Column="1" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellBlessed" Grid.Column="2" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitBlessed" Grid.Column="3" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Scouring.png" ToolTip="Orb of Scouring"/>
+                        <TextBox x:Name="BuyScouring" Grid.Column="5" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellScouring" Grid.Column="6" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitScouring" Grid.Column="7" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 7 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="7" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Regal.png" ToolTip="Regal Orb"/>
+                        <TextBox x:Name="BuyRegal" Grid.Column="1" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellRegal" Grid.Column="2" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitRegal" Grid.Column="3" Grid.Row="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="7" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Regret.png" ToolTip="Orb of Regret"/>
+                        <TextBox x:Name="BuyRegret" Grid.Column="5" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellRegret" Grid.Column="6" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitRegret" Grid.Column="7" Grid.Row="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 8 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="8" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Vaal.png" ToolTip="Vaal Orb"/>
+                        <TextBox x:Name="BuyVaal" Grid.Column="1" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellVaal" Grid.Column="2" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitVaal" Grid.Column="3" Grid.Row="8" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="8" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Divine.png" ToolTip="Divine Orb"/>
+                        <TextBox x:Name="BuyDivine" Grid.Column="5" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellDivine" Grid.Column="6" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitDivine" Grid.Column="7" Grid.Row="8" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 9 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="9" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Portal.png" ToolTip="Portal Scroll"/>
+                        <TextBox x:Name="BuyPortal" Grid.Column="1" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPortal" Grid.Column="2" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPortal" Grid.Column="3" Grid.Row="9" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="9" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Wisdom.png" ToolTip="Scroll of Wisdom"/>
+                        <TextBox x:Name="BuyWisdom" Grid.Column="5" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellWisdom" Grid.Column="6" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitWisdom" Grid.Column="7" Grid.Row="9" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 10 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="10" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Whetstone.png" ToolTip="Blacksmith's Whetstone"/>
+                        <TextBox x:Name="BuyWhetstone" Grid.Column="1" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellWhetstone" Grid.Column="2" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitWhetstone" Grid.Column="3" Grid.Row="10" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="10" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Scrap.png" ToolTip="Armourer's Scrap"/>
+                        <TextBox x:Name="BuyScrap" Grid.Column="5" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellScrap" Grid.Column="6" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitScrap" Grid.Column="7" Grid.Row="10" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 11 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="11" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Transmute.png" ToolTip="Orb of Transmutation"/>
+                        <TextBox x:Name="BuyTransmute" Grid.Column="1" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellTransmute" Grid.Column="2" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitTransmute" Grid.Column="3" Grid.Row="11" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="11" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Bauble.png" ToolTip="Glassblower's Bauble"/>
+                        <TextBox x:Name="BuyBauble" Grid.Column="5" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellBauble" Grid.Column="6" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitBauble" Grid.Column="7" Grid.Row="11" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 12 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="12" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Perandus.png" ToolTip="Perandus Coin"/>
+                        <TextBox x:Name="BuyPerandus" Grid.Column="1" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPerandus" Grid.Column="2" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPerandus" Grid.Column="3" Grid.Row="12" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="12" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Augmentation.png" ToolTip="Orb of Augmentation"/>
+                        <TextBox x:Name="BuyAugmentation" Grid.Column="5" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAugmentation" Grid.Column="6" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAugmentation" Grid.Column="7" Grid.Row="12" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 13 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="13" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Simple_Sextant.png" ToolTip="Simple Sextant"/>
+                        <TextBox x:Name="BuySimple_Sextant" Grid.Column="1" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellSimple_Sextant" Grid.Column="2" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitSimple_Sextant" Grid.Column="3" Grid.Row="13" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="13" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Silver.png" ToolTip="Silver Coin"/>
+                        <TextBox x:Name="BuySilver" Grid.Column="5" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellSilver" Grid.Column="6" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitSilver" Grid.Column="7" Grid.Row="13" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 14 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="14" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Prime_Sextant.png" ToolTip="Prime Sextant"/>
+                        <TextBox x:Name="BuyPrime_Sextant" Grid.Column="1" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPrime_Sextant" Grid.Column="2" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPrime_Sextant" Grid.Column="3" Grid.Row="14" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="14" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="/Images/Orbs/Mirror_of_Kalandra.png" ToolTip="Mirror of Kalandra"/>
+                        <TextBox x:Name="BuyMirror" Grid.Column="5" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellMirror" Grid.Column="6" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitMirror" Grid.Column="7" Grid.Row="14" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 15 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="15" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Awakened_Sextant.png" ToolTip="Awakened Sextant"/>
+                        <TextBox x:Name="BuyAwakened_Sextant" Grid.Column="1" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAwakened_Sextant" Grid.Column="2" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAwakened_Sextant" Grid.Column="3" Grid.Row="15" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="15" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Binding.png" ToolTip="Orb of Binding"/>
+                        <TextBox x:Name="BuyBinding" Grid.Column="5" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellBinding" Grid.Column="6" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitBinding" Grid.Column="7" Grid.Row="15" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 16 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="16" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Annulment.png" ToolTip="Orb of Annulment"/>
+                        <TextBox x:Name="BuyAnnulment" Grid.Column="1" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAnnulment" Grid.Column="2" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAnnulment" Grid.Column="3" Grid.Row="16" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="16" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Harbinger.png" ToolTip="Harbinger's Orb"/>
+                        <TextBox x:Name="BuyHarbinger" Grid.Column="5" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellHarbinger" Grid.Column="6" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitHarbinger" Grid.Column="7" Grid.Row="16" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 17 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="17" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Horizons.png" ToolTip="Orb of Horizons"/>
+                        <TextBox x:Name="BuyHorizons" Grid.Column="1" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellHorizons" Grid.Column="2" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitHorizons" Grid.Column="3" Grid.Row="17" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="17" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Ancient.png" ToolTip="Ancient Orb"/>
+                        <TextBox x:Name="BuyAncient" Grid.Column="5" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAncient" Grid.Column="6" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAncient" Grid.Column="7" Grid.Row="17" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 18 -->
+                        <!-- left -->
+                        <Image Grid.Column="4" Grid.Row="18" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Crusader's_Exalted_Orb.png" ToolTip="Crusader's Exalted"/>
+                        <TextBox x:Name="BuyCrusader" Grid.Column="5" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellCrusader" Grid.Column="6" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitCrusader" Grid.Column="7" Grid.Row="18" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="0" Grid.Row="18" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Hunter's_Exalted_Orb.png" ToolTip="Hunter's Exalted"/>
+                        <TextBox x:Name="BuyHunter" Grid.Column="1" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellHunter" Grid.Column="2" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitHunter" Grid.Column="3" Grid.Row="18" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 19 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="19" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Warlord's_Exalted_Orb.png" ToolTip="Warlord's Exalted"/>
+                        <TextBox x:Name="BuyWarlord" Grid.Column="1" Grid.Row="19" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellWarlord" Grid.Column="2" Grid.Row="19" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitWarlord" Grid.Column="3" Grid.Row="19" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="19" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Redeemer's_Exalted_Orb.png" ToolTip="Redeemer's Exalted"/>
+                        <TextBox x:Name="BuyRedeemer" Grid.Column="5" Grid.Row="19" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellRedeemer" Grid.Column="6" Grid.Row="19" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitRedeemer" Grid.Column="7" Grid.Row="19" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 20 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="20" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/WokeOrb.png" ToolTip="Awakener's Orb"/>
+                        <TextBox x:Name="BuyAwakener" Grid.Column="1" Grid.Row="20" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAwakener" Grid.Column="2" Grid.Row="20" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAwakener" Grid.Column="3" Grid.Row="20" Style="{StaticResource TextBoxProfit}"/>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0 10 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Exit button -->
+                        <Button x:Name="ExitButton" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="150" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Calc button-->
+                        <Button x:Name="CalcButton" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="300" Margin="5 0 5 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="CalcButton_Click" Content="CALCULATE" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Reset button -->
+                        <Button x:Name="ResetButton" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="ResetButton_Click" Content="RESET" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Link button -->
+                        <Button x:Name="LinksButton" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="LinksButton_Click" Content="LINKS" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Calc -->
+                        <Button x:Name="QuantButton" Grid.Column="3" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="QuantButton_Click" Content="QUANTITY" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Box -->
+                        <TextBox x:Name="QuantBox" Grid.Column="4" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="200" Margin="10 0 10 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Text="" TextAlignment="Center" MaxLength="6" Background="#FF252525" BorderBrush="#CCA4C400" BorderThickness="0,0,0,2"/>
+                        <!-- Discord button -->
+                        <Button x:Name="Discord" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Images/Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Viewbox>
+                <!-- Buttons -->
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Fossil">
+            <StackPanel Height="750">
+                <Viewbox Stretch="Uniform"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid >
+                        <!-- Column Def -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                        </Grid.ColumnDefinitions>
+                        <!-- Row Def -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Top Row -->
+                        <!-- left -->
+                        <Rectangle Grid.Column="0" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="1" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="2" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="3" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- right -->
+                        <Rectangle Grid.Column="4" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="5" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="6" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="7" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- left -->
+                        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="10,0,10,0" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="1" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF3AFF00"/>
+                        <!-- right -->
+                        <TextBlock Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="5" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="6" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF0CFF00"/>
+                        <!-- Row 1 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Aberrant_Fossil.png" ToolTip="Aberrant Fossil"/>
+                        <TextBox x:Name="BuyAberrant" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAberrant" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAberrant" Grid.Row="1" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Aetheric_Fossil.png" ToolTip="Aetheric Fossil"/>
+                        <TextBox x:Name="BuyAetheric" Grid.Column="5" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAetheric" Grid.Column="6" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAetheric" Grid.Column="7" Grid.Row="1" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 2 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Bloodstained_Fossil.png" ToolTip="Bloodstained Fossil"/>
+                        <TextBox x:Name="BuyBloodstained" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellBloodstained" Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitBloodstained" Grid.Row="2" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Bound_Fossil.png" ToolTip="Bound Fossil"/>
+                        <TextBox x:Name="BuyBound" Grid.Column="5" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellBound" Grid.Column="6" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitBound" Grid.Column="7" Grid.Row="2" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 3 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Corroded_Fossil.png" ToolTip="Corroded Fossil"/>
+                        <TextBox x:Name="BuyCorroded" Grid.Column="1" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellCorroded" Grid.Column="2" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitCorroded" Grid.Column="3" Grid.Row="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Dense_Fossil.png" ToolTip="Dense Fossil"/>
+                        <TextBox x:Name="BuyDense" Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellDense" Grid.Row="3" Grid.Column="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitDense" Grid.Row="3" Grid.Column="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 4 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Enchanted_Fossil.png" ToolTip="Enchanted Fossil"/>
+                        <TextBox x:Name="BuyEnchanted" Grid.Column="1" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellEnchanted" Grid.Column="2" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitEnchanted" Grid.Column="3" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Encrusted_Fossil.png" ToolTip="Encrusted Fossil"/>
+                        <TextBox x:Name="BuyEncrusted" Grid.Column="5" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellEncrusted" Grid.Column="6" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitEncrusted" Grid.Column="7" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 5 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Faceted_Fossil.png" ToolTip="Faceted Fossil"/>
+                        <TextBox x:Name="BuyFaceted" Grid.Column="1" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellFaceted" Grid.Column="2" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitFaceted" Grid.Column="3" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Frigid_Fossil.png" ToolTip="Frigid Fossil"/>
+                        <TextBox x:Name="BuyFrigid" Grid.Column="5" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellFrigid" Grid.Column="6" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitFrigid" Grid.Column="7" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 6 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/Gilded_Fossil.png" ToolTip="Gilded Fossil"/>
+                        <TextBox x:Name="BuyGilded" Grid.Column="1" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellGilded" Grid.Column="2" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitGilded" Grid.Column="3" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Glyphic_Fossil.png" ToolTip="Glyphic Fossil"/>
+                        <TextBox x:Name="BuyGlyphic" Grid.Column="5" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellGlyphic" Grid.Column="6" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitGlyphic" Grid.Column="7" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 7 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="7" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Hollow_Fossil.png" ToolTip="Hollow Fossil"/>
+                        <TextBox x:Name="BuyHollow" Grid.Column="1" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellHollow" Grid.Column="2" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitHollow" Grid.Column="3" Grid.Row="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="7" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Jagged_Fossil.png" ToolTip="Jagged Fossil"/>
+                        <TextBox x:Name="BuyJagged" Grid.Column="5" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellJagged" Grid.Column="6" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitJagged" Grid.Column="7" Grid.Row="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 8 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="8" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Lucent_Fossil.png" ToolTip="Lucent Fossil"/>
+                        <TextBox x:Name="BuyLucent" Grid.Column="1" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellLucent" Grid.Column="2" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitLucent" Grid.Column="3" Grid.Row="8" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="8" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Metallic_Fossil.png" ToolTip="Metallic Fossil"/>
+                        <TextBox x:Name="BuyMetallic" Grid.Column="5" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellMetallic" Grid.Column="6" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitMetallic" Grid.Column="7" Grid.Row="8" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 9 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="9" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Perfect_Fossil.png" ToolTip="Perfect Fossil"/>
+                        <TextBox x:Name="BuyPerfect" Grid.Column="1" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPerfect" Grid.Column="2" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPerfect" Grid.Column="3" Grid.Row="9" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="9" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Prismatic_Fossil.png" ToolTip="Prismatic Fossil"/>
+                        <TextBox x:Name="BuyPrismatic" Grid.Column="5" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPrismatic" Grid.Column="6" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPrismatic" Grid.Column="7" Grid.Row="9" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 10 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="10" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Pristine_Fossil.png" ToolTip="Pristine Fossil"/>
+                        <TextBox x:Name="BuyPristine" Grid.Column="1" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPristine" Grid.Column="2" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPristine" Grid.Column="3" Grid.Row="10" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="10" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Sanctified_Fossil.png" ToolTip="Sanctified Fossil"/>
+                        <TextBox x:Name="BuySanctified" Grid.Column="5" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellSanctified" Grid.Column="6" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitSanctified" Grid.Column="7" Grid.Row="10" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 11 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="11" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Scorched_Fossil.png" ToolTip="Scorched Fossil"/>
+                        <TextBox x:Name="BuyScorched" Grid.Column="1" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellScorched" Grid.Column="2" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitScorched" Grid.Column="3" Grid.Row="11" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="11" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Serrated_Fossil.png" ToolTip="Serrated Fossil"/>
+                        <TextBox x:Name="BuySerrated" Grid.Column="5" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellSerrated" Grid.Column="6" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitSerrated" Grid.Column="7" Grid.Row="11" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 12 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="12" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Shuddering_Fossil.png" ToolTip="Shuddering Fossil"/>
+                        <TextBox x:Name="BuyShuddering" Grid.Column="1" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellShuddering" Grid.Column="2" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitShuddering" Grid.Column="3" Grid.Row="12" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="12" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Tangled_Fossil.png" ToolTip="Tangled Fossil"/>
+                        <TextBox x:Name="BuyTangled" Grid.Column="5" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellTangled" Grid.Column="6" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitTangled" Grid.Column="7" Grid.Row="12" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 13 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="13" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Fractured_Fossil.png" ToolTip="Fractured Fossil"/>
+                        <TextBox x:Name="BuyFractured" Grid.Column="1" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellFractured" Grid.Column="2" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitFractured" Grid.Column="3" Grid.Row="13" Style="{StaticResource TextBoxProfit}"/>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0 10 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Exit button -->
+                        <Button x:Name="ExitButtonFossil" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="150" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Calc button-->
+                        <Button x:Name="CalcButtonFossil" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="300" Margin="5 0 5 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="CalcButtonFossil_Click" Content="CALCULATE" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Reset button -->
+                        <Button x:Name="ResetButtonFossil" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="ResetButtonFossil_Click" Content="RESET" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Link button -->
+                        <Button x:Name="LinksButtonFossil" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="LinksButton_Click" Content="LINKS" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Calc -->
+                        <Button x:Name="QuantButtonFossil" Grid.Column="3" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="QuantButtonFossil_Click" Content="QUANTITY" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Box -->
+                        <TextBox x:Name="QuantBoxFossil" Grid.Column="4" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="200" Margin="10 0 10 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Text="" TextAlignment="Center" MaxLength="6" Background="#FF252525" BorderBrush="#CCA4C400" BorderThickness="0,0,0,2"/>
+                        <!-- Discord button -->
+                        <Button x:Name="DiscordFossil" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Images/Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Viewbox>
+                <!-- Buttons -->
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Oils">
+            <StackPanel Height="750">
+                <Viewbox Stretch="Uniform"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid >
+                        <!-- Column Def -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                        </Grid.ColumnDefinitions>
+                        <!-- Row Def -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Top Row -->
+                        <!-- left -->
+                        <Rectangle Grid.Column="0" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="1" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="2" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="3" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- right -->
+                        <Rectangle Grid.Column="4" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="5" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="6" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="7" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- left -->
+                        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="10,0,10,0" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="1" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF3AFF00"/>
+                        <!-- right -->
+                        <TextBlock Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="5" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="6" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF0CFF00"/>
+                        <!-- Row 1 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Clear_Oil.png" ToolTip="Clear Oil"/>
+                        <TextBox x:Name="BuyClear" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellClear" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitClear" Grid.Row="1" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Sepia_Oil.png" ToolTip="Sepia Oil"/>
+                        <TextBox x:Name="BuySepia" Grid.Column="5" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellSepia" Grid.Column="6" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitSepia" Grid.Column="7" Grid.Row="1" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 2 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Amber_Oil.png" ToolTip="Amber Oil"/>
+                        <TextBox x:Name="BuyAmber" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAmber" Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAmber" Grid.Row="2" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Verdant_Oil.png" ToolTip="Verdant Oil"/>
+                        <TextBox x:Name="BuyVerdant" Grid.Column="5" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellVerdant" Grid.Column="6" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitVerdant" Grid.Column="7" Grid.Row="2" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 3 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Teal_Oil.png" ToolTip="Teal Oil"/>
+                        <TextBox x:Name="BuyTeal" Grid.Column="1" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellTeal" Grid.Column="2" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitTeal" Grid.Column="3" Grid.Row="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Azure_Oil.png" ToolTip="Azure Oil"/>
+                        <TextBox x:Name="BuyAzure" Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAzure" Grid.Row="3" Grid.Column="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAzure" Grid.Row="3" Grid.Column="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 4 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/IndigoOil.png" ToolTip="Indigo Oil"/>
+                        <TextBox x:Name="BuyIndigo" Grid.Column="1" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellIndigo" Grid.Column="2" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitIndigo" Grid.Column="3" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Violet_Oil.png" ToolTip="Violet Oil"/>
+                        <TextBox x:Name="BuyViolet" Grid.Column="5" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellViolet" Grid.Column="6" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitViolet" Grid.Column="7" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 5 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Crimson_Oil.png" ToolTip="Crimson Oil"/>
+                        <TextBox x:Name="BuyCrimson" Grid.Column="1" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellCrimson" Grid.Column="2" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitCrimson" Grid.Column="3" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Black_Oil.png" ToolTip="Black Oil"/>
+                        <TextBox x:Name="BuyBlack" Grid.Column="5" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellBlack" Grid.Column="6" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitBlack" Grid.Column="7" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 6 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Opalescent_Oil.png" ToolTip="Opalescent Oil"/>
+                        <TextBox x:Name="BuyOpal" Grid.Column="1" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellOpal" Grid.Column="2" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitOpal" Grid.Column="3" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/Silver_Oil.png" ToolTip="Silver Oil"/>
+                        <TextBox x:Name="BuySilverOil" Grid.Column="5" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellSilverOil" Grid.Column="6" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitSilverOil" Grid.Column="7" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 7 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="7" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Golden_Oil.png" ToolTip="Golden Oil"/>
+                        <TextBox x:Name="BuyGolden" Grid.Column="1" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellGolden" Grid.Column="2" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitGolden" Grid.Column="3" Grid.Row="7" Style="{StaticResource TextBoxProfit}"/>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0 10 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Exit button -->
+                        <Button x:Name="ExitButtonOil" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="150" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Calc button-->
+                        <Button x:Name="CalcButtonOil" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="300" Margin="5 0 5 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="CalcButtonOil_Click" Content="CALCULATE" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Reset button -->
+                        <Button x:Name="ResetButtonOil" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="ResetButtonOil_Click" Content="RESET" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Link button -->
+                        <Button x:Name="LinksButtonOil" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="LinksButton_Click" Content="LINKS" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Calc -->
+                        <Button x:Name="QuantButtonOil" Grid.Column="3" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="QuantButtonOil_Click" Content="QUANTITY" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Box -->
+                        <TextBox x:Name="QuantBoxOil" Grid.Column="4" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="200" Margin="10 0 10 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Text="" TextAlignment="Center" MaxLength="6" Background="#FF252525" BorderBrush="#CCA4C400" BorderThickness="0,0,0,2"/>
+                        <!-- Discord button -->
+                        <Button x:Name="DiscordOil" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Images/Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Viewbox>
+                <!-- Buttons -->
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Catalysts">
+            <StackPanel Height="750">
+                <Viewbox Stretch="Uniform"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid >
+                        <!-- Column Def -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                        </Grid.ColumnDefinitions>
+                        <!-- Row Def -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Top Row -->
+                        <!-- left -->
+                        <Rectangle Grid.Column="0" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="1" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="2" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="3" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- right -->
+                        <Rectangle Grid.Column="4" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="5" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="6" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="7" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- left -->
+                        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="10,0,10,0" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="1" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF3AFF00"/>
+                        <!-- right -->
+                        <TextBlock Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="5" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="6" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF0CFF00"/>
+                        <!-- Row 1 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Abrasive_Catalyst.png" ToolTip="Abrasive Catalyst"/>
+                        <TextBox x:Name="BuyAbrasive" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAbrasive" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAbrasive" Grid.Row="1" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Fertile_Catalyst.png" ToolTip="Fertile Catalyst"/>
+                        <TextBox x:Name="BuyFertile" Grid.Column="5" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellFertile" Grid.Column="6" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitFertile" Grid.Column="7" Grid.Row="1" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 2 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Imbued_Catalyst.png" ToolTip="Imbued Catalyst"/>
+                        <TextBox x:Name="BuyImbued" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellImbued" Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitImbued" Grid.Row="2" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Intrinsic_Catalyst.png" ToolTip="Intrinsic Catalyst"/>
+                        <TextBox x:Name="BuyIntrinsic" Grid.Column="5" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellIntrinsic" Grid.Column="6" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitIntrinsic" Grid.Column="7" Grid.Row="2" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 3 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Prismatic_Catalyst.png" ToolTip="Prismatic Catalyst"/>
+                        <TextBox x:Name="BuyPrismaticCata" Grid.Column="1" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPrismaticCata" Grid.Column="2" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPrismaticCata" Grid.Column="3" Grid.Row="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Tempering_Catalyst.png" ToolTip="Tempering Catalyst"/>
+                        <TextBox x:Name="BuyTempering" Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellTempering" Grid.Row="3" Grid.Column="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitTempering" Grid.Row="3" Grid.Column="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 4 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Turbulent_Catalyst.png" ToolTip="Turbulent Catalyst"/>
+                        <TextBox x:Name="BuyTurbulent" Grid.Column="1" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellTurbulent" Grid.Column="2" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitTurbulent" Grid.Column="3" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0 10 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Exit button -->
+                        <Button x:Name="ExitButtonCata" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="150" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Calc button-->
+                        <Button x:Name="CalcButtonCata" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="300" Margin="5 0 5 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="CalcButtonCata_Click" Content="CALCULATE" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Reset button -->
+                        <Button x:Name="ResetButtonCata" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="ResetButtonCata_Click" Content="RESET" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Link button -->
+                        <Button x:Name="LinksButtonCata" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="LinksButton_Click" Content="LINKS" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Calc -->
+                        <Button x:Name="QuantButtonCata" Grid.Column="3" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="QuantButtonCata_Click" Content="QUANTITY" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Box -->
+                        <TextBox x:Name="QuantBoxCata" Grid.Column="4" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="200" Margin="10 0 10 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Text="" TextAlignment="Center" MaxLength="6" Background="#FF252525" BorderBrush="#CCA4C400" BorderThickness="0,0,0,2"/>
+                        <!-- Discord button -->
+                        <Button x:Name="DiscordCata" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Images/Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Viewbox>
+                <!-- Buttons -->
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Fragments">
+            <StackPanel Height="750">
+                <Viewbox Stretch="Uniform"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid >
+                        <!-- Column Def -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1.5*" />
+                        </Grid.ColumnDefinitions>
+                        <!-- Row Def -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Top Row -->
+                        <!-- left -->
+                        <Rectangle Grid.Column="0" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="1" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="2" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="3" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- right -->
+                        <Rectangle Grid.Column="4" Grid.Row="0" Height="30" Fill="DodgerBlue" Margin="10 0 10 0" Stroke="Black"/>
+                        <Rectangle Grid.Column="5" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="6" Grid.Row="0" Height="30" Fill="Yellow" Stroke="Black" Margin="0 0 10 0"/>
+                        <Rectangle Grid.Column="7" Grid.Row="0" Height="30" Fill="SeaGreen" Margin="0 0 0 0" Stroke="Black"/>
+                        <!-- left -->
+                        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="10,0,10,0" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="1" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF3AFF00"/>
+                        <!-- right -->
+                        <TextBlock Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Text="TYPE" VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="5" Grid.Row="0" Text=" ⮂BUY " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000"/>
+                        <TextBlock Grid.Column="6" Grid.Row="0" Text=" ⮀SELL " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" Margin="0,0,10,0" HorizontalAlignment="Center" Foreground="#DD000000" />
+                        <TextBlock Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center" Text=" PROFIT " VerticalAlignment="Center" FontFamily="Microsoft YaHei" FontSize="22" FontWeight="Bold" TextDecorations="{x:Null}" Foreground="#DD000000" Background="#FF0CFF00"/>
+                        <!-- Row 1 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Atziri1.png" ToolTip="Dusk"/>
+                        <TextBox x:Name="BuyAtziri1" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAtziri1" Grid.Row="1" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAtziri1" Grid.Row="1" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Atziri2.png" ToolTip="Midnight"/>
+                        <TextBox x:Name="BuyAtziri2" Grid.Column="5" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAtziri2" Grid.Column="6" Grid.Row="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAtziri2" Grid.Column="7" Grid.Row="1" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 2 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Atziri3.png" ToolTip="Dawn"/>
+                        <TextBox x:Name="BuyAtziri3" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAtziri3" Grid.Row="2" Grid.Column="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAtziri3" Grid.Row="2" Grid.Column="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="2" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Atziri4.png" ToolTip="Noon"/>
+                        <TextBox x:Name="BuyAtziri4" Grid.Column="5" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellAtziri4" Grid.Column="6" Grid.Row="2" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitAtziri4" Grid.Column="7" Grid.Row="2" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 3 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/UAtziri1.png" ToolTip="Mortal Grief"/>
+                        <TextBox x:Name="BuyUAtziri1" Grid.Column="1" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUAtziri1" Grid.Column="2" Grid.Row="3" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUAtziri1" Grid.Column="3" Grid.Row="3" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="3" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/UAtziri2.png" ToolTip="Mortal Rage"/>
+                        <TextBox x:Name="BuyUAtziri2" Grid.Row="3" Grid.Column="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUAtziri2" Grid.Row="3" Grid.Column="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUAtziri2" Grid.Row="3" Grid.Column="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 4 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/UAtziri3.png" ToolTip="Mortal Hope"/>
+                        <TextBox x:Name="BuyUAtziri3" Grid.Column="1" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUAtziri3" Grid.Column="2" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUAtziri3" Grid.Column="3" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="4" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/UAtziri4.png" ToolTip="Mortal Ignorance"/>
+                        <TextBox x:Name="BuyUAtziri4" Grid.Column="5" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUAtziri4" Grid.Column="6" Grid.Row="4" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUAtziri4" Grid.Column="7" Grid.Row="4" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 5 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/PaleCourt01.png" ToolTip="Eber's Key"/>
+                        <TextBox x:Name="BuyPale1" Grid.Column="1" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPale1" Grid.Column="2" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPale1" Grid.Column="3" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="5" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/PaleCourt02.png" ToolTip="Yriel's Key"/>
+                        <TextBox x:Name="BuyPale2" Grid.Column="5" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPale2" Grid.Column="6" Grid.Row="5" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPale2" Grid.Column="7" Grid.Row="5" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 6 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/PaleCourt03.png" ToolTip="Inya's Key"/>
+                        <TextBox x:Name="BuyPale3" Grid.Column="1" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPale3" Grid.Column="2" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPale3" Grid.Column="3" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="6" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/PaleCourt04.png" ToolTip="Volkuur's Key"/>
+                        <TextBox x:Name="BuyPale4" Grid.Column="5" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPale4" Grid.Column="6" Grid.Row="6" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPale4" Grid.Column="7" Grid.Row="6" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 7 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="7" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/FragmentHydra.png" ToolTip="Hydra"/>
+                        <TextBox x:Name="BuyHydra" Grid.Column="1" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellHydra" Grid.Column="2" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitHydra" Grid.Column="3" Grid.Row="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="7" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/FragmentPhoenix.png" ToolTip="Phoenix"/>
+                        <TextBox x:Name="BuyPhoenix" Grid.Column="5" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellPhoenix" Grid.Column="6" Grid.Row="7" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitPhoenix" Grid.Column="7" Grid.Row="7" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 8 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="8" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/FragmentMinotaur.png" ToolTip="Minotaur"/>
+                        <TextBox x:Name="BuyMinotaur" Grid.Column="1" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellMinotaur" Grid.Column="2" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitMinotaur" Grid.Column="3" Grid.Row="8" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="8" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/FragmentChimera.png" ToolTip="Chimera"/>
+                        <TextBox x:Name="BuyChimera" Grid.Column="5" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellChimera" Grid.Column="6" Grid.Row="8" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitChimera" Grid.Column="7" Grid.Row="8" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 9 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="9" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/AtlasMapGuardianFire.png" ToolTip="Enslavement"/>
+                        <TextBox x:Name="BuyElder1" Grid.Column="1" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellElder1" Grid.Column="2" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitElder1" Grid.Column="3" Grid.Row="9" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="9" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/AtlasMapGuardianLightning.png" ToolTip="Eradication"/>
+                        <TextBox x:Name="BuyElder2" Grid.Column="5" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellElder2" Grid.Column="6" Grid.Row="9" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitElder2" Grid.Column="7" Grid.Row="9" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 10 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="10" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/AtlasMapGuardianHoly.png" ToolTip="Constriction"/>
+                        <TextBox x:Name="BuyElder3" Grid.Column="1" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellElder3" Grid.Column="2" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitElder3" Grid.Column="3" Grid.Row="10" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="10" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/AtlasMapGuardianChaos.png" ToolTip="Purification"/>
+                        <TextBox x:Name="BuyElder4" Grid.Column="5" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellElder4" Grid.Column="6" Grid.Row="10" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitElder4" Grid.Column="7" Grid.Row="10" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 11 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="11" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/UberElder01.png" ToolTip="Terror"/>
+                        <TextBox x:Name="BuyUElder1" Grid.Column="1" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUElder1" Grid.Column="2" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUElder1" Grid.Column="3" Grid.Row="11" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="11" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/UberElder02.png" ToolTip="Emptiness"/>
+                        <TextBox x:Name="BuyUElder2" Grid.Column="5" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUElder2" Grid.Column="6" Grid.Row="11" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUElder2" Grid.Column="7" Grid.Row="11" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 12 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="12" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/UberElder03.png" ToolTip="Shape"/>
+                        <TextBox x:Name="BuyUElder3" Grid.Column="1" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUElder3" Grid.Column="2" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUElder3" Grid.Column="3" Grid.Row="12" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="12" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/UberElder04.png" ToolTip="Knowledge"/>
+                        <TextBox x:Name="BuyUElder4" Grid.Column="5" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellUElder4" Grid.Column="6" Grid.Row="12" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitUElder4" Grid.Column="7" Grid.Row="12" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 13 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="13" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/BreachFragmentsFire.png" ToolTip="Xoph"/>
+                        <TextBox x:Name="BuyXoph" Grid.Column="1" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellXoph" Grid.Column="2" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitXoph" Grid.Column="3" Grid.Row="13" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="13" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/BreachFragmentsCold.png" ToolTip="Tul"/>
+                        <TextBox x:Name="BuyTul" Grid.Column="5" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellTul" Grid.Column="6" Grid.Row="13" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitTul" Grid.Column="7" Grid.Row="13" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 14 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="14" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/BreachFragmentsLightning.png" ToolTip="Esh"/>
+                        <TextBox x:Name="BuyEsh" Grid.Column="1" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellEsh" Grid.Column="2" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitEsh" Grid.Column="3" Grid.Row="14" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="14" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/BreachFragmentsPhysical.png" ToolTip="Netol"/>
+                        <TextBox x:Name="BuyNetol" Grid.Column="5" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellNetol" Grid.Column="6" Grid.Row="14" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitNetol" Grid.Column="7" Grid.Row="14" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 15 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="15" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/BreachFragmentsChaos.png" ToolTip="Chayula"/>
+                        <TextBox x:Name="BuyChayula" Grid.Column="1" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellChayula" Grid.Column="2" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitChayula" Grid.Column="3" Grid.Row="15" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="15" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/Timeless04.png" ToolTip="Karui"/>
+                        <TextBox x:Name="BuyKarui" Grid.Column="5" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellKarui" Grid.Column="6" Grid.Row="15" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitKarui" Grid.Column="7" Grid.Row="15" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 16 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="16" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Timeless03.png" ToolTip="Maraketh"/>
+                        <TextBox x:Name="BuyMaraketh" Grid.Column="1" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellMaraketh" Grid.Column="2" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitMaraketh" Grid.Column="3" Grid.Row="16" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="16" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/Timeless02.png" ToolTip="Templar"/>
+                        <TextBox x:Name="BuyTemplar" Grid.Column="5" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellTemplar" Grid.Column="6" Grid.Row="16" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitTemplar" Grid.Column="7" Grid.Row="16" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 17 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="17" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Timeless01.png" ToolTip="Vaal"/>
+                        <TextBox x:Name="BuyVaalE" Grid.Column="1" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellVaalE" Grid.Column="2" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitVaalE" Grid.Column="3" Grid.Row="17" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="17" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/Timeless05.png" ToolTip="Eternal"/>
+                        <TextBox x:Name="BuyEternal" Grid.Column="5" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellEternal" Grid.Column="6" Grid.Row="17" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitEternal" Grid.Column="7" Grid.Row="17" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 18 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="18" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/Labyrinth.png" ToolTip="Offering"/>
+                        <TextBox x:Name="BuyOffering" Grid.Column="1" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellOffering" Grid.Column="2" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitOffering" Grid.Column="3" Grid.Row="18" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- right -->
+                        <Image Grid.Column="4" Grid.Row="18" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="Bottom" Width="100" Source="Images/Orbs/SinFlaskEmpty.png" ToolTip="Divine Vessel"/>
+                        <TextBox x:Name="BuyDVessel" Grid.Column="5" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellDVessel" Grid.Column="6" Grid.Row="18" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitDVessel" Grid.Column="7" Grid.Row="18" Style="{StaticResource TextBoxProfit}"/>
+                        <!-- Row 19 -->
+                        <!-- left -->
+                        <Image Grid.Column="0" Grid.Row="19" HorizontalAlignment="center" Height="35" Margin="0 0 0 0" VerticalAlignment="center" Width="100" Source="Images/Orbs/DeliriumFragment.png" ToolTip="Simulacrum"/>
+                        <TextBox x:Name="BuySimulacrum" Grid.Column="1" Grid.Row="19" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="SellSimulacrum" Grid.Column="2" Grid.Row="19" Style="{StaticResource TextBoxBuySell}"/>
+                        <TextBox x:Name="ProfitSimulacrum" Grid.Column="3" Grid.Row="19" Style="{StaticResource TextBoxProfit}"/>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0 10 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!-- Exit button -->
+                        <Button x:Name="ExitButtonFragment" Grid.Column="5" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="150" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="Exit_Click" Content="EXIT" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Calc button-->
+                        <Button x:Name="CalcButtonFragment" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="300" Margin="5 0 5 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Click="CalcButtonFragment_Click" Content="CALCULATE" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Reset button -->
+                        <Button x:Name="ResetButtonFragment" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="ResetButtonFragment_Click" Content="RESET" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Link button -->
+                        <Button x:Name="LinksButtonFragment" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 5 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="LinksButton_Click" Content="LINKS" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Calc -->
+                        <Button x:Name="QuantButtonFragment" Grid.Column="3" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="110" Margin="0 0 0 0" FontFamily="Microsoft YaHei" FontSize="12" FontWeight="Bold" Click="QuantButtonFragment_Click" Content="QUANTITY" Background="#CCA4C400" BorderBrush="{x:Null}" Foreground="Black" BorderThickness="2"/>
+                        <!-- Quant Box -->
+                        <TextBox x:Name="QuantBoxFragment" Grid.Column="4" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="200" Margin="10 0 10 0" FontFamily="Microsoft YaHei" FontSize="18" FontWeight="Bold" Text="" TextAlignment="Center" MaxLength="6" Background="#FF252525" BorderBrush="#CCA4C400" BorderThickness="0,0,0,2"/>
+                        <!-- Discord button -->
+                        <Button x:Name="DiscordFragment" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Width="100" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Click="Discord_Click" Content="" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Image Source="Images/Discord.png"/>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                </Viewbox>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+</mah:MetroWindow>

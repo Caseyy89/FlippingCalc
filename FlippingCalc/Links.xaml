@@ -6,11 +6,11 @@ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
 xmlns:local="clr-namespace:FlippingCalc"
 mc:Ignorable="d"
-Title="Currency" Height="700" Width="600" 
+Title="Currency" Height="500" Width="600" 
 Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip"
 Loaded="OnWindowLoad">
     <TabControl>
-        <TabItem Header="Harvest SC">
+        <TabItem Header="Heist SC">
             <TabControl>
                 <TabItem Header="Currency">
                     <ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -189,7 +189,7 @@ Loaded="OnWindowLoad">
                 </TabItem>
             </TabControl>
         </TabItem>
-        <TabItem Header="Harvest HC">
+        <TabItem Header="Heist HC">
             <TabControl>
                 <TabItem Header="Currency">
                     <ScrollViewer VerticalScrollBarVisibility="Auto">

@@ -5,7 +5,6 @@ using System.Windows.Controls;
 using System.Diagnostics;
 using MahApps.Metro.Controls;
 using ControlzEx.Theming;
-using AutoUpdaterDotNET;
 
 namespace FlippingCalc
 {
@@ -871,11 +870,6 @@ namespace FlippingCalc
                 fourth.Text = "";
                 fifth.Text = "";
             }
-        }
-
-        private void OnWindowLoad(object sender, RoutedEventArgs e)
-        {
-            AutoUpdater.Start("https://github.com/Caseyy89/FlippingCalc/blob/master/FlippingCalc/FlippingCalcAutoUpdater.xaml");
         }
     }
 }

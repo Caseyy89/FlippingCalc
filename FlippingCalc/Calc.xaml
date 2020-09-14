@@ -11,8 +11,7 @@ Icon="Images/Background/CurrencyAddModToRare.png"
 WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
 TextElement.FontWeight="Medium"
 TextElement.FontSize="14"
-TextElement.FontFamily="Microsoft YaHei"
-Loaded="OnWindowLoad">
+TextElement.FontFamily="Microsoft YaHei">
     <Window.Resources>
         <Style x:Key="TextBoxBuySell" TargetType="TextBox">
             <Setter Property="Height" Value="25"/>

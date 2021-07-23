@@ -10,7 +10,7 @@ Title="Currency" Height="500" Width="600"
 Icon="Images/Orbs/Exalted.png" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip"
 Loaded="OnWindowLoad">
     <TabControl>
-        <TabItem Header="Ritual SC">
+        <TabItem Header="Expedition SC">
             <TabControl>
                 <TabItem Header="Currency">
                     <ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -189,7 +189,7 @@ Loaded="OnWindowLoad">
                 </TabItem>
             </TabControl>
         </TabItem>
-        <TabItem Header="Ritual HC">
+        <TabItem Header="Expedition HC">
             <TabControl>
                 <TabItem Header="Currency">
                     <ScrollViewer VerticalScrollBarVisibility="Auto">
